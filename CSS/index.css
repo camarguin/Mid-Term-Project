@@ -1,3 +1,23 @@
-body {
-    background-color: black;
+body{
+    background-color: yellow;
+}
+#main{
+    text-align: center;
+}
+#title_img{
+    animation-name: title;
+    animation-delay: 0s;
+    animation-duration: 3s;
+}
+
+/* ========== animation ========== */
+
+@keyframes title{
+    0%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
 }
