@@ -1,13 +1,33 @@
 body{
-    background-color: yellow;
+    margin: 0 auto;
 }
-#main{
+#main_menu{
     text-align: center;
+    background-color: black;
+    color: white;
 }
-#title_img{
+#menu_img{
+    width: 10vw;
+    height: 20vh;
+    position: absolute;
+    left: 0;
+    margin-left: 10px;
     animation-name: title;
     animation-delay: 0s;
     animation-duration: 3s;
+}
+#menu_bar{
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+}
+.menu_block{
+    width: 10vw;
+    height: 10vh;
+    margin: 10px 10px;
+}
+.menu_block:hover{
+    background-color: gold;
 }
 
 /* ========== animation ========== */
@@ -16,7 +36,7 @@ body{
     0%{
         opacity: 0;
     }
-    
+
     100%{
         opacity: 1;
     }
