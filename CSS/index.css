@@ -1,3 +1,6 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
 body{
     background-color: yellow;
 }
@@ -8,6 +11,32 @@ body{
     animation-name: title;
     animation-delay: 0s;
     animation-duration: 3s;
+}
+.menu {
+    width: 750px;
+    margin: 0 auto;
+    list-style: none;
+    background-color: lightcoral;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*overflow: hidden;*/
+}
+.menu li {
+    display: inline;
+    float: left;
+}
+.menu li:hover {
+    display: inline;
+    color: lightblue;
+}
+.menu a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    /*background-color:rgb(243, 184, 34);*/
 }
 
 /* ========== animation ========== */
@@ -20,4 +49,24 @@ body{
     100%{
         opacity: 1;
     }
+}
+
+/* ========== responsive ==========*/
+
+@media screen and (max-width:1024px) {
+
+}
+@media screen and (max-width:768px) {
+
+}
+@media screen and (max-width:375px) {
+    .menu a:not(:first-child) {
+        display: none;
+    }
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
 }
