@@ -2,41 +2,48 @@
     font-family: 'Open Sans', sans-serif;
 }
 body{
-    background-color: yellow;
+    background-color: goldenrod;
 }
 #main{
-    text-align: center;
+    
 }
 #title_img{
     animation-name: title;
     animation-delay: 0s;
+    width: 480px;
     animation-duration: 3s;
+    float: left;
+
+}
+#menu-cointainer {
+    display: block;
+    
+    
+    
 }
 .menu {
-    width: 750px;
-    margin: 0 auto;
-    list-style: none;
-    background-color: lightcoral;
+    align-content: center;
+    background-color: rgba(255,255,255,.2);
+    
 }
 .menu ul {
+    margin-left: 500px;
+    align-content: center;
+    display: flex;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    /*overflow: hidden;*/
+    
 }
 .menu li {
-    display: inline;
-    float: left;
+    display: relative;
+    padding: 10px;
+    
 }
 .menu li:hover {
-    display: inline;
-    color: lightblue;
+    
 }
 .menu a {
-    display: block;
-    padding: 8px;
-    text-decoration: none;
-    /*background-color:rgb(243, 184, 34);*/
+    text-align: center;
+   
 }
 
 /* ========== animation ========== */
