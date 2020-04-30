@@ -16,34 +16,34 @@ body{
 
 }
 #menu-cointainer {
-    display: block;
-    
     
     
 }
 .menu {
-    align-content: center;
-    background-color: rgba(255,255,255,.2);
-    
+    display: flex;
+    /*margin: 0 auto;*/
+    list-style: none;
+    opacity: 0.5;
+    background-color: red;
 }
 .menu ul {
-    margin-left: 500px;
-    align-content: center;
-    display: flex;
     list-style-type: none;
-    
+    overflow: hidden;
+    float: left;
 }
 .menu li {
-    display: relative;
-    padding: 10px;
-    
+    display: inline;
+    margin: 10px 10px;
+    float: left;
 }
 .menu li:hover {
-    
+    background-color: gold;
 }
 .menu a {
-    text-align: center;
-   
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    /*background-color:rgb(243, 184, 34);*/
 }
 
 /* ========== animation ========== */
@@ -67,13 +67,5 @@ body{
 
 }
 @media screen and (max-width:375px) {
-    .menu a:not(:first-child) {
-        display: none;
-    }
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-    float: right;
-    display: block;
-  }
 
 }

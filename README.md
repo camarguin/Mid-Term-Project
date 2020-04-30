@@ -4,7 +4,9 @@
 Instructor: Steve Kim
 
 Website: http://www.westvancouvercricketclub.ca
+
 Example idea 1: http://www.mohrgoodideas.com/index.html
+
 Example idea 2: https://manlycricket.com/
 
 ### Some thoughs for the website:
