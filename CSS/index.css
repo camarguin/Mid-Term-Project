@@ -1,14 +1,39 @@
 body{
     margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(../images/cricket.jpg);
+}
+#link_bar{
+    background-color: white;
+    opacity: 0.8;
+}
+#icon_position{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1350px;
+    text-align: center;
+}
+.link_block{
+    width: 5vw;
+    height: 5vh;
+}
+.link_block:hover{
+    background-color: gold;
+}
+.icon{
+    width: 2rem;
+    height: 2rem;
 }
 #main_menu{
+    margin: 0 auto;
     text-align: center;
     background-color: black;
     color: white;
+    opacity: 0.8;
 }
 #menu_img{
-    width: 10vw;
-    height: 20vh;
+    width: 7vw;
+    height: 15vh;
     position: absolute;
     left: 0;
     margin-left: 10px;
@@ -19,12 +44,14 @@ body{
 #menu_bar{
     display: flex;
     flex-direction: row;
-    margin-left: 100px;
+    margin:0 auto auto 65px;
+    list-style-type: none;
 }
 .menu_block{
+    margin: 0 auto;
+    padding-top: 50px;
     width: 10vw;
     height: 10vh;
-    margin: 10px 10px;
 }
 .menu_block:hover{
     background-color: gold;
