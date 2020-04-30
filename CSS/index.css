@@ -194,3 +194,24 @@
 }
 
 /*END Slideshow*/
+@keyframes title{
+    0%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}
+
+/* ========== responsive ==========*/
+
+@media screen and (max-width:1024px) {
+
+}
+@media screen and (max-width:768px) {
+
+}
+@media screen and (max-width:375px) {
+
+}
