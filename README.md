@@ -1,7 +1,7 @@
 # Mid-Term-Project
 
 *Group: Rodrigo, Lucas, Zack, Shinya, Juan Carlos*
-Instructor: Steve Kim
+ | Instructor: Steve Kim
 
 Website: http://www.westvancouvercricketclub.ca
 
