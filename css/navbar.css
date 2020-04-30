@@ -1,15 +1,21 @@
 
+*{
 
-div {
+    box-sizing: border-box;
+}
+
+#main {
     background-color: #ffd700; 
 }
+
+
 
 ul{
 list-style-type: none;
 margin: 0px;
 padding: 0;
 overflow: hidden;
-background-color: #ffd700;
+background-color: #030303;
 
 }
 
@@ -31,3 +37,15 @@ li a:hover {
 
     background-color: rgba(180, 180, 8, 0.747);
 }
+@media screen and (max-width: 768px) {
+    #main .active {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    #main .active {   
+      width: 100%;
+      padding: 0;
+    }
+  }
