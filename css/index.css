@@ -1,0 +1,255 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;    
+}
+body {
+    background-image: url(/MidTermProject/images//BallBackgroundBlur.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* Header Menu*/
+.header {
+    background-color: white;
+    height: 32px;
+}
+.header ul {
+    list-style-type: none;
+  
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+/* Social Media Links*/
+.social-media {
+    position: absolute;
+    top: 0px;
+    right: 60px;
+    padding: 0px;
+}
+.social-media li {
+    display: inline-block;
+  /*  float: right;*/
+    padding-left: 30px;
+}
+.social-media img {
+    float: right;
+}
+.social-media a {
+    float: right;
+}
+.list-header {
+    display: flex;
+    flex-direction: row;    
+}
+.menu {
+    display: flex;
+    height: 105px;
+    background-color: rgb(244, 155, 0);
+}
+.menu nav {
+    display: flex;
+    float: right;
+    margin-left: 15vw;
+}
+.menu ul {
+    list-style-type: none;
+}
+.menu li {
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    float: left;
+    width: 10vw;
+    text-align: center;
+}
+.menu a {
+    color:white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.menu li:hover {
+    background-color: rgb(179, 113, 0);
+    border-bottom: 3px solid #000;
+}
+#logo-image {
+    position: absolute;
+    top: 32px;
+    left: 15px;
+}
+
+/*Additions NEW CODE CLUB*/
+.club-content {
+
+    display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.club-content a{
+
+    color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+
+}
+
+
+.club-content a:hover {background-color: #f1f1f1;}
+
+.club:hover .club-content {
+
+    display: block;
+}
+
+/*Additions NEW CODE JUNIORS*/
+.juniors-content {
+
+    display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.juniors-content a{
+
+    color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+
+}
+
+
+.juniors-content a:hover {background-color: #f1f1f1;}
+
+.juniors:hover .juniors-content {
+
+    display: block;
+}
+
+/*Additions NEW CODE LEAGUE*/
+
+.league-content {
+
+    display: none;
+position: absolute;
+background-color: orange;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.league-content a{
+
+    color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+
+}
+
+
+.league-content a:hover {background-color: #f1f1f1;}
+
+.league:hover .league-content {
+
+    display: block;
+}
+
+/*Additions NEW CODE WOMENS*/
+
+.women-content {
+
+    display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.women-content a{
+
+    color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+
+}
+
+
+.women-content a:hover {background-color: #f1f1f1;}
+
+.women:hover .women-content {
+
+    display: block;
+}
+
+/*Additions NEW CODE CLUB HOUSE*/
+.chouse-content {
+
+    display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.chouse-content a{
+
+    color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+
+}
+
+
+.chouse-content a:hover {background-color: #f1f1f1;}
+
+.chouse:hover .chouse-content {
+
+    display: block;
+}
+
+/*Additions NEW CODE CONTACT*/
+
+.contact-content {
+
+    display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.contact-content a{
+
+    color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+
+}
+
+
+.contact-content a:hover {background-color: #f1f1f1;}
+
+.contact:hover .contact-content {
+
+    display: block;
+}
+
+
