@@ -42,7 +42,7 @@ Example 2: https://manlycricket.com/
     - LOCATION AND DIRECTIONS
     - NEWSLETTER SIGNUP
 
-### **Commit Rules (Please try to follow it for a better understanding)
+### **Commit Rules (Please try to follow it for a better understanding)**
 - Capitalize only the first letter
 - Avoid period at the end of the line
 - Describe what was done
