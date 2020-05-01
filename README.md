@@ -1,22 +1,50 @@
 # Mid-Term-Project
 
 *Group: Rodrigo, Lucas, Zack, Shinya, Juan Carlos*
-Instructor: Steve Kim
+Instructor: Steve Kim.
 
 Website: http://www.westvancouvercricketclub.ca
 
-Example idea 1: http://www.mohrgoodideas.com/index.html
+Example 1: http://www.mohrgoodideas.com/index.html
+Example 2: https://manlycricket.com/
 
-Example idea 2: https://manlycricket.com/
+### **Some thoughts for the website**
 
-### Some thoughs for the website:
-1. Have same colours for the website - gold and black
-2. Simple, clean and fresh website
-3. Menu: HOME, CLUB, JUNIORS, LEAGUE, WOMEN'S, CLUBHOUSE, LINKS, CONTACT
-4. Whole page responsive
+  - Have same colors - Gold and Black
+  - Simple, clean and fresh website
+  - Menu: HOME, CLUB, JUNIORS, LEAGUE, WOMEN'S, CLUBHOUSE, CONTACT US
+  - Whole page responsive
 
-##### Commit rules: (Please try to follow it for a better understanding)
+### **Menu and Submenus**
+1. HOME
+2. CLUB
+    - ABOUT WVCC
+    - CLUB MANAGEMENT
+    - LIFE MEMBERS
+    - PROGRAMS
+    - FACILITIES
+3. JUNIORS
+    - PROGRAMS
+    - SCHOOL CRICKET
+    - SUMMER CAMP
+4. LEAGUE
+    - TEAMS
+    - TRAINING
+    - INDOOR TRAINING
+    - SCHEDULE
+5. WOMEN’S
+    - TEAM
+    - SCHEDULE
+    - TRAINING
+6. CLUBHOUSE
+    - RENTAL
+7. CONTACT US
+    - LOCATION AND DIRECTIONS
+    - NEWSLETTER SIGNUP
+
+### **Commit Rules (Please try to follow it for a better understanding)
 - Capitalize only the first letter
 - Avoid period at the end of the line
-- Describe what was done 
-Examples: "Add menu" "Fix the menu"
+- Describe what was done
+
+Examples: "Add menu" "Fix menu"
