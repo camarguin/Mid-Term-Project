@@ -1,196 +1,495 @@
 * {
-    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;    
+    box-sizing: border-box;
 }
 
-:root {
-    background-image: url(/images/ball-background-blur.jpg);
-    font-family: 'Open Sans', sans-serif;
-    background-size: cover;
+
+
+body {
+    /* background-image: url(/images/BallBackground.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover; */
+
+    /* The image used */
+  background-image: url("/images/BallBackground.jpg");
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
 }
 
-.listheader{
-    display: flex;
-    /* align-items: right; */
-    /* justify-content: center; */
+
+/* Header Menu*/
+.header {
     background-color: white;
-    /* padding: 5px; */
-    list-style-type: none; 
-    /* width: auto;   
-    height: auto; */
+    height: 32px;
 }
-
-.listheader li{
-    width: 300px;
-    height: 63px;
+.header ul {
+    list-style-type: none;
 }
-.sponsortxt{
-    padding-top: 20px;
-    width: 200px;
-    margin-left: 10px;
-}
-.brands {
-    /* width: 30%; */
-    height: 63px;
-    object-fit: contain; 
-    /* align-content: right; */
-}
-
-.spacetop {
-    width: 10px;
-    margin-right: 800px;
-}
-
-.social {
-    /* width: 30%; */
-    height: 63px;
-    object-fit: contain; 
-    align-content: right;
-}
-.header{
-    text-decoration:none;  
-}
-
-
-/* Menu */
-.list {
-    width: auto;
-    height: 100px;
-    padding-top: 0px;
-    /* padding-left: 10px; */
-    background-color: rgb(244, 155, 0);
-
-}
-.list a:hover {
-    background-color: rgb(179, 113, 0);
-    border-bottom: 3px solid #000;
-}
-
-.list, .list li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;    
-}
-
-
-.list a {
-    font-size: 1.4rem;
-    text-decoration:none;
-    color:rgba(255, 255, 255, 1);
-    line-height: 6rem; 
-    background-color: rgb(244, 155, 0);
-    height: 100px;
-    width: 200px;
-}
-
-.list a:hover {
-    color:#fff;
-    /* text-shadow: 7px 2px 8px rgba(0,0,0,0.91) ; */
-    /* background-color: hsla(44, 100%, 38%, 0.164); */
-    /* border-radius: 50%; */
-    font-size: 1.5rem;
-}
-
-/*CRICKET LOGO*/
-
-.cricketlogo{
-    display: block;
-    width: 150px;
-    margin-top: -100px;
-    margin-left: 20px;
-    position: relative;
-}
-.cricketlogo img {
-    width: 150px;
-}
-
-/*END CRICKET LOGO*/
-
-
-/*START TEXT CONTENT*/
-
-.allcontent {
-    display: block;
-    align-content: center;
-    margin-left: 1300px;
-}
-.allcontent h2{
-    color: white;
-    margin-top: 60px;
-}
-.content {
-    background-color: #eee;
-    padding: 5px;
-    width: 550px;
-    height: 370px;
-    border: 1px solid white;
-    overflow-x: scroll;
-    text-align: justify;
-}
-
-/*END TEXT CONTENT*/
-
-
-
-
-
-/*Slideshow*/
-
-.slide-container {
-    width: 640px;
-    height: 400px;
-    margin: 100px auto;
-    overflow: hidden;
-    text-align: center;
+/* Social Media Links*/
+.social-media {
     position: absolute;
-    margin-left: 40px;
-}
-
-.image-container {
-    width: 1920px;
-    height: 400px;
-    display: flex;
-    position: relative;
-    /* float: left; */
-    transition: left 2s;
-    -webkit-transition: left 2s;
-    -moz-transition: left 2s;
-    -o-transition: left 2s;
-}
-
-.slider-image {
-    float: left;
-    margin: 0px;
+    top: 0px;
+    right: 60px;
     padding: 0px;
 }
-
-.button-container {
-    top: -30px;
-    position: relative;
+.social-media li {
+    display: inline-block;
+    float: right;
+    padding-left: 30px;
+}
+.social-media img {
+    float: right;
+}
+.social-media a {
+    float: right;
+}
+.list-header {
+    display: flex;
+    flex-direction: row;    
+}
+.menu {
+    display: inline-block;
+    width: 100%;
+    height: 105px;
+    /* background-color: rgb(244, 155, 0, 0.5); */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* position: fixed; */
+}
+.menu nav {
+    display: flex;
+    float: center;
+    margin-left: 15vw;
 }
 
-.slider-button {
-    display: inline-block;
-    height: 10px;
-    width: 10px;
-    border-radius: 55px;
+.menu ul {
+    list-style-type: none;
+}
+.menu li {
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    float: left;
+    width: 10vw;
+    text-align: center;
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+}
+
+.menu a {
+    color:white;
+    font-weight: bold;
+    text-transform: uppercase;       
+}
+
+.menu li:hover {
+    /* background-color: rgb(179, 113, 0); */
+    border-bottom: 3px solid #000;
+}
+#logo-image {
+    position: absolute;
+    top: 32px;
+    left: 15px;
+}
+
+.toggler{
+    display: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: black;
     background-color: white;
 }
 
-#slider-image-1:target~.image-container {
-    left: 0px;
+/*BODY WELCOME*/
+
+.bodycontainer{
+    position: relative;
+    margin-top: 10vh;
+    margin-left: 5vh;
+    background-color: rgb(244, 155, 0, 0.5);
+    /* opacity: 0.7; */
+    /* filter: alpha(opacity=30); For IE8 and earlier */
+    display: block;
+    width: 500px;
+    height: auto;
+    padding: 1.5rem;
 }
 
-#slider-image-2:target~.image-container {
-    left: -640px;
+.titlewelcome{
+font-size: 6rem;
+font-family: 'Oswald', sans-serif;
+letter-spacing: -0.2rem;
+line-height: 100px;
 }
 
-#slider-image-3:target~.image-container {
-    left: -1280px;
+.imglogotext{
+    width: 500px;
+    height: auto;
 }
 
-/*END Slideshow*/
+.learnmorebutton{
+    background-color: #fff;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+}
+
+.divisor{
+    margin: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+
+.aboutcontainer{
+    margin-top: 10vh;
+    margin-left: 5vh;
+    background-color: rgba(255,255,255,0.5);
+    display: block;
+    width: 500px;
+    height: 600px;
+    padding: 1.5rem;
+}
+
+.abouttitle{
+font-size: 6rem;
+font-family: 'Oswald', sans-serif;
+letter-spacing: -0.2rem;
+}
+
+.abouttxt{
+    width: 400px;
+    height: auto;
+}
+
+.coordinator{
+    display: flex;
+    background-color: rgb(244, 155, 0);
+    opacity: 0.7;
+    height: 1000px;
+}
+
+
+/* NEW CSS CODE - SUBMENUS J.C.*/
+
+/* Header Menu*/
+/* .header {
+    background-color: white;
+    height: 32px;
+} */
+.header ul {
+    list-style-type: none;
+  
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+/* Social Media Links*/
+.social-media {
+    position: absolute;
+    top: 0px;
+    right: 60px;
+    padding: 0px;
+}
+.social-media li {
+    display: inline-block;
+  /*  float: right;*/
+    padding-left: 30px;
+}
+.social-media img {
+    float: right;
+}
+.social-media a {
+    float: right;
+}
+.list-header {
+    display: flex;
+    flex-direction: row;    
+}
+/* .menu {
+    display: flex;
+    height: 105px;
+    background-color: rgb(244, 155, 0);
+} */
+.menu nav {
+    display: flex;
+    float: center;
+    margin-left: 15vw;
+}
+.menu ul {
+    list-style-type: none;
+}
+.menu li {
+    margin: 0 auto;
+    padding-top: 4.4vh;
+    padding-bottom: 4.4vh;
+    float: left;
+    width: 10vw;
+    text-align: center;
+}
+.menu a {
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.menu li:hover {
+    background-color: rgb(244, 155, 0);
+    border-bottom: 3px solid #000;
+}
+#logo-image {
+    position: absolute;
+    top: 32px;
+    left: 15px;
+}
+/* 
+.club:hover .club-content {
+
+    display: block;
+}
+
+display: none;
+position: absolute;
+background-color: orange;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+
+.juniors:hover .juniors-content {
+
+    display: block;
+} */
+
+/*Additions NEW CODE LEAGUE*/
+
+/* .league-content {
+
+display: none;
+position: absolute;
+background-color: orange;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+} */
+
+/* .league-content a{
+
+    color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+
+} */
+
+
+/* .league-content a:hover {
+    background-color: #f1f1f1;
+} */
+
+/* .league:hover .league-content {
+
+    display: block;
+} */
+
+/*Additions NEW CODE WOMENS*/
+
+/* .women-content {
+
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.women-content a{
+
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+
+}
+
+
+.women-content a:hover {background-color: #f1f1f1;}
+
+.women:hover .women-content {
+
+    display: block;
+} */
+
+/*Additions NEW CODE CLUB HOUSE*/
+/* .chouse-content {
+
+    display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.chouse-content a{
+
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+
+}
+
+
+.chouse-content a:hover {background-color: #f1f1f1;}
+
+.chouse:hover .chouse-content {
+
+    display: block;
+} */
+
+/*Additions NEW CODE CONTACT*/
+
+/* .contact-content {
+
+    display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.contact-content a{
+
+    color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+
+} */
+
+
+/* .contact-content a:hover {background-color: #f1f1f1;}
+
+.contact:hover .contact-content {
+
+    display: block;
+} */
+
+
+.submenu{
+    color: black;
+    background-color: rgb(172, 172, 172);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none;
+    position: absolute;
+    min-width: 192px;
+    /* max-width: 130px; */
+    z-index: 1;
+    display: none;
+    margin-top: 44px;
+}
+
+.submenu a{
+    /* color: rgb(0, 255, 0);     */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    color: black;   
+}
+
+.submenu a:hover{
+    background-color: rgb(244, 155, 0);
+    color: #fff;
+}
+
+.mainsub:hover .submenu{
+    display: block;
+
+}
+
+
+/* RESPONSIVE */
+
+
+@media (max-width: 858px) {
+    
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .checkbtn {
+        display: block;
+        float: right;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(0, 0, 0, 0.6);
+        top: 131px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: inline-block;
+        /* line-height: 30px; */
+        text-align: center;
+        padding: 30px;
+        margin: 0 10px;
+        /* background-color: royalblue; */
+    }
+    /* nav ul li {
+        display: block;
+        margin: 30px;
+        line-height: 30px;
+    } */
+    nav ul li a {
+        font-size: 20px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    nav ul li a:hover {
+        background-color: rgb(244, 155, 0, 0.6);
+    }
+    /* a:hover,a.active {
+        background: none;
+        color: lawngreen;
+    } */
+    
+    #check:checked ~ ul {
+        left: 0;
+    }
