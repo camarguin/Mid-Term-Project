@@ -263,12 +263,13 @@ footer{
         height: 5vh;
     }
     .menu{
-        /* width: 100vw; */
+        width: 100vw;
         background-color: rgb(0, 0, 0, 0.75);
-        /* padding-left: 335px; */
+        padding-left: 30vw;
     }
     #logo-image{
-        margin: 0 auto;
+        /* margin: 0 auto; */
+        margin-left: 335px;
     }
     .checkbtn{
         display: block;
