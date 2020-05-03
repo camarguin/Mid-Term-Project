@@ -39,8 +39,9 @@ body{
     display: flex;
     flex-direction: row;
     background-color: rgba(0, 0, 0, 0.60);
-    /* position: fixed;
-    z-index: 1; */
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 #logo-image{
     margin: 0 0 0 15px;
@@ -68,17 +69,17 @@ body{
 
 /* =========== dropdown =========== */
 
-/* SubMenus */
+/* club */
 .submenu-content {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: rgb(0, 0, 0, 0.8);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     margin-top: 40px;
     z-index: 1;
 }
 .submenu-content a{
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -90,7 +91,6 @@ body{
 .submenu:hover .submenu-content {
     display: block;
 }
-
 /* =========== container =========== */
 
 /* welcome */
@@ -256,15 +256,16 @@ footer{
         background-size: contain;
     }
     .header{
-        background-color: rgb(255, 0, 0, 0.75);
+        background-color: white;
     }
     .social{
         width: 5vw;
         height: 5vh;
     }
     .menu{
+        /* width: 100vw; */
         background-color: rgb(0, 0, 0, 0.75);
-        padding-left: 335px;
+        /* padding-left: 335px; */
     }
     #logo-image{
         margin: 0 auto;
@@ -340,5 +341,35 @@ footer{
     .abouttitle{
         font-size: 3rem;
         margin-bottom: 40px;
+    }
+    #aboutitem{
+        flex-direction: column;
+    }
+    #row_media{
+        flex-direction: column;
+    }
+    #aboutitem p{
+        width: auto;
+        margin: 0 auto;
+    }
+    #secondbox{
+        margin-top: 20px;
+    }
+    #slideshow{
+        width: 250px;
+        height: 200px;
+    }
+    #image_box{
+        width: 750px;
+    }
+    .slider-image {
+        width: 250px;
+        height: 200px;
+    }
+    #slider-image-2:target~#image_box {
+        left: -250px;
+    }
+    #slider-image-3:target~#image_box {
+        left: -500px;
     }
 }
