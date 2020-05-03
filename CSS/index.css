@@ -1,23 +1,459 @@
-body{
-    background-color: yellow;
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;    
 }
-#main{
+body{
+    background-image: url(../images/BallBackground.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Header Menu */
+.header{
+    background-color: white;
+    height: 4.5vh;
+}
+.header ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Social Media Links */
+.social-media{
+    position: absolute;
+    top: 0px;
+    right: 60px;
+}
+.social-media li{
+    display: inline-block;
+    margin-left: 10px;
+}
+.social-media ul{
+    display: flex;
+    flex-direction: row;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.60);
+    /* position: fixed;
+    z-index: 1; */
+}
+#logo-image{
+    margin: 0 0 0 15px;
+}
+.menu ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+}
+.menu li{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 10vw;
     text-align: center;
 }
-#title_img{
-    animation-name: title;
-    animation-delay: 0s;
-    animation-duration: 3s;
+.menu a{
+    color:white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.menu li:hover{
+    background-color: rgb(179, 113, 0);
 }
 
-/* ========== animation ========== */
+/* =========== dropdown =========== */
 
-@keyframes title{
-    0%{
-        opacity: 0;
+/* club */
+.club-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 40px;
+    z-index: 1;
+}
+.club-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.club-content a:hover {
+    background-color: rgb(244, 155, 0);
+}
+.club:hover .club-content {
+    display: block;
+}
+
+/* juniors */
+.juniors-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 40px;
+    z-index: 1;
+}
+.juniors-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.juniors-content a:hover {
+    background-color: rgb(244, 155, 0);
+}
+.juniors:hover .juniors-content {
+    display: block;
+}
+
+/* league */
+.league-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 40px;
+    z-index: 1;
+}
+.league-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.league-content a:hover {
+    background-color: rgb(244, 155, 0);
+}
+.league:hover .league-content {
+    display: block;
+}
+
+/* women */
+.women-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 40px;
+    z-index: 1;
+}
+.women-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.women-content a:hover {
+    background-color: rgb(244, 155, 0);
+}
+.women:hover .women-content {
+    display: block;
+}
+
+/* club house */
+.house-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 40px;
+    z-index: 1;
+}
+.house-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.house-content a:hover {
+    background-color: rgb(244, 155, 0);
+}
+.house:hover .house-content {
+    display: block;
+}
+
+/* contact */
+.contact-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 40px;
+    z-index: 1;
+}
+.contact-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.contact-content a:hover {
+    background-color: rgb(244, 155, 0);
+}
+.contact:hover .contact-content {
+    display: block;
+}
+
+/* =========== container =========== */
+
+/* welcome */
+.bodycontainer{
+    position: relative;
+    margin: 100px 0 100px 50px;
+    background-color: rgb(244, 155, 0, 0.5);
+    width: 33vw;
+    padding: 1.5rem;
+}
+.imglogotext{
+    width: 30vw;
+    margin-bottom: 10px;
+}
+.titlewelcome{
+    font-size: 6rem;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: -0.2rem;
+    line-height: 100px;
+    margin-bottom: 70px;
+}
+.learnmorebutton{
+    background-color: #fff;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+    margin-top: 50px;
+}
+
+/* about */
+.aboutcontainer{
+    position: relative;
+    background-color: rgba(255,255,255,0.5);
+    padding: 1.5rem;
+}
+.abouttitle{
+    font-size: 6rem;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: -0.2rem;
+    margin-bottom: 70px;
+}
+#aboutitem{
+    display: flex;
+    flex-direction: row;
+}
+#row_media{
+    display: flex;
+    flex-direction: row;
+}
+#aboutitem p{
+    width: 25vw;
+    margin: 0 30px;
+    line-height: 30px;
+}
+#secondbox{
+    margin: 0 30px;
+}
+#secondbox p{
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+#thirdbox{
+    margin: 0 30px;
+}
+
+/* ========== slide show ========== */
+#slide-container {
+    display: block;
+    margin: 0 auto ;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#slideshow{
+    width: 450px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.69);
+}
+#image_box{
+    width: 1350px;
+    position: relative;
+    transition: left 2s;
+}
+.slider-image {
+    width: 450px;
+    height: 300px;
+}
+.slider-image {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+.slider-button {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 55px;
+    background-color: #fff;
+    border: 1px solid skyblue;
+    margin: 0 5px 0 5px;
+}
+.slider-button:hover {
+    cursor: pointer;
+    background-color: tomato;
+}
+#slider-image-1:target~#image_box {
+    left: 0px;
+}
+#slider-image-2:target~#image_box {
+    left: -450px;
+}
+#slider-image-3:target~#image_box {
+    left: -900px;
+}
+#button_box {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+/* footer */
+footer{
+    position: sticky;
+    bottom: 0px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+}
+
+/* =========== hamburger bar =========== */
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    line-height: 80px;
+    cursor: pointer;
+    margin: 0 0;
+    display: none;
+}
+#check{
+    margin: 0 0;
+    display: none;
+}
+
+/* =========== media =========== */
+@media screen and (max-width:1024px) {
+    body{
+        background-image: url(../images/logo.jpeg);
+        background-size: contain;
     }
-    
-    100%{
-        opacity: 1;
+    .header{
+        background-color: rgb(255, 0, 0, 0.75);
+    }
+    .social{
+        width: 5vw;
+        height: 5vh;
+    }
+    .menu{
+        background-color: rgb(0, 0, 0, 0.75);
+        padding-left: 335px;
+    }
+    #logo-image{
+        margin: 0 auto;
+    }
+    .checkbtn{
+        display: block;
+        position: relative;
+        left: 70px;
+    }
+    #menu_media{
+        flex-direction: column;
+        position: fixed;
+        background-color: rgb(0, 0, 0, 0.85);
+        width: 100vw;
+        height: 100vh;
+        top: 130px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        z-index: 1;
+    }
+    #check:checked ~ #menu_media{
+        left: 0%;
+    }
+
+    /* container */
+    .bodycontainer{
+        margin: 100px auto;
+        width: 80vw;
+        background-color: rgb(244, 155, 0, 0.75);
+    }
+    .aboutcontainer{
+        margin: 0 auto;
+        width: 80vw;
+        background-color: rgb(244, 155, 0, 0.75);
+    }
+    #aboutitem{
+        flex-direction: column;
+    }
+    #row_media{
+        margin-bottom: 50px;
+    }
+    #aboutitem p:nth-child(1){
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:375px) {
+    .social-media ul{
+        position: absolute;
+        right: -50px;
+    }
+    .social{
+        height: 4vh;
+    }
+    .menu{
+        padding-left: 120px;
+    }
+    .checkbtn{
+        left: 15px;
+    }
+    #menu_media{
+        top: 135px;
+    }
+    .imglogotext{
+        width: 80vw;
+        margin-bottom: 3px;
+    }
+    .titlewelcome{
+        font-size: 3rem;
+        line-height: 70px;
+        margin-bottom: 40px;
+    }
+    .abouttitle{
+        font-size: 3rem;
+        margin-bottom: 40px;
     }
 }

@@ -1,11 +1,12 @@
 # Mid-Term-Project
 
-*Group: Rodrigo, Lucas, Zack, Shinya, Juan Carlos*
+*Group: Rodrigo, Lucas, Zack, Shinya, Juan Carlos* - 
 Instructor: Steve Kim.
 
 Website: http://www.westvancouvercricketclub.ca
 
 Example 1: http://www.mohrgoodideas.com/index.html
+
 Example 2: https://manlycricket.com/
 
 ### **Some thoughts for the website**
@@ -41,7 +42,7 @@ Example 2: https://manlycricket.com/
 7. CONTACT US
     - LOCATION AND DIRECTIONS
     - NEWSLETTER SIGNUP
-
+    
 ### **Commit Rules (Please try to follow it for a better understanding)**
 - Capitalize only the first letter
 - Avoid period at the end of the line
