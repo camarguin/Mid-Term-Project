@@ -1,14 +1,23 @@
 # Mid-Term-Project
 
+<<<<<<< HEAD
 *Group: Rodrigo, Lucas, Zack, Shinya, Juan Carlos* - 
+=======
+*Group: Rodrigo, Lucas, Zack, Shinya, Juan Carlos*
+>>>>>>> 1cfece3... Finished Menu and Submenu
 Instructor: Steve Kim.
 
 Website: http://www.westvancouvercricketclub.ca
 
 Example 1: http://www.mohrgoodideas.com/index.html
+<<<<<<< HEAD
 
 Example 2: https://manlycricket.com/
 
+=======
+Example 2: https://manlycricket.com/
+
+>>>>>>> 1cfece3... Finished Menu and Submenu
 ### **Some thoughts for the website**
 
   - Have same colors - Gold and Black
@@ -42,8 +51,13 @@ Example 2: https://manlycricket.com/
 7. CONTACT US
     - LOCATION AND DIRECTIONS
     - NEWSLETTER SIGNUP
+<<<<<<< HEAD
     
 ### **Commit Rules (Please try to follow it for a better understanding)**
+=======
+
+### **Commit Rules (Please try to follow it for a better understanding)
+>>>>>>> 1cfece3... Finished Menu and Submenu
 - Capitalize only the first letter
 - Avoid period at the end of the line
 - Describe what was done
