@@ -35,6 +35,14 @@ body{
     display: flex;
     flex-direction: row;
 }
+
+.wrapmenu{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+
 .menu{
     display: flex;
     flex-direction: row;
@@ -72,13 +80,13 @@ body{
 .submenu-content {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.80);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     margin-top: 40px;
     z-index: 1;
 }
 .submenu-content a{
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
