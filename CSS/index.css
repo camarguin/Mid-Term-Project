@@ -13,7 +13,7 @@ body{
 
 /* Header Menu */
 .header{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     height: 4.5vh;
 }
 .header ul{
@@ -57,6 +57,7 @@ body{
     padding-bottom: 40px;
     width: 10vw;
     text-align: center;
+    cursor: pointer;
 }
 .menu a{
     color:white;
@@ -232,7 +233,7 @@ footer{
     font-size: 0.8rem;
     font-weight: bold;
     color: black;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* =========== hamburger bar =========== */
@@ -252,11 +253,8 @@ footer{
 /* =========== media =========== */
 @media screen and (max-width:1024px) {
     body{
-        background-image: url(../images/logo.jpeg);
-        background-size: contain;
-    }
-    .header{
-        background-color: white;
+        background-image: url(../images/BallBackground.jpg);
+        /* background-size: contain; */
     }
     .social{
         width: 5vw;
@@ -272,7 +270,7 @@ footer{
     #logo-image{
         margin: 0 auto;
         /* padding-left: 335px; */
-        padding-left: 32vw;
+        padding-left: 30vw;
     }
     .checkbtn{
         display: block;
