@@ -43,6 +43,7 @@ body{
     width: 100%;
     z-index: 1;
 }
+
 #logo-image{
     margin: 0 0 0 15px;
 }
@@ -97,11 +98,16 @@ body{
 /* welcome */
 .bodycontainer{
     position: relative;
-    margin: 100px 0 100px 50px;
+    margin: 0px;
+    margin-bottom: 25vh;
+    margin-right: 25vh;
     background-color: rgb(244, 155, 0, 0.5);
     width: 33vw;
-    padding: 1.5rem;
+    padding: 2rem;
+    top: 18vh;
+    left: 5vw;
 }
+
 .imglogotext{
     width: 30vw;
     margin-bottom: 10px;
@@ -113,6 +119,11 @@ body{
     line-height: 100px;
     margin-bottom: 70px;
 }
+
+.textwelcome{
+    text-align: justify;
+}
+
 .learnmorebutton{
     background-color: #fff;
     border: none;
@@ -131,14 +142,21 @@ body{
 .aboutcontainer{
     position: relative;
     background-color: rgba(255,255,255,0.5);
-    padding: 1.5rem;
+    padding: 2rem;
 }
+
 .abouttitle{
     font-size: 6rem;
     font-family: 'Oswald', sans-serif;
     letter-spacing: -0.2rem;
-    margin-bottom: 70px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
+
+.abouttxt{
+    text-align: justify;
+}
+
 #aboutitem{
     display: flex;
     flex-direction: row;
@@ -228,7 +246,7 @@ footer{
     bottom: 0px;
     margin: 0 auto;
     width: 100%;
-    padding: 20px 0;
+    padding: 0.5vh 0;
     text-align: center;
     font-size: 0.8rem;
     font-weight: bold;
@@ -261,12 +279,13 @@ footer{
         height: 5vh;
     }
     .menu{
-        position: static;
+        /* position: absolute; */
         /* width: 100vw; */
         /* changes we made*/
         background-color: rgb(0, 0, 0, 0.75);
         /* padding-left: 100px; */
     }
+
     #logo-image{
         margin: 0 auto;
         /* padding-left: 335px; */
@@ -283,21 +302,26 @@ footer{
         background-color: rgb(0, 0, 0, 0.85);
         width: 100vw;
         height: 100vh;
-        top: 160px;
+        top: 7.2vh;
         left: -100%;
         text-align: center;
         transition: all 0.5s;
         z-index: 1;
     }
+
     #check:checked ~ #menu_media{
         left: 0%;
     }
 
     /* container */
     .bodycontainer{
-        margin: 100px auto;
+        /* margin: 0px auto; */
         width: 80vw;
         background-color: rgb(244, 155, 0, 0.75);
+        left: 0;
+        right: 0;
+        margin: 5vh;
+        margin-bottom: 30vh;
     }
     .aboutcontainer{
         margin: 0 auto;
@@ -332,13 +356,36 @@ footer{
     .checkbtn{
         left: 15px;
     }
-    #menu_media{
-        top: 135px;
-    }
+
+    /* #menu_media{
+        top: 300px
+    } */
+
     .imglogotext{
         width: 80vw;
         margin-bottom: 3px;
     }
+
+    .bodycontainer{
+        left: 1vw;
+        /* width: 80vw; */
+        width: 335px;
+        padding-right: 50px;
+        background-color: rgb(244, 155, 0, 0.75);
+    }
+    .aboutcontainer{
+        margin: 0 auto;
+        width: 80vw;
+        background-color: rgb(244, 155, 0, 0.75);
+    }
+
+  
+
+
+
+
+
+
     .titlewelcome{
         font-size: 3rem;
         line-height: 70px;
@@ -379,3 +426,163 @@ footer{
         left: -500px;
     }
 }
+
+@media screen and (max-width:425px) {
+    .social-media ul{
+        position: absolute;
+        right: -50px;
+    }
+    .social{
+        height: 4vh;
+    }
+    .menu{
+        position: static;
+        /* width: 100vw; */
+        /*changes we made*/
+        background-color: rgb(0, 0, 0, 0.75);
+        /* padding-left: 100px; */
+    }
+    .checkbtn{
+        left: 15px;
+    }
+    #menu_media{
+        top: 16.2vh;
+    }
+    .imglogotext{
+        width: 80vw;
+        margin-bottom: 3px;
+    }
+
+    .bodycontainer{
+        /* margin: 0px auto; */
+        /* padding-right: 6.8vw; */
+        padding-left: 4vw;
+        margin-left: 0;
+        width: 80vw;
+        background-color: rgb(244, 155, 0, 0.75);
+    }
+
+
+    .titlewelcome{
+        font-size: 3rem;
+        line-height: 70px;
+        margin-bottom: 40px;
+    }
+    .abouttitle{
+        font-size: 3rem;
+        margin-bottom: 40px;
+    }
+    #aboutitem{
+        flex-direction: column;
+    }
+    #row_media{
+        flex-direction: column;
+    }
+    #aboutitem p{
+        width: auto;
+        margin: 0 auto;
+    }
+    #secondbox{
+        margin-top: 20px;
+    }
+    #slideshow{
+        width: 250px;
+        height: 200px;
+    }
+    #image_box{
+        width: 750px;
+    }
+    .slider-image {
+        width: 250px;
+        height: 200px;
+    }
+    #slider-image-2:target~#image_box {
+        left: -250px;
+    }
+    #slider-image-3:target~#image_box {
+        left: -500px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .social-media ul{
+        position: absolute;
+        right: -50px;
+    }
+    .social{
+        height: 4vh;
+    }
+    .menu{
+        position: static;
+        /* width: 100vw; */
+        /*changes we made*/
+        background-color: rgb(0, 0, 0, 0.75);
+        /* padding-left: 100px; */
+    }
+    .checkbtn{
+        left: 15px;
+    }
+    #menu_media{
+        top: 16.2vh;
+    }
+    .imglogotext{
+        width: 80vw;
+        margin-bottom: 3px;
+    }
+
+    .bodycontainer{
+        /* margin: 0px auto; */
+        /* padding-right: 6.8vw; */
+        padding-left: 4vw;
+        margin-left: 0;
+        width: 80vw;
+        background-color: rgb(244, 155, 0, 0.75);
+    }
+
+
+    .titlewelcome{
+        font-size: 3rem;
+        line-height: 70px;
+        margin-bottom: 40px;
+    }
+    .abouttitle{
+        font-size: 3rem;
+        margin-bottom: 40px;
+    }
+    #aboutitem{
+        flex-direction: column;
+    }
+    #row_media{
+        flex-direction: column;
+    }
+    #aboutitem p{
+        width: auto;
+        margin: 0 auto;
+    }
+    #secondbox{
+        margin-top: 20px;
+    }
+    #slideshow{
+        width: 250px;
+        height: 200px;
+    }
+    #image_box{
+        width: 750px;
+    }
+    .slider-image {
+        width: 250px;
+        height: 200px;
+    }
+    #slider-image-2:target~#image_box {
+        left: -250px;
+    }
+    #slider-image-3:target~#image_box {
+        left: -500px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    
+    #menu_media{       
+        top: 9.8vh;      
+    }
