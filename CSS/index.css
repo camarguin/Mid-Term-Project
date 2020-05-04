@@ -263,13 +263,16 @@ footer{
         height: 5vh;
     }
     .menu{
-        width: 100vw;
+        position: static;
+        /* width: 100vw; */
+        /* changes we made*/
         background-color: rgb(0, 0, 0, 0.75);
-        padding-left: 30vw;
+        /* padding-left: 100px; */
     }
     #logo-image{
-        /* margin: 0 auto; */
-        margin-left: 335px;
+        margin: 0 auto;
+        /* padding-left: 335px; */
+        padding-left: 32vw;
     }
     .checkbtn{
         display: block;
@@ -278,11 +281,11 @@ footer{
     }
     #menu_media{
         flex-direction: column;
-        position: fixed;
+        position: absolute;
         background-color: rgb(0, 0, 0, 0.85);
         width: 100vw;
         height: 100vh;
-        top: 130px;
+        top: 160px;
         left: -100%;
         text-align: center;
         transition: all 0.5s;
@@ -322,7 +325,11 @@ footer{
         height: 4vh;
     }
     .menu{
-        padding-left: 120px;
+        position: static;
+        /* width: 100vw; */
+        /*changes we made*/
+        background-color: rgb(0, 0, 0, 0.75);
+        /* padding-left: 100px; */
     }
     .checkbtn{
         left: 15px;
