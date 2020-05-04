@@ -13,8 +13,8 @@ body{
 
 /* Header Menu */
 .header{
-    background-color: white;
-    height: 4.5vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 4vh;
 }
 .header ul{
     list-style-type: none;
@@ -35,24 +35,14 @@ body{
     display: flex;
     flex-direction: row;
 }
-
-/* .wrapmenu{
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-} */
-
-/*BODY WELCOME*/
-
 .menu{
     display: flex;
     flex-direction: row;
     background-color: rgba(0, 0, 0, 0.60);
     position: fixed;
-    z-index: 1;
     width: 100%;
+    z-index: 1;
 }
-
 #logo-image{
     margin: 0 0 0 15px;
 }
@@ -79,11 +69,11 @@ body{
 
 /* =========== dropdown =========== */
 
-/* SubMenus */
+/* club */
 .submenu-content {
     display: none;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.80);
+    background-color: rgb(0, 0, 0, 0.8);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     margin-top: 40px;
     z-index: 1;
@@ -101,11 +91,11 @@ body{
 .submenu:hover .submenu-content {
     display: block;
 }
-
 /* =========== container =========== */
 
 /* welcome */
 .bodycontainer{
+    top: 8vh;
     position: relative;
     margin: 100px 0 100px 50px;
     background-color: rgb(244, 155, 0, 0.5);
@@ -123,6 +113,11 @@ body{
     line-height: 100px;
     margin-bottom: 70px;
 }
+
+.textwelcome{
+    text-align: justify;
+}
+
 .learnmorebutton{
     background-color: #fff;
     border: none;
@@ -143,12 +138,18 @@ body{
     background-color: rgba(255,255,255,0.5);
     padding: 1.5rem;
 }
+
 .abouttitle{
     font-size: 6rem;
     font-family: 'Oswald', sans-serif;
     letter-spacing: -0.2rem;
     margin-bottom: 70px;
 }
+
+.abouttxt{
+    text-align: justify;
+}
+
 #aboutitem{
     display: flex;
     flex-direction: row;
@@ -238,12 +239,12 @@ footer{
     bottom: 0px;
     margin: 0 auto;
     width: 100%;
-    padding: 20px 0;
+    padding: 1vh 0;
     text-align: center;
     font-size: 0.8rem;
     font-weight: bold;
     color: black;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* =========== hamburger bar =========== */
@@ -267,18 +268,23 @@ footer{
         background-size: contain;
     }
     .header{
-        background-color: rgb(255, 0, 0, 0.75);
+        background-color: white;
     }
     .social{
         width: 5vw;
         height: 5vh;
     }
     .menu{
+        position: static;
+        /* width: 100vw; */
+        /* changes we made*/
         background-color: rgb(0, 0, 0, 0.75);
-        padding-left: 335px;
+        /* padding-left: 100px; */
     }
     #logo-image{
         margin: 0 auto;
+        /* padding-left: 335px; */
+        padding-left: 32vw;
     }
     .checkbtn{
         display: block;
@@ -287,11 +293,11 @@ footer{
     }
     #menu_media{
         flex-direction: column;
-        position: fixed;
+        position: absolute;
         background-color: rgb(0, 0, 0, 0.85);
         width: 100vw;
         height: 100vh;
-        top: 130px;
+        top: 160px;
         left: -100%;
         text-align: center;
         transition: all 0.5s;
@@ -331,7 +337,11 @@ footer{
         height: 4vh;
     }
     .menu{
-        padding-left: 120px;
+        position: static;
+        /* width: 100vw; */
+        /*changes we made*/
+        background-color: rgb(0, 0, 0, 0.75);
+        /* padding-left: 100px; */
     }
     .checkbtn{
         left: 15px;
@@ -351,5 +361,35 @@ footer{
     .abouttitle{
         font-size: 3rem;
         margin-bottom: 40px;
+    }
+    #aboutitem{
+        flex-direction: column;
+    }
+    #row_media{
+        flex-direction: column;
+    }
+    #aboutitem p{
+        width: auto;
+        margin: 0 auto;
+    }
+    #secondbox{
+        margin-top: 20px;
+    }
+    #slideshow{
+        width: 250px;
+        height: 200px;
+    }
+    #image_box{
+        width: 750px;
+    }
+    .slider-image {
+        width: 250px;
+        height: 200px;
+    }
+    #slider-image-2:target~#image_box {
+        left: -250px;
+    }
+    #slider-image-3:target~#image_box {
+        left: -500px;
     }
 }
