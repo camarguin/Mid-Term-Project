@@ -14,7 +14,7 @@ body{
 /* Header Menu */
 .header{
     background-color: rgba(255, 255, 255, 0.5);
-    height: 4vh;
+    height: 4.5vh;
 }
 .header ul{
     list-style-type: none;
@@ -57,6 +57,7 @@ body{
     padding-bottom: 40px;
     width: 10vw;
     text-align: center;
+    cursor: pointer;
 }
 .menu a{
     color:white;
@@ -95,7 +96,6 @@ body{
 
 /* welcome */
 .bodycontainer{
-    top: 8vh;
     position: relative;
     margin: 100px 0 100px 50px;
     background-color: rgb(244, 155, 0, 0.5);
@@ -113,11 +113,6 @@ body{
     line-height: 100px;
     margin-bottom: 70px;
 }
-
-.textwelcome{
-    text-align: justify;
-}
-
 .learnmorebutton{
     background-color: #fff;
     border: none;
@@ -138,18 +133,12 @@ body{
     background-color: rgba(255,255,255,0.5);
     padding: 1.5rem;
 }
-
 .abouttitle{
     font-size: 6rem;
     font-family: 'Oswald', sans-serif;
     letter-spacing: -0.2rem;
     margin-bottom: 70px;
 }
-
-.abouttxt{
-    text-align: justify;
-}
-
 #aboutitem{
     display: flex;
     flex-direction: row;
@@ -239,7 +228,7 @@ footer{
     bottom: 0px;
     margin: 0 auto;
     width: 100%;
-    padding: 1vh 0;
+    padding: 20px 0;
     text-align: center;
     font-size: 0.8rem;
     font-weight: bold;
@@ -264,11 +253,8 @@ footer{
 /* =========== media =========== */
 @media screen and (max-width:1024px) {
     body{
-        background-image: url(../images/logo.jpeg);
-        background-size: contain;
-    }
-    .header{
-        background-color: white;
+        background-image: url(../images/BallBackground.jpg);
+        /* background-size: contain; */
     }
     .social{
         width: 5vw;
@@ -284,7 +270,7 @@ footer{
     #logo-image{
         margin: 0 auto;
         /* padding-left: 335px; */
-        padding-left: 32vw;
+        padding-left: 30vw;
     }
     .checkbtn{
         display: block;
