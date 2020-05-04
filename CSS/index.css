@@ -265,6 +265,7 @@ footer{
     .menu{
         position: static;
         /* width: 100vw; */
+        /* changes we made*/
         background-color: rgb(0, 0, 0, 0.75);
         /* padding-left: 100px; */
     }
