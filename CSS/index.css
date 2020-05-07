@@ -2,7 +2,7 @@
     margin: 0 auto;
     padding: 0 auto;
     font-family: 'Open Sans', sans-serif;
-    text-decoration: none;    
+    text-decoration: none;
 }
 body{
     background-image: url(../images/BallBackground.jpg);
@@ -24,18 +24,21 @@ body{
 
 /* Social Media Links */
 .social-media{
-    position: absolute;
+    display: flex;
+    float: right;
     top: 0px;
-    right: 10px;
+    /* right: 10px; */
 }
 .social-media li{
-    display: inline-block;
-    margin-left: 10px;
+    display: block;
+    float: right;
+    margin-right: 2vw;
 }
 .social-media a i{
     font-size: 20px;
-    margin-top: 5px;
-    margin-right: 2vw;
+    margin: 0;
+    margin-top: 5px;    
+    color: black;
 }
 .social-media ul{
     display: flex;
@@ -47,7 +50,8 @@ body{
     display: flex;
     flex-direction: row;
     background-color: rgba(0, 0, 0, 0.60);
-    position: fixed;
+    position: sticky;
+    top: 0px;
     height: 100px;
     width: 100%;
     align-items: center;
@@ -114,7 +118,7 @@ body{
     border-bottom: 1px solid white;
 }
 
-li,
+.menu li,
 .submenu-content > li {
     display: inline-block;
     /* padding: 10px 20px; */
@@ -393,69 +397,68 @@ footer{
     }
     
     /* Header - Social Media */
+    .header {
+        width: 100%;
+    }
     .social-media {
         position: absolute;
         top: 0px;
         right: 20px;
     }
     .social-media li{
-        display: inline-block;
+        /* display: inline-block; */
         margin-left: 20px;
-    }
-    .social-media a i {
-        font-size: 20px;
-        margin-right: 10px;
     }
 
     /* Menu */
-    .menu{
-        position: flex;
-        width: 100%;
-        /* changes we made*/
-        background-color: rgb(0, 0, 0, 0.75);
-        /* padding-left: 100px; */
+    .menu {
+        position: sticky;
+        top: 0px;
+        display: absolute;
+    }
+    #menu_media {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 120px;
+        padding: 0px;
+        width: 80%;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    .menu-content-li {
+        /* width: 500px; */
+        /* width: 100%; */
+        text-align: center;
+        align-self: center;
+        /* display: block; */
+        padding: 10px;
+        /* padding-left: 50px;
+        padding-right: 50px; */
+        margin: 0;
+    }
+    .menu-a {
+        text-align: center;
+        padding: 15px;
+        /* padding-left: 50px;
+        padding-right: 50px; */
     }
 
     #logo-image{
-        margin: 0 auto;
-        /* padding-left: 335px; */
-        padding-left: 30vw;
-    }
+        align-self: center;
+
+    } 
     #check {
-        display: flex;
+        position: relative;
     }
     .checkbtn{
-        display: block;
-        position: relative;
-        left: 70px;
-        background-color: violet;
-    }
-    .menu nav {
         display: inline-block;
+        float: right;
     }
-    #menu_media{
-        position: absolute;
-        width: 300px;
-        /* height: 100vh; */
-        background-color: black;
-        top: 130px;
-        left: -350px;
-        text-align: center;
-        padding: 0;
-    }
-    nav ul li {
-        display: inline-block;
-        background-color: red;
-        margin: 0;
-        padding: 0;
-    }
-    .submenu-content {
-        position: absolute;
-        padding: 0;
-        margin-left: 50px;
+    .checkbtn i {
+        color: rgb(244, 155, 0, 0.5);
     }
     #check:checked ~ nav ul{
-        /* left: 100%; */
+        left: 100%; 
         left: 100px;
     }
 
