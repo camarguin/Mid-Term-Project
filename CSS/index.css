@@ -419,36 +419,43 @@ footer{
     #menu_media {
         position: absolute;
         display: flex;
+        align-content: center;
         flex-direction: column;
-        top: 120px;
         padding: 0px;
-        width: 80%;
+        width: 100%;
+        top: 100px;
+        left: -100%;
         background-color: rgba(0, 0, 0, 0.9);
+        transition: all 0.5s;
     }
     .menu-content-li {
-        /* width: 500px; */
-        /* width: 100%; */
-        text-align: center;
         align-self: center;
-        /* display: block; */
-        padding: 10px;
-        /* padding-left: 50px;
-        padding-right: 50px; */
+        display: block;
+        padding: 0px;
+        padding-left: 20vw;
+        padding-right: 20vw;
         margin: 0;
     }
     .menu-a {
         text-align: center;
-        padding: 15px;
-        /* padding-left: 50px;
-        padding-right: 50px; */
+        padding: 0;
+        /* padding: 0px; */
+    }
+    .submenu-content {
+        top: 0px;
+        padding: 0px;
+        left: 5px;
     }
 
     #logo-image{
         align-self: center;
+        float: center;
+        margin-left: 45vw;
+        padding: 0;
 
     } 
     #check {
-        position: relative;
+        position: absolute;
     }
     .checkbtn{
         display: inline-block;
@@ -457,19 +464,18 @@ footer{
     .checkbtn i {
         color: rgb(244, 155, 0, 0.5);
     }
-    #check:checked ~ nav ul{
-        left: 100%; 
-        left: 100px;
+    #check:checked ~ ul{
+        /* left: 100%;  */
+        left: 0px;
     }
 
     /* Body Container */
     .bodycontainer{
-        /* margin: 0px auto; */
+        margin: 0px auto;
         width: 80vw;
         background-color: rgb(244, 155, 0, 0.75);
         left: 0;
         right: 0;
-        margin: 5vh;
         margin-bottom: 30vh;
     }
     .aboutcontainer{
@@ -504,24 +510,58 @@ footer{
         margin-right: 10px;
     }
     /* Menu */
-    .menu{
-        position: static;
-        /* width: 100vw; */
-        /*changes we made*/
-        background-color: rgb(0, 0, 0, 0.75);
-        /* padding-left: 100px; */
+    .menu {
+        position: sticky;
+        top: 0px;
+        display: absolute;
+    }
+    #menu_media {
+        position: absolute;
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        /* padding: 0px; */
+        width: 100%;
+        top: 100px;
+        left: -100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        transition: all 0.5s;
+        z-index: 1;
+    }
+    .menu-content-li {
+        align-self: center;
+        display: block;
+        padding: 10px;
+        padding-left: 20vw;
+        padding-right: 20vw;
+        /* margin: 0; */
+    }
+    .menu-a {
+        text-align: center;
+        padding: 0;
+        /* padding: 0px; */
+    }
+
+    #logo-image{
+        align-self: center;
+        float: center;
+        padding: 0;
+        padding-right: 10px;
+
+    } 
+    #check {
+        position: absolute;
     }
     .checkbtn{
-        left: 15px;
+        display: inline-block;
+        float: right;
     }
-
-    /* #menu_media{
-        top: 300px
-    } */
-
-    .imglogotext{
-        width: 80vw;
-        margin-bottom: 3px;
+    .checkbtn i {
+        color: rgb(244, 155, 0, 0.5);
+    }
+    #check:checked ~ ul{
+        /* left: 100%;  */
+        left: 0px;
     }
 
     /* Body Container */
@@ -596,18 +636,8 @@ footer{
     }
 
     /* Menu */
-    .menu{
-        position: static;
-        /* width: 100vw; */
-        /*changes we made*/
-        background-color: rgb(0, 0, 0, 0.75);
-        /* padding-left: 100px; */
-    }
     .checkbtn{
         left: 15px;
-    }
-    #menu_media{
-        top: 16.2vh;
     }
     .imglogotext{
         width: 80vw;
