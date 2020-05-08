@@ -13,7 +13,6 @@ body{
 /* Header Menu */
 .header{
     background-color: rgba(255, 255, 255, 0.5);
-    /* height: 4.5vh; */
     height: 30px;
 }
 .header ul{
@@ -28,14 +27,11 @@ body{
     right: 10px;
 }
 .social-media li{
-    /* display: inline-block;
-    margin-left: 10px; */
     width: 6vw;
 }
 .social-media a i{
     font-size: 20px;
     margin-top: 5px;
-    /* margin-right: 2vw; */
 }
 .social-media ul{
     display: flex;
@@ -54,37 +50,23 @@ body{
     align-items: center;
     z-index: 1;
     list-style-type: none;
-    /* box-sizing: border-box; */
-}
-.menu img {
-    /* float: left; */
-}
-.menu nav {
-    /* display: inline-block;
-    text-decoration: none;
-    text-align: center; */
-    /* float: right; */
 }
 .menu-a {
     margin: 0;
     padding-top: 30px;
     padding-bottom: 35px;
     color: white;
-    /* font-size: 15px; */
     font-weight: bold;
     text-transform: uppercase;
 }
 .submenu-content-a {
-    /* text-decoration: none; */
     color: white;
-    /* float: left; */
 }
 #menu_media {
     align-self: center;
 }
 
 .menu-content-li {
-    /* margin: 0; */
     padding-top: 40px;
     padding-bottom: 20px;
     color: white;
@@ -96,9 +78,7 @@ body{
 }
 .submenu-content {
     position: absolute;
-    /* left: 0px; */
     top: 100px;
-    /* margin-right: 100px; */
     display: none;
     width: 190px;
     text-align: left;
@@ -107,7 +87,6 @@ body{
 .submenu-content li {
     background-color: rgb(0, 0, 0, 0.8);
     border-bottom: 1px solid transparent;
-    /* margin: 0; */
     padding-top: 10px;
 }
 .submenu-content li:hover {
@@ -115,10 +94,9 @@ body{
     border-bottom: 1px solid white;
 }
 
-li,
-.submenu-content > li {
+#menu_media li,
+.submenu-content li {
     display: inline-block;
-    /* padding: 10px 20px; */
     width: 150px;
     height: 40px;
     text-align: center;
@@ -133,17 +111,12 @@ li,
 }
 .bodycontainer{
     position: relative;
-    top: 100px;
+    top: 120px;
     left: 70px;
     margin: 30px 0;
-    /* margin-bottom: 30px; */
-    /* margin-bottom: 25vh;
-    margin-right: 25vh; */
     background-color: rgb(244, 155, 0, 0.5);
     width: 33vw;
     padding: 2rem;
-    /* top: 18vh;
-    left: 5vw; */
 }
 
 .imglogotext{
@@ -185,20 +158,17 @@ li,
 #league_link a:hover{
     background-color: rgb(244, 155, 0, 0.5);
 }
-#league_main{
-
-}
 #league_main div:nth-child(odd){
     margin: 130px auto;
+    padding: 30px 30px;
     width: 90vw;
-    height: 600px;
     border-radius: 1%;
     background-color: rgba(255,255,255,0.5);
 }
 #league_main div:nth-child(even){
-    margin: 80px auto;
+    margin: 130px auto;
+    padding: 30px 30px;
     width: 90vw;
-    height: 600px;
     border-radius: 1%;
     background-color: rgb(244, 155, 0, 0.5);
 }
@@ -207,6 +177,31 @@ li,
     font-size: 3em;
     position: relative;
     top: 40px;
+}
+.league_container h3{
+    font-weight: bold;
+    text-align: center;
+    margin: 60px auto;
+}
+.league_container ul{
+    width: 60vw;
+    line-height: 50px;
+    font-size: 1em;
+}
+.league_container p{
+    width: 60vw;
+    line-height: 50px;
+    font-size: 1em;
+}
+.league_container h1{
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+#league_img{
+    margin: 50px auto;
+    display: block;
+    text-align: center;
 }
 
 /* =========== Hamburger Bar =========== */
@@ -243,9 +238,39 @@ li,
     }
     .checkbtn{
         display: block;
+        position: fixed;
+        right: 20px;
     }
     .bodycontainer{
         width: 80vw;
         margin: 0 0;
+    }
+}
+
+@media screen and (max-width:768px){
+    .bodycontainer{
+        left: 45px;
+    }
+    #league_img{
+        width: 450px;
+        height: 300px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:375px){
+    .bodycontainer{
+        left: 5px;
+    }
+    #league_main div:nth-child(odd){
+        width: 80vw;
+    }
+    #league_main div:nth-child(even){
+        width: 80vw;
+    }
+    #league_img{
+        width: 230px;
+        height: 120px;
     }
 }
