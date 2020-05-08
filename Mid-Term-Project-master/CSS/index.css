@@ -1,0 +1,757 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;    
+}
+body{
+    background-image: url(../images/BallBackground.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Header Menu */
+.header{
+    background-color: rgba(255, 255, 255, 0.5);
+    /* height: 4.5vh; */
+    height: 30px;
+}
+.header ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Social Media Links */
+.social-media{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+.social-media li{
+    display: inline-block;
+    margin-left: 10px;
+}
+.social-media a i{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-right: 2vw;
+}
+.social-media ul{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Menu */
+.menu{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.60);
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    z-index: 1;
+    list-style-type: none;
+    /* box-sizing: border-box; */
+}
+.menu img {
+    float: left;
+}
+.menu nav {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+ /*   float: right;*/
+}
+.menu-a {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 35px;
+    color: white;
+    /* font-size: 15px; */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.submenu-content-a {
+    text-decoration: none;
+    color: white;
+    /* float: left; */
+}
+#menu_media {
+    align-self: center;
+}
+
+.menu-content-li {
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color: white;
+    border-bottom: 2px solid transparent;
+}
+.menu-content-li:hover {
+    border-bottom: 2px solid white;
+    background-color: rgb(244, 155, 0, 0.75);
+}
+.submenu-content {
+    position: absolute;
+    /* left: 0px; */
+    top: 101px;
+    margin-right: 100px;
+    display: none;
+    width: 190px;
+    text-align: left;
+    padding: 0;
+}
+.submenu-content li {
+    background-color: rgb(0, 0, 0, 0.8);
+    border-bottom: 1px solid transparent;
+    margin: 0;
+    padding-top: 10px;
+}
+.submenu-content li:hover {
+    background-color: rgb(244, 155, 0, 0.5);
+    border-bottom: 1px solid white;
+}
+
+li,
+.submenu-content > li {
+    display: inline-block;
+    /* padding: 10px 20px; */
+    width: 150px;
+    height: 40px;
+    text-align: center;
+}
+.menu-content-li:hover ul {
+    display: block;
+}
+#menu-media > li:hover {
+    cursor: pointer;
+    color: white;
+    border-bottom: 2px solid black;
+}
+/* .menu-content-li a {
+    padding: 30px;
+    background-color: turquoise;
+} */
+/*
+.menu-content-a {
+    position: relative;
+}
+a,.submenu-content > a {
+    display: inline-block;
+    text-align: center;
+}
+.submenu-content > li {
+    position: relative;
+}
+.submenu-content > li:hover {
+    color: black;
+}
+.menu-content-a:hover ul {
+    display: block;
+}
+.menu-content-a:hover > li {
+    
+} */
+
+
+
+/* .menu-media > li:hover {
+    cursor: pointer;
+
+}
+
+#logo-image{
+    margin: 0 0 0 15px;
+}
+.menu ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+}
+.menu li{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 10vw;
+    text-align: center;
+}
+.menu a{
+    color:white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.menu li:hover{
+    background-color: rgb(179, 113, 0);
+} */ 
+
+/* =========== dropdown =========== */
+
+/* Sub-Menus */
+/* .submenu-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.8);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 40px;
+    z-index: 1;
+}
+.submenu-content a{
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.submenu-content a:hover {
+    background-color: rgb(244, 155, 0);
+}
+.submenu:hover .submenu-content {
+    display: block;
+}
+/* =========== Body Container =========== */
+
+/* Welcome */
+.bodycontainer{
+    position: relative;
+    margin: 0px;
+    margin-bottom: 25vh;
+    margin-right: 25vh;
+    background-color: rgb(244, 155, 0, 0.5);
+    width: 33vw;
+    padding: 2rem;
+    top: 18vh;
+    left: 5vw;
+}
+
+.imglogotext{
+    width: 30vw;
+    margin-bottom: 10px;
+}
+.titlewelcome{
+    font-size: 6rem;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: -0.2rem;
+    line-height: 100px;
+    margin-bottom: 70px;
+}
+
+.textwelcome{
+    text-align: justify;
+}
+
+.learnmorebutton{
+    background-color: #fff;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+    margin-top: 50px;
+}
+
+/* About */
+.aboutcontainer{
+    position: relative;
+    background-color: rgba(255,255,255,0.5);
+    padding: 2rem;
+}
+
+.abouttitle{
+    font-size: 6rem;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: -0.2rem;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.abouttxt{
+    text-align: justify;
+}
+
+#aboutitem{
+    display: flex;
+    flex-direction: row;
+}
+#row_media{
+    display: flex;
+    flex-direction: row;
+}
+#aboutitem p{
+    width: 25vw;
+    margin: 0 30px;
+    line-height: 30px;
+}
+#secondbox{
+    margin: 0 30px;
+}
+#secondbox p{
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+#thirdbox{
+    margin: 0 30px;
+}
+
+/* ========== Slide Show ========== */
+#slide-container {
+    display: block;
+    margin: 0 auto ;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#slideshow{
+    width: 450px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.69);
+}
+#image_box{
+    width: 1350px;
+    position: relative;
+    transition: left 2s;
+}
+.slider-image {
+    width: 450px;
+    height: 300px;
+}
+.slider-image {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+.slider-button {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 55px;
+    background-color: #fff;
+    border: 1px solid skyblue;
+    margin: 0 5px 0 5px;
+}
+.slider-button:hover {
+    cursor: pointer;
+    background-color: tomato;
+}
+#slider-image-1:target~#image_box {
+    left: 0px;
+}
+#slider-image-2:target~#image_box {
+    left: -450px;
+}
+#slider-image-3:target~#image_box {
+    left: -900px;
+}
+#button_box {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+/* Footer */
+footer{
+    position: sticky;
+    bottom: 0px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0.5vh 0;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* =========== Hamburger Bar =========== */
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    line-height: 80px;
+    cursor: pointer;
+    margin: 0 0;
+    display: none;
+}
+#check{
+    margin: 0 0;
+    display: none;
+}
+
+/* =========== Medias =========== */
+@media screen and (max-width:1024px) {
+    body{
+        background-image: url(../images/BallBackground.jpg);
+        /* background-size: contain; */
+    }
+    
+    /* Header - Social Media */
+    .social-media {
+        position: absolute;
+        top: 0px;
+        right: 20px;
+    }
+    .social-media li{
+        display: inline-block;
+        margin-left: 20px;
+    }
+    .social-media a i {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    /* Menu */
+    .menu{
+        position: flex;
+        width: 100%;
+        /* changes we made*/
+        background-color: rgb(0, 0, 0, 0.75);
+        /* padding-left: 100px; */
+    }
+
+    #logo-image{
+        margin: 0 auto;
+        /* padding-left: 335px; */
+        padding-left: 30vw;
+    }
+    #check {
+        display: flex;
+    }
+    .checkbtn{
+        display: block;
+        position: relative;
+        left: 70px;
+        background-color: violet;
+    }
+    .menu nav {
+        display: inline-block;
+    }
+    #menu_media{
+        position: absolute;
+        width: 300px;
+        /* height: 100vh; */
+        background-color: black;
+        top: 130px;
+        left: -350px;
+        text-align: center;
+        padding: 0;
+    }
+    nav ul li {
+        display: inline-block;
+        background-color: red;
+        margin: 0;
+        padding: 0;
+    }
+    .submenu-content {
+        position: absolute;
+        padding: 0;
+        margin-left: 50px;
+    }
+    #check:checked ~ nav ul{
+        /* left: 100%; */
+        left: 100px;
+    }
+
+    /* Body Container */
+    .bodycontainer{
+        /* margin: 0px auto; */
+        width: 80vw;
+        background-color: rgb(244, 155, 0, 0.75);
+        left: 0;
+        right: 0;
+        margin: 5vh;
+        margin-bottom: 30vh;
+    }
+    .aboutcontainer{
+        margin: 0 auto;
+        width: 80vw;
+        background-color: rgb(244, 155, 0, 0.75);
+    }
+    #aboutitem{
+        flex-direction: column;
+    }
+    #row_media{
+        margin-bottom: 50px;
+    }
+    #aboutitem p:nth-child(1){
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:375px) {
+
+    /* Header - Social Media */
+    .social-media {
+        position: absolute;
+        top: 0px;
+        right: 20px;
+    }
+    .social-media li{
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .social-media a i {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    /* Menu */
+    .menu{
+        position: static;
+        /* width: 100vw; */
+        /*changes we made*/
+        background-color: rgb(0, 0, 0, 0.75);
+        /* padding-left: 100px; */
+    }
+    .checkbtn{
+        left: 15px;
+    }
+
+    /* #menu_media{
+        top: 300px
+    } */
+
+    .imglogotext{
+        width: 80vw;
+        margin-bottom: 3px;
+    }
+
+    /* Body Container */
+    .bodycontainer{
+        left: 1vw;
+        /* width: 80vw; */
+        width: 335px;
+        padding-right: 50px;
+        background-color: rgb(244, 155, 0, 0.75);
+    }
+    .aboutcontainer{
+        margin: 0 auto;
+        width: 80vw;
+        background-color: rgb(244, 155, 0, 0.75);
+    }
+    .titlewelcome{
+        font-size: 3rem;
+        line-height: 70px;
+        margin-bottom: 40px;
+    }
+    .abouttitle{
+        font-size: 3rem;
+        margin-bottom: 40px;
+    }
+    #aboutitem{
+        flex-direction: column;
+    }
+    #row_media{
+        flex-direction: column;
+    }
+    #aboutitem p{
+        width: auto;
+        margin: 0 auto;
+    }
+    #secondbox{
+        margin-top: 20px;
+    }
+    #slideshow{
+        width: 250px;
+        height: 200px;
+    }
+    #image_box{
+        width: 750px;
+    }
+    .slider-image {
+        width: 250px;
+        height: 200px;
+    }
+    #slider-image-2:target~#image_box {
+        left: -250px;
+    }
+    #slider-image-3:target~#image_box {
+        left: -500px;
+    }
+}
+
+@media screen and (max-width:425px) {
+
+    /* Header - Social Media */
+    .social-media {
+        position: absolute;
+        top: 0px;
+        right: 5px;
+    }
+    .social-media li{
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .social-media a i {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    /* Menu */
+    .menu{
+        position: static;
+        /* width: 100vw; */
+        /*changes we made*/
+        background-color: rgb(0, 0, 0, 0.75);
+        /* padding-left: 100px; */
+    }
+    .checkbtn{
+        left: 15px;
+    }
+    #menu_media{
+        top: 16.2vh;
+    }
+    .imglogotext{
+        width: 80vw;
+        margin-bottom: 3px;
+    }
+
+    /* Body */
+    .bodycontainer{
+        /* margin: 0px auto; */
+        /* padding-right: 6.8vw; */
+        padding-left: 4vw;
+        margin-left: 0;
+        width: 80vw;
+        background-color: rgb(244, 155, 0, 0.75);
+    }
+    .titlewelcome{
+        font-size: 3rem;
+        line-height: 70px;
+        margin-bottom: 40px;
+    }
+    .abouttitle{
+        font-size: 3rem;
+        margin-bottom: 40px;
+    }
+    #aboutitem{
+        flex-direction: column;
+    }
+    #row_media{
+        flex-direction: column;
+    }
+    #aboutitem p{
+        width: auto;
+        margin: 0 auto;
+    }
+    #secondbox{
+        margin-top: 20px;
+    }
+    #slideshow{
+        width: 250px;
+        height: 200px;
+    }
+    #image_box{
+        width: 750px;
+    }
+    .slider-image {
+        width: 250px;
+        height: 200px;
+    }
+    #slider-image-2:target~#image_box {
+        left: -250px;
+    }
+    #slider-image-3:target~#image_box {
+        left: -500px;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    /* Header - Social Media */
+    .social-media {
+        position: absolute;
+        top: 0px;
+        right: 10px;
+    }
+    .social-media li{
+        display: inline-block;
+        /* margin-left: 10px; */
+    }
+    .social-media a i {
+        font-size: 20px;
+        /* margin-right: 10px; */
+    }
+
+    /* Menu */
+    .menu{
+        position: static;
+        /* width: 100vw; */
+        /*changes we made*/
+        background-color: rgb(0, 0, 0, 0.75);
+        /* padding-left: 100px; */
+    }
+    .checkbtn{
+        left: 15px;
+    }
+    #menu_media{
+        top: 16.2vh;
+    }
+    .imglogotext{
+        width: 80vw;
+        margin-bottom: 3px;
+    }
+
+    /* Body */
+    .bodycontainer{
+        /* margin: 0px auto; */
+        /* padding-right: 6.8vw; */
+        padding-left: 4vw;
+        margin-left: 0;
+        width: 80vw;
+        background-color:rgb(244, 155, 0, 0.75);
+
+        /* background-color: rgb(244, 155, 0, 0.75);*/
+    }
+    .titlewelcome{
+        font-size: 3rem;
+        line-height: 70px;
+        margin-bottom: 40px;
+    }
+    .abouttitle{
+        font-size: 3rem;
+        margin-bottom: 40px;
+    }
+    #aboutitem{
+        flex-direction: column;
+    }
+    #row_media{
+        flex-direction: column;
+    }
+    #aboutitem p{
+        width: auto;
+        margin: 0 auto;
+    }
+    #secondbox{
+        margin-top: 20px;
+    }
+    #slideshow{
+        width: 250px;
+        height: 200px;
+    }
+    #image_box{
+        width: 750px;
+    }
+    .slider-image {
+        width: 250px;
+        height: 200px;
+    }
+    #slider-image-2:target~#image_box {
+        left: -250px;
+    }
+    #slider-image-3:target~#image_box {
+        left: -500px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    
+    #menu_media {       
+        top: 9.8vh;      
+    }
+}
