@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="West Vancouver Cricket Club">
+    <meta name="keywords" content="website, html, css, sport, ciccc, vancouver, bc, cricket, ball, criquet">
+    <meta name="author" content="Ezequias Guerra, Juan Carlos, Lucas Camargo, Shinya Kimura, Rodrigo Koneski">
+    <link rel="stylesheet" href="./CSS/contact.css">
+    <link rel="icon" type="image/icon" href="./images/FavIcon32x32.png">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>West Vancouver Cricket Club - Contact</title>
+
+</head>
+
+<body>
+    <div class="header">
+        <ul>
+            <div class="social-media">
+                <ul>
+                    <li><a href="https://www.facebook.com/WestVancouverCricketClub/" target="_blank"><i
+                                class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/explore/locations/324245711/west-vancouver-cricket-club/"
+                            target="_blank"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </ul>
+    </div>
+    <div class="menu">
+        <img id="logo-image" src="./images/icon.png" alt="WVCC logo">
+        <!-- hamburger bar icon -->
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul id="menu_media">
+            <!-- Home -->
+            <li class="menu-content-li"><a href="#" class="menu-a">Home</a></li>
+            <!-- club -->
+            <li class="menu-content-li"><a href="#" class="menu-a">Club</a>
+                <ul class="submenu-content">
+                    <a href="#" class="submenu-content-a">
+                        <li>About WVCC</li>
+                    </a>
+                    <a href="#" class="submenu-content-a">
+                        <li>Club Management</li>
+                    </a>
+                    <a href="#" class="submenu-content-a">
+                        <li>Life Members</li>
+                    </a>
+                    <a href="#" class="submenu-content-a">
+                        <li>Programs</li>
+                    </a>
+                    <a href="#" class="submenu-content-a">
+                        <li>Facilities</li>
+                    </a>
+                </ul>
+            </li>
+            <!-- juniors -->
+            <li class="menu-content-li"><a href="#" class="menu-a">Juniors</a>
+                <ul class="submenu-content">
+                    <a href="#" class="submenu-content-a">
+                        <li>Programs</li>
+                    </a>
+                    <a href="#" class="submenu-content-a">
+                        <li>School Cricket</li>
+                    </a>
+                    <a href="#" class="submenu-content-a">
+                        <li>Summer Camp</li>
+                    </a>
+                </ul>
+            </li>
+            <!-- league -->
+            <li class="menu-content-li"><a href="#" class="menu-a">League</a>
+                <ul class="submenu-content">
+                    <a href="#" class="submenu-content-a">
+                        <li>Teams</li>
+                    </a>
+                    <a href="#" class="submenu-content-a">
+                        <li>Training</li>
+                    </a>
+                    <a href="#" class="submenu-content-a">
+                        <li>Indoor Training</li>
+                    </a>
+                    <a href="#" class="submenu-content-a">
+                        <li>Schedule</li>
+                    </a>
+                </ul>
+            </li>
+            <!-- women's -->
+            <li class="menu-content-li"><a href="#" class="menu-a">Women's</a>
+                <ul class="submenu-content">
+                    <a href="#" class="submenu-content-a">
+                        <li>Team</li>
+                    </a>
+                    <a href="#" class="submenu-content-a">
+                        <li>Schedule</li>
+                    </a>
+                    <a href="#" class="submenu-content-a">
+                        <li>Training</li>
+                    </a>
+                </ul>
+            </li>
+            <!-- club house -->
+            <li class="menu-content-li"><a href="#" class="menu-a">Clubhouse</a>
+                <ul class="submenu-content">
+                    <a href="#" class="submenu-content-a">
+                        <li>Rental</li>
+                    </a>
+                </ul>
+            </li>
+            <!-- contact -->
+            <li class="menu-content-li"><a href="#" class="menu-a">Contact Us</a>
+                <ul class="submenu-content">
+                    <a href="#" class="submenu-content-a">
+                        <li>Location</li>
+                    </a>
+                    <a href="#" class="submenu-content-a">
+                        <li>Newsletters</li>
+                    </a>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <section class="body-section">
+        <div class="grid-container">
+            <div class="related-links">
+                <h3>Related links</h3>
+                <br>
+                <ul>
+                    <li><a href="#">Newsletters</a></li>
+                    <li><a href="#">Get in touch</a></li>
+                </ul>
+            </div>
+            <div class="contact-form">
+                <h1>Contact Us</h1>
+                <div class="form-container">
+                    <form action="mailto:abc@hotmail.com" method="POST">
+                        <div class="formItem">
+                            <label for="name">Name:</label>
+                            <input class="formField" type="text" name="" placeholder="Name" required />
+                        </div>
+                        <div class="formItem">
+                            <label for="email">Email:</label>
+                            <input class="formField" type="email" name="email" placeholder="Mail" required />                            
+                        </div>
+                        <div class="formItem">
+                            <input class="formField" type="text" placeholder="Phone Number" />
+                        </div>
+                        <div class="formItem">
+                            <input class="formField" type="text" placeholder="Subject" required />
+                        </div>
+                        <div class="formItem">
+                            <textarea class="formField" cols="30" rows="5" placeholder="Message"></textarea>
+                        </div>
+                        <div class="formItem">
+                            <input class="formBtn" type="submit" value="Submit" />
+                        </div>
+                    </form>
+
+                </div>
+                <div class="information-container">
+                    <label for=contact><i class="fas fa-id-card"></i></label>
+                        <label for="email"><i class="fas fa-envelope"></i></label>
+                        <h4>Email: <a href="#">info@westvancouvercricketclub.ca</a></h4>
+                        <br>
+                        <h4>President: Alex Turko </h4>
+                        <p>Email: <a href="#">president@westvancouvercricketclub.ca</a></p>
+                        <br>
+                        <h4>Club Secretary: Ali Haq</h4>
+                        <p> Email: <a href="#">secretary@westvancouvercricketclub.ca</a></p>
+                        <label for="phone"><i class="fas fa-phone-volume"></i></label>
+                        <h4>604-926-0820</h4>
+                </div>
+
+            </div>
+            <div class="location-map">
+                <label for="location-icon"><i class="fas fa-map-marked-alt"></i></label>
+                <h2>Directions</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2599.909224299429!2d-123.12436244905396!3d49.334937379235676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54866e2c6a957833%3A0x7f71737d27239411!2sWest%20Vancouver%20Cricket%20Club!5e0!3m2!1sen!2sca!4v1588954195207!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+            </div>
+            <div class="newsletter-signup">
+
+            </div>
+          </div>
+    </section>
+    <footer>
+        <p>---- COPYRIGHT &copy; 2020 HTML & CSS ----</p>
+    </footer>
+
+</body>
+
+</html>
