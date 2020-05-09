@@ -125,6 +125,9 @@
         </ul>
     </div>
     <section class="body-section">
+        <div class="page-name">
+            <h1>Contact Us</h1>
+        </div>
         <div class="grid-container">
             <div class="related-links">
                 <h3>Related links</h3>
@@ -135,24 +138,27 @@
                 </ul>
             </div>
             <div class="contact-form">
-                <h1>Contact Us</h1>
+                <h1>Get in Touch</h1>
                 <div class="form-container">
                     <form action="mailto:abc@hotmail.com" method="POST">
                         <div class="formItem">
-                            <label for="name">Name:</label>
+                            <label class="formLabel" for="name">Name:</label>
                             <input class="formField" type="text" name="" placeholder="Name" required />
                         </div>
                         <div class="formItem">
-                            <label for="email">Email:</label>
+                            <label class="formLabel" for="email">Email:</label>
                             <input class="formField" type="email" name="email" placeholder="Mail" required />                            
                         </div>
                         <div class="formItem">
-                            <input class="formField" type="text" placeholder="Phone Number" />
+                            <label class="formLabel" for="phone">Phone:</label>
+                            <input class="formField" type="text" name="phone" placeholder="Phone" />
                         </div>
                         <div class="formItem">
-                            <input class="formField" type="text" placeholder="Subject" required />
+                            <label class="formLabel" for="subject">Subject:</label>
+                            <input class="formField" type="text" name="subject" placeholder="Subject" required />
                         </div>
                         <div class="formItem">
+                            <label class="formLabel" for="message">Message:</label>
                             <textarea class="formField" cols="30" rows="5" placeholder="Message"></textarea>
                         </div>
                         <div class="formItem">
