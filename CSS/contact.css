@@ -132,12 +132,11 @@ body{
 /* Body */
 .body-section {
     width: 100%;
-    display: block;
+    /* display: block;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 50px;
-    align-content: center;
-    /* background-color: mediumblue; */
+    align-content: center; */
 }
 .grid-container {
     display: grid;
@@ -149,26 +148,69 @@ body{
   
 .related-links {
     grid-area: related-links;
-    background-color: lightcoral;
+    background-color: rgb(244, 155, 0, 0.9);
 }
 .related-links h3 {
     text-align: center;
 }
 .contact-form {
     grid-area: contact-form;
-    background-color: rgb(244, 155, 0, 0.75);
+    background-color: rgb(244, 155, 0, 0.7);
+}
+.contact-form h1 {
+    text-align: center;
+    font-size: 52px;
+    padding: 35px;
 }
 
-.information {
+.form-container {
+    width: 20vw;
+    float: left;
+    margin-left: 40px;
+}
+.formItem {
+    margin: 0;
+    padding: 10px;
 
+}
+.formField {
+    color: #fff;
+    background-color: rgba(6, 0, 6, 0.7);
+    border: 2px solid black;
+    padding: 10px;
+    width: 100%;
+    margin: 0;
+    display: block;
+    font-size: 14px;
+    border-radius: 10px;
+}
+.formBtn {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    align-self: center;
+    border-radius: 20px;
+    background-color: rgba(6, 0, 6, 0.5);
+    color: #fff;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.formBtn:hover {
+    background-color: rgb(244, 155, 0, 0.75);
+}
+.information-container {
+    float: right;
 }
 .location-map {
     grid-area: location-map;
-    background-color: lawngreen;
+    background-color: rgb(244, 155, 0, 0.75);
 }  
 .newsletter-signup {
     grid-area: newsletter-signup;
-    background-color: magenta;
+    background-color: rgb(244, 155, 0, 0.75);
 }
 
 /* Footer */
