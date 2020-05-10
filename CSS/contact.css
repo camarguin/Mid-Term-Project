@@ -4,7 +4,8 @@
     padding: 0 auto;
 }
 body{
-    background-image: url(../images/BallBackground.jpg);
+    /* background-image: url(../images/BallBackground.jpg); */
+    background-image: url(../images/mapVancouver2.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -43,7 +44,7 @@ body{
 .menu{
     display: flex;
     flex-direction: row;
-    background-color: rgba(0, 0, 0, 0.60);
+    background-color: rgba(0, 0, 0, 0.8);
     position: sticky;
     top: 0px;
     height: 100px;
@@ -138,45 +139,85 @@ body{
     margin-top: 50px;
     align-content: center; */
 }
+.page-name {
+    /* background-image: url(../images/map-background.png); */
+    /* opacity: 0.7; */
+    height: 150px;
+    padding: 0;
+    border-radius: 2px;
+    background-color: rgb(254, 255, 255, 0.9);
+}
+.page-name h1 {
+    line-height: 150px;
+    font-size: 72px;
+    padding: 0;
+    text-align: center;
+}
 .grid-container {
     display: grid;
     grid-template-columns: 0.5fr 2.0fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 25px 25px;    
+    gap: 15px 0px;
     grid-template-areas: "related-links contact-form" "location-map location-map" "newsletter-signup newsletter-signup";
 }
   
 .related-links {
     grid-area: related-links;
-    background-color: rgb(244, 155, 0, 0.9);
+    background-color: rgb(255, 255, 255, 0.9);
+}
+.related-links ul {
+    margin-left: 20px;
 }
 .related-links h3 {
     text-align: center;
+    margin-top: 55px;
 }
 .contact-form {
     grid-area: contact-form;
-    background-color: rgb(244, 155, 0, 0.7);
+    background-color: rgb(255, 255, 255, 0.9);
 }
-.contact-form h1 {
+.contact-form h2 {
+    /* text-align: center;
+    font-size: 52px;
+    padding: 35px; */
     text-align: center;
     font-size: 52px;
-    padding: 35px;
+    padding: 30px;
 }
 
 .form-container {
-    width: 20vw;
+    width: 35%;
     float: left;
-    margin-left: 40px;
+    margin-left: 4px;
+    
 }
 .formItem {
     margin: 0;
-    padding: 10px;
-
+    padding: 1px;
+    box-sizing: border-box;
+    /* background-color: yellow; */
+}
+.getintouch-form {
+    width: 100%;
+    margin: 0;
+    /* background-color: white; */
+    border-radius: 5%;
+    padding: 30px;
+    /* background-color: rgba(6, 0, 6, 0.5); */
+    background-color: rgb(244, 155, 0, 0.75);
+    padding-right: 70px;
+    box-shadow: 5px 10px 8px #888888;
+}
+.getintouch-form h3 {
+    font-size: 20px;
+    text-align: center;
 }
 .formField {
-    color: #fff;
-    background-color: rgba(6, 0, 6, 0.7);
-    border: 2px solid black;
+    color: white;
+    /* background-color: rgb(244, 155, 0, 0.75); */
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    border: 3px solid black;
     padding: 10px;
     width: 100%;
     margin: 0;
@@ -189,29 +230,110 @@ body{
     margin: 0 auto;
     border: none;
     align-self: center;
-    border-radius: 20px;
+    border-radius: 5px;
     background-color: rgba(6, 0, 6, 0.5);
     color: #fff;
     padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
     cursor: pointer;
     font-weight: bold;
 }
 .formBtn:hover {
-    background-color: rgb(244, 155, 0, 0.75);
+    background-color: rgb(244, 155, 0, 0.9);
 }
 .information-container {
     float: right;
+    width: 50%;
+    text-align: center;
+    line-height: 25px;
+}
+.information-container h3 { 
+    font-size: 72px;
+    margin-top: 75px;
+    text-align: center;    
+    color: black;
 }
 .location-map {
+    display: block;
     grid-area: location-map;
-    background-color: rgb(244, 155, 0, 0.75);
-}  
-.newsletter-signup {
-    grid-area: newsletter-signup;
+    background-color: rgb(254, 255, 255, 0.9);
+    /* background-color: rgb(244, 155, 0, 0.8); */
+}
+.location-map h2 {
+    text-align: center;
+    font-size: 52px;
+    padding: 50px;
+}
+.mapiframe {
+    float: right;
+    width: 65%;
     background-color: rgb(244, 155, 0, 0.75);
 }
+.addressinfo {
+    float: left;
+    width: 35%;
+    text-align: center;
+    line-height: 25px;
+}
+.addressinfo h3 {
+    display: block;
+    margin-top: 25%;  
+    font-size: 72px;
+    text-align: center;    
+    color: black;
+}
+#map-iframe {
+    width: 90%;
+    /* -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); */
+}
+.newsletter-signup {
+    grid-area: newsletter-signup;
+    /* background-color: rgb(244, 155, 0, 0.75); */
+    background-color: rgb(254, 255, 255, 0.9);
+}
+.newsletter-form {
+    width: 100%;
+    align-self: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.newsletter-signup h2 {
+    text-align: center;
+    font-size: 52px;
+    padding: 50px;
+}
+.newsletter-signup h3 {
+    font-size: 72px;
+    text-align: center;
+    
+}
+.newsletter-signup input {
+    width: 50%;
+    text-align: center;
+    align-content: center;
+    align-self: center;
+    color: white;
+}
+/* Placeholders */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    /* color: rgb(254, 255, 255, 0.1); */
+    /* opacity: 1; Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    /* color: rgb(254, 255, 255, 0.1); */
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    /* color: rgb(254, 255, 255, 0.1); */
+}
+
 
 /* Footer */
 footer{
