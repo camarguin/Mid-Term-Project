@@ -186,26 +186,26 @@ body{
 }
 
 .form-container {
-    width: 35%;
+    width: 50%;
     float: left;
-    margin-left: 4px;
+    margin: 0 auto;
+    padding: 0px;
+    display: block;
     
 }
 .formItem {
-    margin: 0;
-    padding: 1px;
-    box-sizing: border-box;
-    /* background-color: yellow; */
+    margin: 0 auto;
+    padding-bottom: 10px;
+    display: block; 
 }
 .getintouch-form {
-    width: 100%;
+    display: block;
     margin: 0;
-    /* background-color: white; */
+    background-color: white;
     border-radius: 5%;
-    padding: 30px;
     /* background-color: rgba(6, 0, 6, 0.5); */
-    background-color: rgb(244, 155, 0, 0.75);
-    padding-right: 70px;
+    background-color: rgb(244, 155, 0, 0.8);
+    padding: 5px;
     box-shadow: 5px 10px 8px #888888;
 }
 .getintouch-form h3 {
@@ -213,17 +213,27 @@ body{
     text-align: center;
 }
 .formField {
-    color: white;
-    /* background-color: rgb(244, 155, 0, 0.75); */
-    /* background-color: rgba(255, 255, 255, 0.9); */
-    /* background-color: rgba(0, 0, 0, 0.8); */
+    color: black;
     border: 3px solid black;
     padding: 10px;
-    width: 100%;
-    margin: 0;
+    width: 90%;
+    margin: 0 auto;
     display: block;
     font-size: 14px;
     border-radius: 10px;
+    box-sizing: border-box;
+    -ms-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    -webkit-box-sizing:content-box; 
+}
+.formLabel {
+    color: black;
+    margin-left: 20px;
+    box-sizing: border-box;
+    -ms-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    -webkit-box-sizing:content-box; 
+
 }
 .formBtn {
     display: block;
@@ -238,27 +248,36 @@ body{
     padding-right: 25px;
     cursor: pointer;
     font-weight: bold;
+    text-align: center;
 }
 .formBtn:hover {
-    background-color: rgb(244, 155, 0, 0.9);
+    background-color: rgb(0, 0, 0, 0.9);
 }
 .information-container {
     float: right;
-    width: 50%;
+    width: 40%;
     text-align: center;
     line-height: 25px;
 }
+.information-container p {
+    font-size: 16px;
+    font-weight: 550;
+}
+.information-container h4 {
+    font-size: 22px;
+    font-weight: bold;
+}
 .information-container h3 { 
     font-size: 72px;
-    margin-top: 75px;
+    margin-top: 70px;
     text-align: center;    
     color: black;
 }
 .location-map {
     display: block;
     grid-area: location-map;
-    background-color: rgb(254, 255, 255, 0.9);
-    /* background-color: rgb(244, 155, 0, 0.8); */
+    /* background-color: rgb(254, 255, 255, 0.9); */
+    background-color: rgb(244, 155, 0, 0.8);
 }
 .location-map h2 {
     text-align: center;
@@ -268,7 +287,8 @@ body{
 .mapiframe {
     float: right;
     width: 65%;
-    background-color: rgb(244, 155, 0, 0.75);
+    margin-bottom: 45px;
+    /* background-color: rgb(244, 155, 0, 0.75); */
 }
 .addressinfo {
     float: left;
@@ -321,18 +341,18 @@ body{
     color: white;
 }
 /* Placeholders */
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+/* ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     /* color: rgb(254, 255, 255, 0.1); */
-    /* opacity: 1; Firefox */
-}
+    /* opacity: 1; Firefox 
+} */
   
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    /* color: rgb(254, 255, 255, 0.1); */
-}
+/* :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    /* color: rgb(254, 255, 255, 0.1); 
+} */
   
-::-ms-input-placeholder { /* Microsoft Edge */
-    /* color: rgb(254, 255, 255, 0.1); */
-}
+/* ::-ms-input-placeholder { Microsoft Edge */
+    /* color: rgb(254, 255, 255, 0.1); 
+}*/
 
 
 /* Footer */
