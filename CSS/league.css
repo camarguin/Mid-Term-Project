@@ -1,0 +1,269 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;    
+}
+body{
+    background-image: url(../images/BallBackground.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* Header Menu */
+.header{
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 30px;
+}
+.header ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Social Media Links */
+.social-media{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+.social-media li{
+    width: 6vw;
+}
+.social-media a i{
+    font-size: 20px;
+    margin-top: 5px;
+}
+.social-media ul{
+    display: flex;
+    flex-direction: row;
+    margin-right: 40px;
+}
+
+/* Menu */
+.menu{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.60);
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    z-index: 1;
+    list-style-type: none;
+}
+.menu-a {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 35px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.submenu-content-a {
+    color: white;
+}
+#menu_media {
+    align-self: center;
+}
+
+.menu-content-li {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color: white;
+    border-bottom: 2px solid transparent;
+}
+.menu-content-li:hover {
+    border-bottom: 2px solid white;
+    background-color: rgb(244, 155, 0, 0.75);
+}
+.submenu-content {
+    position: absolute;
+    top: 100px;
+    display: none;
+    width: 190px;
+    text-align: left;
+    padding-left: 0;
+}
+.submenu-content li {
+    background-color: rgb(0, 0, 0, 0.8);
+    border-bottom: 1px solid transparent;
+    padding-top: 10px;
+}
+.submenu-content li:hover {
+    background-color: rgb(244, 155, 0, 0.5);
+    border-bottom: 1px solid white;
+}
+
+#menu_media li,
+.submenu-content li {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+}
+.menu-content-li:hover ul {
+    display: block;
+}
+#menu-media > li:hover {
+    cursor: pointer;
+    color: white;
+    border-bottom: 2px solid black;
+}
+
+/* =========== league link =========== */
+#league_layout{
+    display: flex;
+    flex-direction: row;
+}
+#league_link{
+    background-color: rgb(244, 155, 0, 0.5);
+    position: fixed;
+    top: 200px;
+    left: 40px;
+    width: 25vw;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 2%;
+}
+#league_link header{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+/* =========== league contents =========== */
+.league_container:nth-child(odd){
+    margin: 170px 0px 0px 400px;
+    padding: 30px 30px;
+    width: 60vw;
+    border-radius: 1%;
+    background-color: rgba(255,255,255,0.5);
+}
+.league_container:nth-child(even){
+    margin: 170px 0px 0px 400px;
+    padding: 30px 30px;
+    width: 60vw;
+    border-radius: 1%;
+    background-color: rgb(244, 155, 0, 0.5);
+}
+.league_container header{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    position: relative;
+    top: 40px;
+}
+.league_container h3{
+    font-weight: bold;
+    text-align: center;
+    margin: 60px auto;
+}
+.league_container ul{
+    line-height: 50px;
+    font-size: 1em;
+}
+.league_container p{
+    line-height: 50px;
+    font-size: 1em;
+}
+.league_container h1{
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+#league_img{
+    margin: 50px auto;
+    display: block;
+    text-align: center;
+}
+
+/* =========== Hamburger Bar =========== */
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    line-height: 80px;
+    cursor: pointer;
+    margin: 0 0;
+    display: none;
+}
+#check{
+    margin: 0 0;
+    display: none;
+}
+
+/* =========== media =========== */
+@media screen and (max-width:1024px){
+    nav{
+        background-color: rgb(0, 0, 0, 0.7);
+        margin: 0 0;
+        position: absolute;
+        top: 100px;
+        left: -100%;
+        width: 100%;
+        transition: all 0.5s;
+    }
+    #check:checked ~ nav{
+        left: 0%;
+    }
+    #menu_media{
+        display: flex;
+        flex-direction: column;
+    }
+    .checkbtn{
+        display: block;
+        position: fixed;
+        right: 20px;
+    }
+    .league_container:nth-child(odd){
+        margin-left: 310px;
+    }
+    .league_container:nth-child(even){
+        margin-left: 310px;
+    }
+}
+
+@media screen and (max-width:768px){
+    #league_img{
+        width: 610px;
+        height: 400px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    #league_layout{
+        flex-direction: column;
+    }
+    #league_link{
+        position: absolute;
+        left: 65px;
+        width: 80vw;
+    }
+    #league_main{
+        margin-top: 250px;
+    }
+    .league_container:nth-child(odd){
+        margin-left: 0px;
+        width: 80vw;
+    }
+    .league_container:nth-child(even){
+        margin-left: 0px;
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width:375px){
+    #league_link{
+        left: 27px;
+    }
+    #league_main div:nth-child(odd){
+        margin-top: 100px;
+        width: 80vw;
+    }
+    #league_main div:nth-child(even){
+        margin-top: 100px;
+        width: 80vw;
+    }
+    #league_img{
+        width: 300px;
+        height: 200px;
+    }
+}

@@ -261,12 +261,17 @@ a,.submenu-content > a {
     letter-spacing: 0.0rem;
     line-height: 30px;
     margin-bottom: 40px;
+
     
 }
 
 .textwelcome{
-    text-align: justify;
+   text-align: justify;
+  
+}
 
+.ulmargin {
+    margin-left:  -40px;
 }
 
 /* .learnmorebutton{
