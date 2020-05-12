@@ -242,6 +242,14 @@ html, body, .grid-container { height: 100%; margin: 0; }
   grid-template-areas: "president operations finance" "administration develop facilities";
   height: 30vh;
   background-color: rgba(255, 255, 255, 0.7);
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.avatar img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
 }
 
 .president {
@@ -328,6 +336,7 @@ html, body, .grid-container { height: 100%; margin: 0; }
 /*PROGRAMS CONTAINER*/
 
 /* LIFE MEMBERS CONTENT */
+
 .programscontainer{
     top: 10vh;
     position: relative;
@@ -367,6 +376,8 @@ footer{
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+
+
 /* =========== Hamburger Bar =========== */
 .checkbtn{
     font-size: 30px;
@@ -380,6 +391,10 @@ footer{
     margin: 0 0;
     display: none;
 }
+
+
+
+
 
 /* =========== Medias =========== */
 @media screen and (max-width:1024px) {
@@ -465,7 +480,7 @@ footer{
         position: absolute;
         width: 300px;
         /* height: 100vh; */
-        background-color: white;
+        /* background-color: white; */
         top: 130px;
         left: -350px;
         text-align: center;
@@ -474,7 +489,8 @@ footer{
 
     nav ul li {
         display: inline-block;
-        background-color: red;
+        /* background-color: red; */
+        background-color: rgba(0, 0, 0, 0.70);
         margin: 0;
         padding: 0;
     }
@@ -515,6 +531,11 @@ footer{
         margin: 0 auto;
     }
 }
+
+
+
+
+
 @media screen and (max-width:375px) {
 
     /* Header - Social Media */
