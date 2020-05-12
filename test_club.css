@@ -1,0 +1,352 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0 auto;
+}
+body{
+    /* background-image: url(../images/BallBackground.jpg); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* Header Menu */
+.header{
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 30px;
+}
+.header ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+/* Social Media Links */
+.social-media{
+    display: flex;
+    float: right;
+    top: 0px;
+}
+.social-media li{
+    display: block;
+    float: right;
+    margin-right: 2vw;
+}
+.social-media a i{
+    font-size: 20px;
+    margin: 0;
+    margin-top: 5px;    
+    color: black;
+}
+.social-media ul{
+    display: flex;
+    flex-direction: row;
+}
+/* Menu */
+.menu{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.60);
+    position: sticky;
+    top: 0px;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    z-index: 1;
+    list-style-type: none;
+}
+.menu img {
+    float: left;
+}
+.menu-a {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 35px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.submenu-content-a {
+    text-decoration: none;
+    color: white;
+}
+#menu_media {
+    align-self: center;
+}
+.menu-content-li {
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color: white;
+    border-bottom: 2px solid transparent;
+}
+.menu-content-li:hover {
+    border-bottom: 2px solid white;
+    background-color: rgb(244, 155, 0, 0.75);
+}
+.submenu-content {
+    position: absolute;
+    top: 101px;
+    margin-right: 100px;
+    display: none;
+    width: 190px;
+    text-align: left;
+    padding: 0;
+}
+.submenu-content li {
+    background-color: rgb(0, 0, 0, 0.8);
+    border-bottom: 1px solid transparent;
+    margin: 0;
+    padding-top: 10px;
+}
+.submenu-content li:hover {
+    background-color: rgb(244, 155, 0, 0.5);
+    border-bottom: 1px solid white;
+}
+.menu li,
+.submenu-content > li {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+}
+.menu-content-li:hover ul {
+    display: block;
+}
+#menu-media > li:hover {
+    cursor: pointer;
+    color: white;
+    border-bottom: 2px solid black;
+}
+/* Hamburger Bar */
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    line-height: 80px;
+    cursor: pointer;
+    margin: 0 0;
+    display: none;
+}
+#check{
+    margin: 0 0;
+    display: none;
+}
+
+
+/* STARTING GRID LAYOUT */
+
+
+html, body, .grid-container { height: 100%; margin: 0; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: ;
+  grid-template-rows: 1fr 1.4fr 1.4fr 0.2fr;
+  gap: 1px 1px;
+  grid-template-areas: "about" "council" "life_members" "footer";
+  margin: 0 auto;
+  background-color: red;
+}
+
+.abouttxt {
+    background-color: white;
+    padding: 5rem;
+    margin-left: 0;
+}
+.aboutwvcc {
+    background-image: url(./images/BallBackgroundBlur.png);
+    max-height: 800px;
+    /* max-width: 1600px; */
+    /* position: relative; */
+    padding: 10rem;
+    /* display: flex; */
+    /* top: 300px; */
+    padding-top: 7rem;
+    padding-left: 0;
+    padding-right: 4rem;
+    text-align: justify;
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    grid-template-rows: 1fr;
+    /* gap: 50px 50px; */
+    grid-template-areas: ". .";
+    grid-area: about;
+    /* background-color: cornflowerblue; */
+}
+.aboutwvcc img{
+    width: 40vw;
+    height: 50vh;
+    position: relative;
+    top: 150px;    
+    border: 5px solid rgba(255, 255, 255, 1);
+    box-shadow: -20px 20px 0px #fff;
+}
+
+
+.council {
+    display: inline-block;
+  /* display: grid; */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "president finance admin" "develop facilities operations";
+  grid-area: council;
+  background-color: skyblue;
+}
+
+.council img{
+    border-radius: 50%;
+}
+
+.president {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "." ".";
+  grid-area: president;
+}
+
+
+.finance {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "." ".";
+  grid-area: finance;
+}
+
+.admin {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "." ".";
+  grid-area: admin;
+}
+
+.develop {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "." ".";
+  grid-area: develop;
+}
+
+.facilities {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "." ".";
+  grid-area: facilities;
+}
+
+.operations {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "." ".";
+  grid-area: operations;
+}
+
+.life_members {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: ". .";
+  grid-area: life_members;
+}
+
+.footer { grid-area: footer; }
+
+
+/* Footer */
+footer{
+    position: sticky;
+    bottom: 0px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0.5vh 0;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width:1024px) {
+    
+    /* Header - Social Media */
+    .header {
+        width: 100%;
+    }
+    .social-media {
+        position: absolute;
+        top: 0px;
+        right: 20px;
+    }
+    .social-media li{
+        /* display: inline-block; */
+        margin-left: 20px;
+    }
+
+    /* Menu */
+    .menu {
+        position: sticky;
+        top: 0px;
+        display: absolute;
+    }
+    #menu_media {
+        position: absolute;
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        padding: 0px;
+        width: 100%;
+        top: 100px;
+        left: -100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        transition: all 0.5s;
+    }
+    .menu-content-li {
+        align-self: center;
+        display: block;
+        padding: 0px;
+        padding-left: 20vw;
+        padding-right: 20vw;
+        margin: 0;
+    }
+    .menu-a {
+        text-align: center;
+        padding: 0;
+        /* padding: 0px; */
+    }
+    .submenu-content {
+        top: 0px;
+        padding: 0px;
+        left: 5px;
+    }
+
+    #logo-image{
+        align-self: center;
+        float: center;
+        margin-left: 45vw;
+        padding: 0;
+
+    } 
+    #check {
+        position: absolute;
+    }
+    .checkbtn{
+        display: inline-block;
+        float: right;
+    }
+    .checkbtn i {
+        color: rgb(244, 155, 0, 0.5);
+    }
+    #check:checked ~ ul{
+        left: 0px;
+    }
