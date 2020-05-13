@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="./CSS/contact.css">
     <link rel="icon" type="image/icon" href="./images/FavIcon32x32.png">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <title>West Vancouver Cricket Club - Contact</title>
 
 </head>
@@ -125,23 +126,25 @@
         </ul>
     </div>
     <section class="body-section">
-        <div class="page-name">
-            <h1>Contact Us</h1>
-        </div>
+        <br>
         <div class="grid-container">
             <div class="related-links">
-                <h3>Related links</h3>
+                <h3><i class="fas fa-link"></i> Related links</h3>
                 <br>
                 <ul>
-                    <li><a href="#">Get in touch</a></li>
-                    <li><a href="#">Location</a></li>
-                    <li><a href="#">Newsletters</a></li>
+                    <li>&raquo;<a href="#"> Get in touch</a></li>
+                    <li>&raquo;<a href="#"> Location</a></li>
+                    <li>&raquo;<a href="#"> Newsletters</a></li>
                     
                 </ul>
             </div>
-            <div class="contact-form">
-                <div class="form-container">
-                    <h2>Get in Touch</h2>
+            <div class="contact-grid">
+                <div class="title-page">
+                    <h1>Contact Us</h1>
+                </div>
+                
+                <div class="contact-form">
+                    
                     <form class="getintouch-form" action="mailto:abc@hotmail.com" method="POST">
                         <h3>Send us an email</h3>
                         <div class="formItem">
@@ -171,9 +174,8 @@
                             <input class="formBtn" type="submit" value="Submit" />
                         </div>
                     </form>
-
                 </div>
-                <div class="information-container">
+                <div class="contact-info">
                     <h3><i class="fas fa-info-circle"></i></h3>
                     <br>
                     <!-- <label for=contact><i class="fas fa-id-card"></i></label>
@@ -191,12 +193,11 @@
                     <p><a href="#">juniorcricket@westvancouvercricketclub.ca</a></p>
                 </div>
             </div>
-            <div class="location-map">
-                <h2>Location and Directions</h2>
-                <div class="mapiframe">
-                    <iframe id="map-iframe"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2599.909224299429!2d-123.12436244905396!3d49.334937379235676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54866e2c6a957833%3A0x7f71737d27239411!2sWest%20Vancouver%20Cricket%20Club!5e0!3m2!1sen!2sca!4v1588954195207!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="false" aria-hidden="true" tabindex="0"></iframe>                    
-                </div>
-                <div class="addressinfo">
+            <div class="location-grid">
+                <div class="location-title">
+                    <div><h2>Location and Directions</h2></div>
+                </div>                
+                <div class="location-info">
                     <h3><i class="fas fa-map-marked-alt"></i></h3>
                     <br>
                     <p><b>West Vancouver Cricket Club</b>
@@ -210,16 +211,21 @@
                         V7S 2Y2
                     </p>
                 </div>
-
+                <div class="location-map">
+                    <iframe id="map-iframe"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2599.909224299429!2d-123.12436244905396!3d49.334937379235676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54866e2c6a957833%3A0x7f71737d27239411!2sWest%20Vancouver%20Cricket%20Club!5e0!3m2!1sen!2sca!4v1588954195207!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="false" aria-hidden="true" tabindex="0"></iframe>
+                </div>
             </div>
-            <div class="newsletter-signup">
+            <div class="newsletter-grid">
                 <h2>Newsletters</h2>
                 <h3><i class="far fa-newspaper"></i></h3>
-                <form class="newsletter-form" action="mailto:abc@hotmail.com" method="POST">
-                    <input id="newsletter" class="formField" name="newsletterEmail" type="email" placeholder="Enter your email to subscribe">
+                <form class="newsletter-form" action="#" method="POST">
+                    <div class="newslettertxtfield">
+                        <input id="newsletter" class="formField" name="newsletterEmail" type="email" placeholder="Enter your email to subscribe">
+                    </div>
+                    <div class="newsletterbtn">
+                        <input class="newsletterButton" type="submit" value="Submit"/>                        
+                    </div>                  
                 </form>
-                
-
             </div>
           </div>
     </section>
