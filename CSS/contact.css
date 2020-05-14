@@ -484,7 +484,6 @@ footer {
     .menu-a {
         text-align: center;
         padding: 0;
-        /* padding: 0px; */
     }
     .submenu-content {
         top: 0px;
@@ -509,5 +508,28 @@ footer {
     }
     #check:checked~ul {
         left: 0px;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 0.5fr 1.5fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1px 1px;
+        grid-template-areas: "related-links contact-grid" "related-links location-grid" "related-links newsletter-grid";
+    }
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 1.1fr 1.1fr;
+        gap: 1px 1px;
+        grid-template-areas: "title-page" "contact-info" "contact-form";
+        grid-area: contact-grid;
+    }
+    .location-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 1.1fr 1.1fr;
+        gap: 1px 1px;
+        grid-template-areas: "location-title" "location-info" "location-map";
+        grid-area: location-grid;
     }
 }
