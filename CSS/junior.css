@@ -221,7 +221,7 @@ a,.submenu-content > a {
     margin: 0px;
     margin-bottom: 25vh;
     margin-right: 25vh;
-    background-color: rgb(244, 155, 0, 0.5);
+    background-color: rgb(244, 155, 0, 0.8);
     width: 60vw;
     padding: 2rem;
     top: 18vh;
@@ -233,7 +233,7 @@ a,.submenu-content > a {
     margin: 0px;
     margin-bottom: 25vh;
     margin-right: 25vh;
-    background-color: rgb(244, 155, 0, 0.5);
+    background-color: rgb(244, 155, 0, 0.8);
     width: 20vw;
     padding: 2rem;
     top: 21.7vh;
@@ -273,6 +273,14 @@ a,.submenu-content > a {
 .ulmargin {
     margin-left:  -40px;
 }
+
+   /*links*/
+
+  #related-links a:visited {
+    color:black;
+  }
+
+  
 
 /* .learnmorebutton{
     background-color: #fff;
@@ -352,5 +360,171 @@ footer{
         display: block;
         position: fixed;
         right: 20px;
+    }
+    .textwelcome{
+        text-align: justify;
+       
+     }
+}
+
+
+@media screen and (max-width:768px){
+
+    .bodycontainer{
+        position: relative;
+        margin: 0px;
+        margin-bottom: 5vh; /*move*/
+        margin-right: 5vh;/*move*/
+        background-color: rgb(244, 155, 0, 0.8);
+        width: 88vw;/*move*/
+        padding: 2rem;
+        top: 21.7vh;
+        left: 2vw;
+    }
+    .layoutcontainer1{
+        flex-direction: column;
+       
+    }
+
+    .bodycontainer1{
+        position: relative; /*move*/
+        margin: 0px;
+        margin-bottom: 5vh;/*move*/
+        margin-right: 5vh;/*move*/
+        background-color: rgb(244, 155, 0, 0.8);
+        width: 50vw;/*move*/
+        padding: 2rem;
+        top: 21.7vh;
+        left: 2vw;
+    }
+    .layoutcontainer2{
+        flex-direction: column;
+    }
+    #related-links{
+        position: relative; /*move*/
+        left: 65px;
+        width: 80vw;
+    }
+    /* #league_main{
+        margin-top: 250px;
+    } */
+    .textwelcome{
+        text-align: justify;
+       
+     }
+    footer{
+    position: fixed;
+    bottom: 0px;
+    margin: 0px auto;
+    width: 100%;
+    height: 3%; /*new move*/
+    padding: 0.5vh 10;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+}
+
+@media screen and (max-width:425px){
+
+ 
+    .bodycontainer{
+        position: relative;
+        margin: 0px;
+        margin-bottom: 5vh; /*move*/
+        margin-right: 5vh;/*move*/
+        background-color: rgb(244, 155, 0, 0.8);
+        width: 87vw;/*move*/
+        padding: -10rem;
+        top: 21.7vh;
+        left: 2vw;
+    }
+    .layoutcontainer1{
+        flex-direction: column;
+    }
+
+    .bodycontainer1{
+        position: relative; /*move*/
+        margin: -45px;
+        margin-bottom: 5vh;/*move*/
+        margin-right: 5vh;/*move*/
+        background-color: rgb(244, 155, 0, 0.8);
+        width: 60vw;/*move*/
+        padding: 2rem; /*move*/
+        top: 21.7vh;
+        left: 2vw;
+       
+    }
+    .layoutcontainer2{
+        flex-direction: column;
+    }
+    #related-links{
+        position: relative; /*move*/
+        left: 65px;
+        width: 80vw;
+    }
+
+    .textwelcome{
+        text-align: justify;
+       
+     }
+    footer{
+  
+        height: 3%; /*new move*/
+       
+    }
+}
+
+
+
+
+
+@media screen and (max-width:375px){
+    .bodycontainer{
+        position: relative;
+        margin: 0px;
+        margin-bottom: 5vh; /*move*/
+        margin-right: 5vh;/*move*/
+        background-color: rgb(244, 155, 0, 0.8);
+        width: 87vw;/*move*/
+        padding: -10rem;
+        top: 21.7vh;
+        left: 2vw;
+    }
+    .layoutcontainer1{
+        flex-direction: column;
+    }
+
+    .bodycontainer1{
+        position: relative; /*move*/
+        margin: -45px;
+        margin-bottom: 5vh;/*move*/
+        margin-right: 5vh;/*move*/
+        background-color: rgb(244, 155, 0, 0.8);
+        width: 60vw;/*move*/
+        padding: 2rem; /*move*/
+        top: 21.7vh;
+        left: 2vw;
+       
+    }
+    .layoutcontainer2{
+        flex-direction: column;
+    }
+    #related-links{
+        position: relative; /*move*/
+        left: 65px;
+        width: 80vw;
+    }
+
+    .textwelcome{
+        text-align: justify;
+       
+     }
+    footer{
+  
+        height: 3%; /*new move*/
+       
     }
 }
