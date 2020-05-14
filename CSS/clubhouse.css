@@ -1,0 +1,259 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0 auto;
+}
+
+body {
+    /* background-image: url(../images/BallBackground.jpg); */
+    background-image: url(../images/clubhouseBackground.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Header Menu */
+
+.header {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 30px;
+}
+
+.header ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Social Media Links */
+
+.social-media {
+    display: flex;
+    float: right;
+    top: 0px;
+}
+
+.social-media li {
+    display: block;
+    float: right;
+    margin-right: 2vw;
+}
+
+.social-media a i {
+    font-size: 20px;
+    margin: 0;
+    margin-top: 5px;
+    color: black;
+}
+
+.social-media ul {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Menu */
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: sticky;
+    top: 0px;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    z-index: 1;
+    list-style-type: none;
+}
+
+.menu img {
+    float: left;
+}
+
+.menu-a {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 35px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.submenu-content-a {
+    text-decoration: none;
+    color: white;
+}
+
+#menu_media {
+    align-self: center;
+}
+
+.menu-content-li {
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color: white;
+    border-bottom: 2px solid transparent;
+}
+
+.menu-content-li:hover {
+    border-bottom: 2px solid white;
+    background-color: rgb(244, 155, 0, 0.75);
+}
+
+.submenu-content {
+    position: absolute;
+    top: 101px;
+    margin-right: 100px;
+    display: none;
+    width: 190px;
+    text-align: left;
+    padding: 0;
+}
+
+.submenu-content li {
+    background-color: rgb(0, 0, 0, 0.8);
+    border-bottom: 1px solid transparent;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.submenu-content li:hover {
+    background-color: rgb(244, 155, 0, 0.5);
+    border-bottom: 1px solid white;
+}
+
+.menu li, .submenu-content>li {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+}
+
+.menu-content-li:hover ul {
+    display: block;
+}
+
+#menu-media>li:hover {
+    cursor: pointer;
+    color: white;
+    border-bottom: 2px solid black;
+}
+
+/* Hamburger Bar */
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    line-height: 80px;
+    cursor: pointer;
+    margin: 0 0;
+    display: none;
+}
+
+#check {
+    margin: 0 0;
+    display: none;
+}
+
+/* Body */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.4fr 1.6fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "related-links rental-grid" "related-links facilities-grid" "related-links info-grid";
+}
+
+.related-links {
+    grid-area: related-links;
+    background-color: lawngreen;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.rental-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 1.4fr 1.3fr;
+    gap: 1px 1px;
+    grid-template-areas: "title-page title-page" "rent-1 image-1" "image-2 rent-2";
+    grid-area: rental-grid;
+    background-color: rgb(244, 155, 0, 0.8);
+}
+
+.title-page {
+    grid-area: title-page;
+}
+
+.image-1 {
+    grid-area: image-1;
+}
+
+.image-2 {
+    grid-area: image-2;
+}
+
+.rent-1 {
+    grid-area: rent-1;
+}
+
+.rent-2 {
+    grid-area: rent-2;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 1.7fr;
+    gap: 1px 1px;
+    grid-template-areas: "info-title" "info-content";
+    grid-area: info-grid;
+}
+
+.info-title {
+    grid-area: info-title;
+}
+
+.info-content {
+    grid-area: info-content;
+}
+
+.facilities-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 1.7fr;
+    gap: 1px 1px;
+    grid-template-areas: "facilities-title" "facilities-equipment";
+    grid-area: facilities-grid;
+}
+
+.facilities-title {
+    grid-area: facilities-title;
+}
+
+.facilities-equipment {
+    grid-area: facilities-equipment;
+}
+
+/* Footer */
+
+footer {
+    background-color: rgb(255, 255, 255, 0.5);
+}
+#footer-img {
+    width: 500px;
+}
+.div-copyright {
+    position: sticky;
+    bottom: 0px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0.5vh 0;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: inline-block;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+}
