@@ -233,11 +233,12 @@ a,.submenu-content > a {
     margin: 0px;
     margin-bottom: 25vh;
     margin-right: 25vh;
-    background-color: rgb(244, 155, 0, 0.8);
+    background-color: rgb(0, 0, 0, 0.8);
     width: 20vw;
     padding: 2rem;
     top: 21.7vh;
     left: 2vw;
+    color:white;
 }
 
 .imglogotext{
@@ -269,6 +270,10 @@ a,.submenu-content > a {
    text-align: justify;
   
 }
+.textwelcome1{
+ color:white;
+    text-align: justify;
+}
 
 .ulmargin {
     margin-left:  -40px;
@@ -277,7 +282,7 @@ a,.submenu-content > a {
    /*links*/
 
   #related-links a:visited {
-    color:black;
+    color:white;
   }
 
   
@@ -310,8 +315,30 @@ dd {
 /* ========== Slide Show ========== */
 
 
+
+/*    BULLETS  */
+
+.ulmargin a:visited{
+
+   
+    color: white;
+
+}
+
 /* Footer */
-footer{
+
+
+#footer-img{
+
+    width: 500px;
+}
+.div-img{
+    position: relative;
+bottom: -41px;
+ background-color: rgba(255, 255, 255, 0.5);
+}
+
+.div-copyright {
     position: fixed;
     bottom: 0px;
     margin: 0 auto;
@@ -320,9 +347,12 @@ footer{
     text-align: center;
     font-size: 0.8rem;
     font-weight: bold;
+    display: inline-block;
     color: black;
     background-color: rgba(255, 255, 255, 0.5);
-}
+} 
+
+
 
 /* =========== Hamburger Bar =========== */
 .checkbtn{
