@@ -158,72 +158,26 @@ body {
 
 /* Body */
 
-.body-section {
-    width: 99%;
-}
-
 .grid-container {
     display: grid;
-    grid-template-columns: 0.4fr 1.6fr;
-    grid-template-rows: 1.1fr 1fr 1fr;
-    gap: 15px 30px;
-    grid-template-areas: "related-links contact-grid" ". location-grid" ". newsletter-grid";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px 1px;
+    grid-template-areas: "contact-grid" "location-grid" "newsletter-grid";
 }
-
-/* Related Links */
-
-.related-links {
-    /* grid-area: related-links; */
-    position: sticky;
-    margin: 0px;
-    height: 35vh;
-    width: 100%;
-    border-radius: 2%;
-    top: 115px;
-    background-color: rgb(0, 0, 0, 0.8);
-    color: white;
-}
-
-.related-links ul {
-    /* margin-left: 20px; */
-    list-style-type: none;
-    line-height: 30px;
-}
-
-.related-links a {
-    color: white;
-    text-decoration: none;
-    text-align: center;
-}
-
-.related-links a:hover {
-    color: orange;
-}
-
-.related-links h3 {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.related-links i {
-    font-size: 12px;
-    padding-right: 5px;
-}
-
-/* Contact Us */
 
 .contact-grid {
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    grid-template-rows: 0.1fr 1.8fr;
-    gap: 0px 0px;
-    grid-template-areas: "title-page title-page" "contact-form contact-info";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 1.7fr;
+    gap: 1px 1px;
+    grid-template-areas: "contact-title contact-title" "contact-form contact-info";
     grid-area: contact-grid;
-    background-color: rgb(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
-.title-page {
-    grid-area: title-page;
+.contact-title {
+    grid-area: contact-title;
     text-align: center;
     font-size: 52px;
     padding: 30px;
@@ -301,8 +255,6 @@ body {
     background-color: rgb(0, 0, 0, 0.9);
 }
 
-/* Contact Information */
-
 .contact-info {
     grid-area: contact-info;
     text-align: center;
@@ -312,6 +264,11 @@ body {
 .contact-info p {
     font-size: 16px;
     font-weight: 550;
+}
+
+.contact-info a {
+    color: black;
+    text-decoration: none;
 }
 
 .contact-info h3 {
@@ -330,9 +287,9 @@ body {
 
 .location-grid {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    grid-template-rows: 0.1fr 1fr;
-    gap: 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 1.7fr;
+    gap: 1px 1px;
     grid-template-areas: "location-title location-title" "location-info location-map";
     grid-area: location-grid;
     background-color: rgb(244, 155, 0, 0.8);
@@ -358,7 +315,7 @@ body {
 
 .location-info h3 {
     font-size: 72px;
-    margin-top: 30%;
+    margin-top: 25%;
     text-align: center;
     color: black;
 }
@@ -368,8 +325,9 @@ body {
 }
 
 #map-iframe {
-    float: right;
-    margin: 25px 25px 25px 0px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    /*Fix*/
 }
 
 /* Newsletter */
@@ -381,7 +339,7 @@ body {
     gap: 1px 1px;
     grid-template-areas: "newsletter-title" "newsletter-form";
     grid-area: newsletter-grid;
-    background-color: rgb(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .newsletter-title {
@@ -396,16 +354,13 @@ body {
     font-weight: bold;
 }
 
-.newsletter-form {
-    grid-area: newsletter-form;
-}
-
 .newsletter-grid h3 {
     font-size: 72px;
     text-align: center;
 }
 
 .newsletter-form {
+    /* grid-area: newsletter-form; */
     width: 100%;
     align-self: center;
     align-content: center;
@@ -473,6 +428,34 @@ body {
 /* Footer */
 
 footer {
+    display: grid;
+    grid-template-columns: 1.5fr 0.7fr 0.7fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "footer-img footer-address footer-phone";
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+footer i {
+    font-size: 26px;
+    margin-top: 50px;
+}
+
+.footer-img {
+    width: 600px;
+}
+
+.footer-address {
+    text-align: center;
+}
+
+.footer-address i {
+    margin-top: 5px;
+}
+
+.footer-phone {}
+
+#copyright {
     position: sticky;
     bottom: 0px;
     margin: 0 auto;
@@ -556,24 +539,84 @@ footer {
     /* Body - Responsive */
     .grid-container {
         display: grid;
-        grid-template-columns: 0.2fr 1.5fr;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         gap: 1px 1px;
-        grid-template-areas: "related-links contact-grid" ". location-grid" ". newsletter-grid";
-    }
-    .related-links {
-        grid-area: related-links;
+        grid-template-areas: "contact-grid" "location-grid" "newsletter-grid";
     }
     .contact-grid {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.4fr 1.3fr 1.3fr;
         gap: 1px 1px;
-        grid-template-areas: "title-page" "contact-form" "contact-info";
+        grid-template-areas: "contact-title" "contact-form" "contact-info";
         grid-area: contact-grid;
     }
-    .title-page {
-        grid-area: title-page;
+    .contact-title {
+        grid-area: contact-title;
+    }
+    .contact-form {
+        grid-area: contact-form;
+        width: 70%;
+    }
+    .contact-info {
+        grid-area: contact-info;
+    }
+    .location-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 1.3fr 1.3fr;
+        gap: 1px 1px;
+        grid-template-areas: "location-title" "location-info" "location-map";
+        grid-area: location-grid;
+    }
+    .location-title {
+        grid-area: location-title;
+    }
+    .location-info {
+        grid-area: location-info;
+    }
+    .location-map {
+        grid-area: location-map;
+        text-align: center;
+    }
+    #map-iframe {
+        
+    }
+    .newsletter-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 1.6fr;
+        gap: 1px 1px;
+        grid-template-areas: "newsletter-title" "newsletter-form";
+        grid-area: newsletter-grid;
+    }
+    .newsletter-title {
+        grid-area: newsletter-title;
+    }
+    .newsletter-form {
+        grid-area: newsletter-form;
+    }
+}
+
+@media screen and (max-device-width: 812px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1px 1px;
+        grid-template-areas: "contact-grid" "location-grid" "newsletter-grid";
+    }
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 1.3fr 1.3fr;
+        gap: 1px 1px;
+        grid-template-areas: "contact-title" "contact-form" "contact-info";
+        grid-area: contact-grid;
+    }
+    .contact-title {
+        grid-area: contact-title;
     }
     .contact-form {
         grid-area: contact-form;
@@ -597,11 +640,17 @@ footer {
     }
     .location-map {
         grid-area: location-map;
+        text-align: center;
+    }
+    #map-iframe {
+        margin: 0;
+        margin-bottom: 50px;
+        /*Fix*/
     }
     .newsletter-grid {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.3fr 1.7fr;
+        grid-template-rows: 0.4fr 1.6fr;
         gap: 1px 1px;
         grid-template-areas: "newsletter-title" "newsletter-form";
         grid-area: newsletter-grid;
@@ -614,54 +663,25 @@ footer {
     }
 }
 
-@media screen and (max-width:768px) {
-    .related-links {
-        display: block;
-        text-align: left;
-        margin: 0px;
-    }
-    .related-links ul {
-        margin: 0px;
-        text-align: left;
-        position: relative;
-    }
-    .related-links li {
-        margin: 0px;
-        padding: 0px;
-    }
-    #map-iframe {
-        width: 92%;
-        /* margin-right: 15px; */
-    }
-    .location-info {
+@media screen and (max-width:375px) {
+    * {
         margin: 0;
+        padding: 0;
+        font-size: 1em;
     }
-    .location-info h3 {
-        
-    }
-
-}
-@media screen and (max-width:425px) {
-    /* Header - Social Media */
-    .social-media {
+    /* .social-media {
         position: absolute;
         top: 0px;
         right: 10px;
     }
     .social-media li {
         display: inline-block;
-        /* margin-left: 10px; */
     }
     .social-media a i {
         font-size: 20px;
-        /* margin-right: 10px; */
     }
-    /* Menu */
     .menu {
-        /* width: 100vw; */
-        /*changes we made*/
         background-color: rgb(0, 0, 0, 0.75);
-        /* padding-left: 100px; */
     }
     .checkbtn {
         left: 15px;
@@ -672,38 +692,36 @@ footer {
     .imglogotext {
         width: 80vw;
         margin-bottom: 3px;
+    } */
+    .body-section {
+
     }
     .grid-container {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 1.4fr 1.4fr 1.4fr;
+        grid-template-rows: 1fr 1fr 1fr;
         gap: 1px 1px;
-        grid-template-areas: "related-links" "contact-grid" "location-grid" "newsletter-grid";
-    }
-    .related-links {
-        grid-area: related-links;
-        display: block;
-        height: 20vh;
-        width: 100%;
-        position: relative;
-        top: 100px;
-    }
-    .related-links ul {
-        text-align: center;
+        grid-template-areas: "contact-grid" "location-grid" "newsletter-grid";
     }
     .contact-grid {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 1.3fr 1.3fr;
+        grid-template-rows: 0.4fr 1fr 1fr;
         gap: 1px 1px;
-        grid-template-areas: "title-page" "contact-form" "contact-info";
+        grid-template-areas: "contact-title" "contact-form" "contact-info";
         grid-area: contact-grid;
     }
-    .title-page {
-        grid-area: title-page;
+    .contact-title {
+        grid-area: contact-title;
     }
     .contact-form {
         grid-area: contact-form;
+    }
+    .getintouch-form {
+        margin: 0;
+    }
+    .formItem {
+        width: 60vw;
     }
     .contact-info {
         grid-area: contact-info;
@@ -726,12 +744,12 @@ footer {
         grid-area: location-map;
     }
     #map-iframe {
-        margin: 0;
+        width: 300px;
     }
     .newsletter-grid {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.3fr 1.7fr;
+        grid-template-rows: 0.4fr 1.6fr;
         gap: 1px 1px;
         grid-template-areas: "newsletter-title" "newsletter-form";
         grid-area: newsletter-grid;
@@ -741,5 +759,8 @@ footer {
     }
     .newsletter-form {
         grid-area: newsletter-form;
+    }
+    footer {
+        display: none;
     }
 }
