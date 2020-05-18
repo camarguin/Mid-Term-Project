@@ -2,72 +2,57 @@
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0 auto;
+  box-sizing: border-box;
 }
 
-body {
-  /* background-image: url(../images/BallBackground.jpg); */
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+.textstd{
+  font-size: 1.3rem;
+  padding: 5rem;
+  text-align: justify;
+  line-height: 2rem;
 }
 
 /* Header Menu */
-
 .header {
   background-color: rgba(255, 255, 255, 0.5);
   height: 30px;
 }
-
 .header ul {
   list-style-type: none;
   padding-left: 0;
 }
 
 /* Social Media Links */
-
 .social-media {
-  display: flex;
-  float: right;
+  position: absolute;
   top: 0px;
+  right: 10px;
 }
-
 .social-media li {
-  display: block;
-  float: right;
-  margin-right: 2vw;
+  width: 6vw;
 }
-
 .social-media a i {
   font-size: 20px;
-  margin: 0;
   margin-top: 5px;
-  color: black;
 }
-
 .social-media ul {
   display: flex;
   flex-direction: row;
+  margin-right: 40px;
 }
 
 /* Menu */
-
 .menu {
   display: flex;
   flex-direction: row;
   background-color: rgba(0, 0, 0, 0.6);
-  position: sticky;
-  top: 0px;
+  position: fixed;
   height: 100px;
   width: 100%;
   align-items: center;
-  z-index: 1;
+  z-index: 3;
   list-style-type: none;
 }
-
-.menu img {
-  float: left;
-}
-
 .menu-a {
   margin: 0;
   padding-top: 30px;
@@ -75,73 +60,59 @@ body {
   color: white;
   font-weight: bold;
   text-transform: uppercase;
-  text-decoration: none;
 }
-
 .submenu-content-a {
-  text-decoration: none;
   color: white;
 }
-
 #menu_media {
   align-self: center;
 }
 
 .menu-content-li {
-  margin: 0;
   padding-top: 40px;
   padding-bottom: 20px;
   color: white;
   border-bottom: 2px solid transparent;
 }
-
 .menu-content-li:hover {
   border-bottom: 2px solid white;
   background-color: rgb(244, 155, 0, 0.75);
 }
-
 .submenu-content {
   position: absolute;
-  top: 101px;
-  margin-right: 100px;
+  top: 100px;
   display: none;
   width: 190px;
   text-align: left;
-  padding: 0;
+  padding-left: 0;
 }
-
 .submenu-content li {
   background-color: rgb(0, 0, 0, 0.8);
   border-bottom: 1px solid transparent;
-  margin: 0;
   padding-top: 10px;
 }
-
 .submenu-content li:hover {
   background-color: rgb(244, 155, 0, 0.5);
   border-bottom: 1px solid white;
 }
 
-.menu li,
-.submenu-content > li {
+#menu_media li,
+.submenu-content li {
   display: inline-block;
   width: 150px;
   height: 40px;
   text-align: center;
 }
-
 .menu-content-li:hover ul {
   display: block;
 }
-
 #menu-media > li:hover {
   cursor: pointer;
   color: white;
   border-bottom: 2px solid black;
 }
 
-/* Hamburger Bar */
-
+/* =========== Hamburger Bar =========== */
 .checkbtn {
   font-size: 30px;
   color: white;
@@ -150,136 +121,214 @@ body {
   margin: 0 0;
   display: none;
 }
-
 #check {
   margin: 0 0;
   display: none;
 }
 
 /* STARTING GRID LAYOUT */
-
 .grid-container {
   display: grid;
-  grid-template-columns: 0.5fr 0.5fr 1fr 1fr;
-  /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
-  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 0.2fr 0.2fr 0.2fr 0.2fr;
   gap: 1px 1px;
-  grid-template-areas: "related-links about about about" "related-links pics pics pics" "related-links pics pics pics" "related-links life-members life-members life-members" "related-links programs programs programs" "related-links facilities facilities facilities";
+  grid-template-areas: "about about about about" 
+                        "councilcards councilcards councilcards councilcards"
+                        "life-members life-members life-members life-members" 
+                        "programs programs programs programs"
+                        "facilities facilities facilities facilities";
 }
 
 .about {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 2fr;
+  gap: 1px 1px;
+  grid-template-areas: "abouttxt slideshow";
   grid-area: about;
 }
 
-.titlestd {
-  text-align: center;
-  font-size: 30px;
-  font-weight: bolder;
-  padding: 10px;
+.abouttxt {
+  grid-area: abouttxt;
 }
 
-.life-members {
-  grid-area: life-members;
-  margin-top: 150px;
-  padding: 40px;
+.slideshow {
+  grid-area: slideshow;
 }
 
-.lifetext {
-  text-align: justify;
-}
-
-.imglife {
-  max-width: 1000px;
-  margin: auto;
-}
-/* .imglife:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-  } */
-
-.programs {
-  grid-area: programs;
-  margin-top: 30px;
-  text-align: justify;
-  padding: 40px;
-  display: flex;
-}
-
-.imgprog {
-  max-width: 700px;
-  margin: auto;
-  /* border: 10px solid rgba(255, 255, 255, 1); */
-  /* box-shadow: rgba(0, 0, 0, 0.9); */
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 5px;
-}
-
-/* .imgprog:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-  } */
-
-.facilities {
-  grid-area: facilities;
-  text-align: justify;
-  padding: 40px;
-}
-
-.imgfacil {
-  max-width: 500px;
-  max-height: 500px;
-  /* border: 1px solid #ddd; */
-  border-radius: 10px;
-  padding: 5px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  float: left;
-  border-radius: 50%;
-  shape-outside: circle();
-  margin: 30px 40px 40px 10px;
-}
-
-.pics {
+.councilcards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 1.5fr 1fr;
+  grid-template-rows: 0.3fr 1fr 1fr;
   gap: 1px 1px;
-  grid-template-areas: "title title title" "pic1 pic2 pic3" "pic4 pic5 pic6";
-  grid-area: pics;
-  /* background-color: rgb(244, 155, 0, 0.75); */
-}
-
-.title {
-  grid-area: title;
+  grid-template-areas: "titlestd titlestd titlestd" "pic1 pic2 pic3" "pic4 pic5 pic6";
+  grid-area: councilcards;
+  background-color: rgb(244, 155, 0, 0.5);
 }
 
 .pic1 {
   grid-area: pic1;
+  z-index: 2;
+  text-align: center;
 }
 
 .pic2 {
   grid-area: pic2;
+  z-index: 2;
+  text-align: center;
 }
 
 .pic3 {
   grid-area: pic3;
+  z-index: 2;
+  text-align: center;
 }
 
 .pic4 {
   grid-area: pic4;
+  z-index: 1;
+  text-align: center;
 }
 
 .pic5 {
   grid-area: pic5;
+  z-index: 1;
+  text-align: center;
 }
 
 .pic6 {
   grid-area: pic6;
+  z-index: 1;
+  text-align: center;
+}
+
+.titlestd {
+  grid-area: titlestd;
+  text-align: center;
+}
+
+.life-members {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.1fr 0.7fr;
+  gap: 1px 1px;
+  grid-template-areas: "titlestd titlestd" "lifetxt lifeimg";
+  grid-area: life-members;
+}
+
+.titlestd {
+  grid-area: titlestd;
+}
+
+.life-members h1 {
+  width: auto;
+  height: auto;
+  /* align-items: center; */
+  /* align-self: center; */
+}
+
+.lifetxt {
+  grid-area: lifetxt;
+  background-color: rgb(244, 155, 0, 0.4);
+  padding: 5rem;
+}
+
+.lifeimg {
+  grid-area: lifeimg;
+  width: 100%;
+  background-color: rgb(244, 155, 0, 0.75);
+}
+
+.lifeimg img {
+  position: absolute;
+  right: 10vw;
+  top: 250vh;
+  width: 50%;
+  height: auto;
+  border: 30px solid white;
+}
+
+.programs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.1fr 1.4fr;
+  gap: 1px 1px;
+  grid-template-areas: "titlestd titlestd" "programstxt imgprog";
+  grid-area: programs;
+}
+
+.programs h1 {
+  width: auto;
+  height: auto;
+}
+
+.titlestd {
+  grid-area: titlestd;
+}
+
+.programstxt {
+  grid-area: programstxt;
+  background-color: rgb(244, 155, 0, 0.75);
+
+}
+.imgprog {
+  background-color: rgb(244, 155, 0, 0.4);
+}
+
+.imgprog img {
+  grid-area: imgprog;
+  margin-top: 12vh;
+  width: 100%;
+}
+
+.facilities {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "titlestd titlestd" "fatilitiestxt fatilitiestxt";
+  grid-area: facilities;
+}
+.imgfacil{
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  float: left;
+  shape-outside: circle();
+  margin: 30px 30px 20px 10px;
+}
+
+.titlestd {
+  grid-area: titlestd;
+  font-size: 3rem;
+  font-weight: bolder;
+  height: 100px;
+}
+
+/* .fatilitiestxt {
+  grid-area: fatilitiestxt;
+  background-color: rgb(244, 155, 0, 0.75);
+  text-align: justify;
+  padding: 5rem;
+  display: flex;
+} */
+
+.fatilitiestxt {
+  grid-area: fatilitiestxt;
+  display: flex;
+  flex-direction: row-reverse;
+  /* position: absolute; */
+  top: 50%;
+  left:50%;
+  padding: 5rem;
+  float: right;
+  background-color: rgb(244, 155, 0, 0.75);
+  line-height: 2rem;
 }
 
 
+
+/* END OF THE GRID LAYOUT */
 
 /* Footer */
 
@@ -296,119 +345,6 @@ footer {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* @media screen and (max-width:1024px) {
-    .header {
-        width: 100%;
-    }
-    .social-media {
-        position: absolute;
-        top: 0px;
-        right: 20px;
-    }
-    .social-media li {
-        margin-left: 20px;
-    }
-    .menu {
-        position: sticky;
-        top: 0px;
-        display: absolute;
-    }
-    #menu_media {
-        position: absolute;
-        display: flex;
-        align-content: center;
-        flex-direction: column;
-        padding: 0px;
-        width: 100%;
-        top: 100px;
-        left: -100%;
-        background-color: rgba(0, 0, 0, 0.9);
-        transition: all 0.5s;
-    }
-    .menu-content-li {
-        align-self: center;
-        display: block;
-        padding: 0px;
-        padding-left: 20vw;
-        padding-right: 20vw;
-        margin: 0;
-    }
-    .menu-a {
-        text-align: center;
-        padding: 0;
-    }
-    .submenu-content {
-        top: 0px;
-        padding: 0px;
-        left: 5px;
-    }
-    #logo-image {
-        align-self: center;
-        float: center;
-        margin-left: 45vw;
-        padding: 0;
-    }
-    #check {
-        position: absolute;
-    }
-    .checkbtn {
-        display: inline-block;
-        float: right;
-    }
-    .checkbtn i {
-        color: rgb(244, 155, 0, 0.5);
-    }
-    #check:checked~ul {
-        left: 0px;
-    } */
-
-/*RELATED LINKS STYLE*/
-
-.related-links {
-  grid-area: related-links;
-  /* top: 120px; */
-  color: #fff;
-  margin-top: 40px;
-  position: fixed;
-  width: 16%;
-}
-
-.related-links li {
-  background-color: rgba(0, 0, 0, 0.6);
-  /* border-radius:28px; */
-  /* border:1px solid #18ab29; */
-  /* display: inline-block; */
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Arial;
-  font-size: 17px;
-  padding: 16px 31px;
-  text-decoration: none;
-  /* text-shadow:0px 1px 0px #2f6627; */
-  /* width: 100%; */
-}
-.related-links ul {
-  padding-left: 0;
-}
-
-.related-links li:hover {
-  background-color: rgb(244, 155, 0, 0.75);
-}
-.related-links li:active {
-  /* position: relative; */
-  top: 1px;
-}
-
-.related-links li {
-  align-content: center;
-  /* width: 300px; */
-}
-
-.related-links li a {
-  text-decoration: none;
-  color: #fff;
-}
-
 /*ABOUT CONTENT*/
 
 .about {
@@ -417,15 +353,16 @@ footer {
 }
 .about h1 {
   font-family: inherit;
-  font-size: 50px;
+  font-size: 5rem;
 }
 
 .abouttxt {
   background-color: #fff;
+  background-color: #fff;
   width: 4hw;
   text-align: justify;
-  padding: 3rem;
-  width: 30rem;
+  padding: 2rem;
+  width: 80rem;
 }
 
 /* COUNCIL CARDS STYLE */
@@ -440,16 +377,15 @@ footer {
   height: 350px;
   /* background-color: #e74c3c; */
   align-content: center;
-  /* z-index: 1; */
 }
 
-.title {
+/* .title {
   margin-top: 20px;
   height: 100px;
   font-size: 40px;
   font-weight: bolder;
   font-family: inherit;
-}
+} */
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 .pics {
@@ -464,7 +400,7 @@ body {
   display: grid;
   place-items: center;
   background: #f2f2f2;
-  text-align: center;
+  /* text-align: center; */
 }
 .container {
   padding: 0 40px;
@@ -474,7 +410,8 @@ body {
 }
 .card {
   height: 280px;
-  max-width: 350px;
+  width: 360vw;
+  max-width: 360px;
   margin: 0 20px;
   background: white;
   transition: 0.4s;
@@ -538,16 +475,6 @@ body {
 .card .bottom-text .btn a:hover {
   transform: scale(0.9);
 }
-@media screen and (max-width: 978px) {
-  .container {
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .card {
-    max-width: 700px;
-    margin: 20px 0;
-  }
-}
 
 /* GO TO TOP BUTTON */
 
@@ -578,10 +505,10 @@ body {
 /* SLIDESHOW CONTAINER */
 
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 2000px;
   position: relative;
   margin: auto;
-  top: 150px;
+  /* top: 150px; */
 }
 
 /* Caption text */
@@ -649,5 +576,168 @@ body {
 @media only screen and (max-width: 300px) {
   .text {
     font-size: 11px;
+  }
+}
+
+/* MEDIA SCREEN */
+
+/* =========== media =========== */
+@media screen and (max-width: 1024px) {
+  nav {
+    background-color: rgb(0, 0, 0, 0.7);
+    margin: 0 0;
+    position: absolute;
+    top: 100px;
+    left: -100%;
+    width: 100%;
+    transition: all 0.5s;
+  }
+  #check:checked ~ nav {
+    left: 0%;
+  }
+  #menu_media {
+    display: flex;
+    flex-direction: column;
+  }
+  .checkbtn {
+    display: block;
+    position: fixed;
+    right: 20px;
+  }
+}
+
+/* NEW GRID */
+@media screen and (max-width: 978px) {
+  html,
+  body,
+  .grid-container {
+    height: 100%;
+    margin: 0;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1.4fr 1.2fr 0.4fr;
+    gap: 1px 1px;
+    grid-template-areas: "about about about about" "councilcards councilcards councilcards councilcards" "life-members life-members life-members life-members" "programs programs programs programs" "facilities facilities facilities facilities";
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "abouttxt";
+    grid-area: about;
+  }
+
+  .abouttxt {
+    grid-area: abouttxt;
+  }
+
+  .councilcards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "titlestd titlestd" "pic1 pic2" "pic3 pic4" "pic5 pic6";
+    grid-area: councilcards;
+    background-color: rgba(255, 0, 0, 0.418);
+  }
+
+  .titlestd {
+    grid-area: titlestd;
+  }
+
+  .pic1 {
+    grid-area: pic1;
+  }
+
+  .pic2 {
+    grid-area: pic2;
+  }
+
+  .pic3 {
+    grid-area: pic3;
+  }
+
+  .pic4 {
+    grid-area: pic4;
+  }
+
+  .pic5 {
+    grid-area: pic5;
+  }
+
+  .pic6 {
+    grid-area: pic6;
+  }
+
+  .life-members {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.6fr 1.4fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "titlestd titlestd" "lifeimg lifeimg" "lifetxt lifetxt";
+    grid-area: life-members;
+  }
+
+  .titlestd {
+    grid-area: titlestd;
+  }
+
+  .lifeimg {
+    grid-area: lifeimg;
+  }
+
+  .lifetxt {
+    grid-area: lifetxt;
+  }
+
+  .programs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.6fr 1.4fr;
+    gap: 1px 1px;
+    grid-template-areas: "titlestd titlestd" "programstxt imgprog";
+    grid-area: programs;
+  }
+
+  .titlestd h1{
+    grid-area: titlestd;
+  }
+
+  .programstxt {
+    grid-area: programstxt;
+  }
+
+  .imgprog {
+    grid-area: imgprog;
+  }
+
+  .facilities {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "titlestd titlestd" "fatilitiestxt fatilitiestxt";
+    grid-area: facilities;
+  }
+
+  .titlestd {
+    grid-area: titlestd;
+  }
+
+  .fatilitiestxt {
+    grid-area: fatilitiestxt;
+    padding: 2rem;
+  }
+
+  .slideshow {
+    display: none !important;
+  }
+  .slideshow-container {
+    display: none !important;
   }
 }
