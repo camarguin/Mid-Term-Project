@@ -14,118 +14,97 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
     <title>West Vancouver Cricket Club - Contact</title>
-
 </head>
 
 <body>
     <div class="header">
-        <ul>
-            <div class="social-media">
-                <ul>
-                    <li><a href="https://www.facebook.com/WestVancouverCricketClub/" target="_blank"><i
-                                class="fab fa-facebook"></i></a></li>
-                    <li><a href="https://www.instagram.com/explore/locations/324245711/west-vancouver-cricket-club/"
-                            target="_blank"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-            </div>
-        </ul>
+        <div class="social-media">
+            <ul>
+                <li><a href="https://www.facebook.com/WestVancouverCricketClub/" target="_blank"><i
+                            class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/explore/locations/324245711/west-vancouver-cricket-club/"
+                        target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com/westvancricket?s=20" target="_blank"><i class="fab fa-twitter"></i></a>
+                </li>
+            </ul>
+        </div>
     </div>
     <div class="menu">
         <img id="logo-image" src="./images/icon.png" alt="WVCC logo">
-        <!-- hamburger bar icon -->
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <ul id="menu_media">
-            <!-- Home -->
-            <li class="menu-content-li"><a href="#" class="menu-a">Home</a></li>
-            <!-- club -->
-            <li class="menu-content-li"><a href="#" class="menu-a">Club</a>
-                <ul class="submenu-content">
-                    <a href="#" class="submenu-content-a">
-                        <li>About WVCC</li>
-                    </a>
-                    <a href="#" class="submenu-content-a">
-                        <li>Club Management</li>
-                    </a>
-                    <a href="#" class="submenu-content-a">
-                        <li>Life Members</li>
-                    </a>
-                    <a href="#" class="submenu-content-a">
-                        <li>Programs</li>
-                    </a>
-                    <a href="#" class="submenu-content-a">
-                        <li>Facilities</li>
-                    </a>
-                </ul>
-            </li>
-            <!-- juniors -->
-            <li class="menu-content-li"><a href="#" class="menu-a">Juniors</a>
-                <ul class="submenu-content">
-                    <a href="#" class="submenu-content-a">
-                        <li>Programs</li>
-                    </a>
-                    <a href="#" class="submenu-content-a">
-                        <li>School Cricket</li>
-                    </a>
-                    <a href="#" class="submenu-content-a">
-                        <li>Summer Camp</li>
-                    </a>
-                </ul>
-            </li>
-            <!-- league -->
-            <li class="menu-content-li"><a href="#" class="menu-a">League</a>
-                <ul class="submenu-content">
-                    <a href="#" class="submenu-content-a">
-                        <li>Teams</li>
-                    </a>
-                    <a href="#" class="submenu-content-a">
-                        <li>Training</li>
-                    </a>
-                    <a href="#" class="submenu-content-a">
-                        <li>Indoor Training</li>
-                    </a>
-                    <a href="#" class="submenu-content-a">
-                        <li>Schedule</li>
-                    </a>
-                </ul>
-            </li>
-            <!-- women's -->
-            <li class="menu-content-li"><a href="#" class="menu-a">Women's</a>
-                <ul class="submenu-content">
-                    <a href="#" class="submenu-content-a">
-                        <li>Team</li>
-                    </a>
-                    <a href="#" class="submenu-content-a">
-                        <li>Schedule</li>
-                    </a>
-                    <a href="#" class="submenu-content-a">
-                        <li>Training</li>
-                    </a>
-                </ul>
-            </li>
-            <!-- club house -->
-            <li class="menu-content-li"><a href="#" class="menu-a">Clubhouse</a>
-                <ul class="submenu-content">
-                    <a href="#" class="submenu-content-a">
-                        <li>Rental</li>
-                    </a>
-                </ul>
-            </li>
-            <!-- contact -->
-            <li class="menu-content-li"><a href="#" class="menu-a">Contact Us</a>
-                <ul class="submenu-content">
-                    <a href="#" class="submenu-content-a">
-                        <li>Location</li>
-                    </a>
-                    <a href="#" class="submenu-content-a">
-                        <li>Newsletters</li>
-                    </a>
-                </ul>
-            </li>
-        </ul>
+        <nav>
+            <label for="btn" class="icon">
+                <span class="fa fa-bars"></span>
+            </label>
+            <input type="checkbox" id="btn">
+            <ul id="menu_media">
+                <!-- Home -->
+                <li class="menu-content-li">
+                <a href="#" class="menu-a">Home
+                </a></li>
+                <!-- club -->
+                <li class="menu-content-li"><label for="btn-1" class="show">Club +</label>
+                    <a href="#" class="menu-a">Club</a>
+                    <input type="checkbox" id="btn-1">
+                    <ul class="submenu-content">
+                        <li><a href="#" class="submenu-content-a">About WVCC</a></li>
+                        <li><a href="#" class="submenu-content-a">Club Management</a></li>
+                        <li><a href="#" class="submenu-content-a">Life Members</a></li>
+                        <li><a href="#" class="submenu-content-a">Programs</a></li>
+                        <li><a href="#" class="submenu-content-a">Facilities</a></li>
+                    </ul>
+                </li>
+                <!-- juniors -->
+                <li class="menu-content-li"><label for="btn-2" class="show">Juniors +</label>
+                    <a href="#" class="menu-a">Juniors</a>
+                    <input type="checkbox" id="btn-2">
+                    <ul class="submenu-content">
+                        <li><a href="#" class="submenu-content-a">Programs</a></li>
+                        <li><a href="#" class="submenu-content-a">School Cricket</a></li>
+                        <li><a href="#" class="submenu-content-a">Summer Camp</a></li>
+                    </ul>
+                </li>
+                <!-- league -->
+                <li class="menu-content-li"><label for="btn-3" class="show">League +</label>
+                    <a href="#" class="menu-a">League</a>
+                    <input type="checkbox" id="btn-3">
+                    <ul class="submenu-content">
+                        <li><a href="#" class="submenu-content-a">Teams</a></li>
+                        <li><a href="#" class="submenu-content-a">Training</a></li>
+                        <li><a href="#" class="submenu-content-a">Indoor Training</a></li>
+                        <li><a href="#" class="submenu-content-a">Schedule</a></li>
+                    </ul>
+                </li>
+                <!-- women's -->
+                <li class="menu-content-li"><label for="btn-4" class="show">Women's +</label>
+                    <a href="#" class="menu-a">Women's</a>
+                    <input type="checkbox" id="btn-4">
+                    <ul class="submenu-content">
+                        <li><a href="#" class="submenu-content-a">Team</a></li>
+                        <li><a href="#" class="submenu-content-a">Schedule</a></li>
+                        <li><a href="#" class="submenu-content-a">Training</a></li>
+                    </ul>
+                </li>
+                <!-- club house -->
+                <li class="menu-content-li"><label for="btn-5" class="show">Clubhouse +</label>
+                    <a href="#" class="menu-a">Clubhouse</a>
+                    <input type="checkbox" id="btn-5">
+                    <ul class="submenu-content">
+                        <li><a href="#" class="submenu-content-a">Rental</a></li>
+                    </ul>
+                </li>
+                <!-- contact -->
+                <li class="menu-content-li"><label for="btn-6" class="show">Contact Us +</label>
+                    <a href="#" class="menu-a">Contact Us</a>
+                    <input type="checkbox" id="btn-6">
+                    <ul class="submenu-content">
+                        <li><a href="#" class="submenu-content-a">Location</a></li>
+                        <li><a href="#" class="submenu-content-a">Newsletters</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </div>
+
     <section class="body-section">
         <br>
         <div class="grid-container">
@@ -228,14 +207,25 @@
             </div>
         </div>
     </section>
+    <br>
     <footer>
-        <img class="footer-img" src="./images/title+logo.png" alt="logo">
-        <!-- <p class="footer-address"><i class="fas fa-map-pin"></i><br>1290 3rd St,<br>West Vancouver, BC</p>
-        <p class="footer-phone"><i class="fas fa-phone-alt"></i><br>(604) 926-0820</p> -->
+        <img id="footerImg" class="footer-img" src="./images/title+logo.png" alt="logo">
+        <div class="footer-followUs">
+            <p>Follow Us:</p>
+            <a href="https://www.facebook.com/WestVancouverCricketClub/"><i id="footerFace"
+                    class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/westvancouvercricketclub/"><i id="footerInsta"
+                    class="fab fa-instagram-square"></i></a>
+            <a href="https://twitter.com/westvancricket?s=20"><i id="footerTwit" class="fab fa-twitter-square"></i></a>
+        </div>
     </footer>
     <p id="copyright">---- COPYRIGHT &copy; 2020 West Vancouver Cricket Club ----</p>
-
-
+    
+    <script>
+        $('.icon').click(function () {
+          $('span').toggleClass("cancel");
+        });
+    </script>
 </body>
 
 </html>
