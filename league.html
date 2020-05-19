@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/icon" href="./images/FavIcon32x32.png">
+    <link rel="stylesheet" href="./CSS/league.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta name="description" content="West Vancouver Cricket Club">
     <meta name="keywords" content="website, html, css, sport, ciccc, vancouver, bc, cricket, ball, criquet">
     <meta name="author" content="Ezequias Guerra, Juan Carlos, Lucas Camargo, Shinya Kimura, Rodrigo Koneski">
-    <link rel="icon" type="image/icon" href="./images/FavIcon32x32.png">
-    <link rel="stylesheet" href="./CSS/league.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
     <title>West Vancouver Cricket Club</title>
 </head>
 
@@ -22,233 +24,258 @@
                             class="fab fa-facebook"></i></a></li>
                 <li><a href="https://www.instagram.com/explore/locations/324245711/west-vancouver-cricket-club/"
                         target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com/westvancricket?s=20" target="_blank"><i class="fab fa-twitter"></i></a>
+                </li>
             </ul>
         </div>
     </div>
     <div class="menu">
         <img id="logo-image" src="./images/icon.png" alt="WVCC logo">
-        <!-- hamburger bar -->
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
         <nav>
+            <label for="btn" class="icon">
+                <span class="fa fa-bars"></span>
+            </label>
+            <input type="checkbox" id="btn">
             <ul id="menu_media">
                 <!-- Home -->
                 <li class="menu-content-li">
-                <a href="#" class="menu-a">Home
-                </a></li>
+                    <a href="#" class="menu-a">Home
+                    </a></li>
                 <!-- club -->
-                <a href="#" class="menu-a">
-                    <li class="menu-content-li">Club
-                        <ul class="submenu-content">
-                            <a href="#" class="submenu-content-a">
-                                <li>About WVCC</li>
-                            </a>
-                            <a href="#" class="submenu-content-a">
-                                <li>Club Management</li>
-                            </a>
-                            <a href="#" class="submenu-content-a">
-                                <li>Life Members</li>
-                            </a>
-                            <a href="#" class="submenu-content-a">
-                                <li>Programs</li>
-                            </a>
-                            <a href="#" class="submenu-content-a">
-                                <li>Facilities</li>
-                            </a>
-                        </ul>
-                    </li>
-                </a>
+                <li class="menu-content-li"><label for="btn-1" class="show">Club +</label>
+                    <a href="#" class="menu-a">Club</a>
+                    <input type="checkbox" id="btn-1">
+                    <ul class="submenu-content">
+                        <li><a href="#" class="submenu-content-a">About WVCC</a></li>
+                        <li><a href="#" class="submenu-content-a">Club Management</a></li>
+                        <li><a href="#" class="submenu-content-a">Life Members</a></li>
+                        <li><a href="#" class="submenu-content-a">Programs</a></li>
+                        <li><a href="#" class="submenu-content-a">Facilities</a></li>
+                    </ul>
+                </li>
                 <!-- juniors -->
-                <a href="#" class="menu-a">
-                    <li class="menu-content-li">Juniors
-                        <ul class="submenu-content">
-                            <a href="#" class="submenu-content-a">
-                                <li>Programs</li>
-                            </a>
-                            <a href="#" class="submenu-content-a">
-                                <li>School Cricket</li>
-                            </a>
-                            <a href="#" class="submenu-content-a">
-                                <li>Summer Camp</li>
-                            </a>
-                        </ul>
-                    </li>
-                </a>
+                <li class="menu-content-li"><label for="btn-2" class="show">Juniors +</label>
+                    <a href="#" class="menu-a">Juniors</a>
+                    <input type="checkbox" id="btn-2">
+                    <ul class="submenu-content">
+                        <li><a href="#" class="submenu-content-a">Programs</a></li>
+                        <li><a href="#" class="submenu-content-a">School Cricket</a></li>
+                        <li><a href="#" class="submenu-content-a">Summer Camp</a></li>
+                    </ul>
+                </li>
                 <!-- league -->
-                <a href="#" class="menu-a">
-                    <li class="menu-content-li">League
-                        <ul class="submenu-content">
-                            <a href="#" class="submenu-content-a">
-                                <li>Teams</li>
-                            </a>
-                            <a href="#" class="submenu-content-a">
-                                <li>Training</li>
-                            </a>
-                            <a href="#" class="submenu-content-a">
-                                <li>Indoor Training</li>
-                            </a>
-                            <a href="#" class="submenu-content-a">
-                                <li>Schedule</li>
-                            </a>
-                        </ul>
-                    </li>
-                </a>
+                <li class="menu-content-li"><label for="btn-3" class="show">League +</label>
+                    <a href="#" class="menu-a">League</a>
+                    <input type="checkbox" id="btn-3">
+                    <ul class="submenu-content">
+                        <li><a href="#" class="submenu-content-a">Teams</a></li>
+                        <li><a href="#" class="submenu-content-a">Training</a></li>
+                        <li><a href="#" class="submenu-content-a">Indoor Training</a></li>
+                        <li><a href="#" class="submenu-content-a">Schedule</a></li>
+                    </ul>
+                </li>
                 <!-- women's -->
-                <a href="#" class="menu-a">
-                    <li class="menu-content-li">Women's
-                        <ul class="submenu-content">
-                            <a href="#" class="submenu-content-a">
-                                <li>Team</li>
-                            </a>
-                            <a href="#" class="submenu-content-a">
-                                <li>Schedule</li>
-                            </a>
-                            <a href="#" class="submenu-content-a">
-                                <li>Training</li>
-                            </a>
-                        </ul>
-                    </li>
-                </a>
+                <li class="menu-content-li"><label for="btn-4" class="show">Women's +</label>
+                    <a href="#" class="menu-a">Women's</a>
+                    <input type="checkbox" id="btn-4">
+                    <ul class="submenu-content">
+                        <li><a href="#" class="submenu-content-a">Team</a></li>
+                        <li><a href="#" class="submenu-content-a">Schedule</a></li>
+                        <li><a href="#" class="submenu-content-a">Training</a></li>
+                    </ul>
+                </li>
                 <!-- club house -->
-                <a href="#" class="menu-a">
-                    <li class="menu-content-li">Clubhouse
-                        <ul class="submenu-content">
-                            <a href="#" class="submenu-content-a">
-                                <li>Rental</li>
-                            </a>
-                        </ul>
-                    </li>
-                </a>
+                <li class="menu-content-li"><label for="btn-5" class="show">Clubhouse +</label>
+                    <a href="#" class="menu-a">Clubhouse</a>
+                    <input type="checkbox" id="btn-5">
+                    <ul class="submenu-content">
+                        <li><a href="#" class="submenu-content-a">Rental</a></li>
+                    </ul>
+                </li>
                 <!-- contact -->
-                <a href="#" class="menu-a">
-                    <li class="menu-content-li">Contact Us
-                        <ul class="submenu-content">
-                            <a href="#" class="submenu-content-a">
-                                <li>Location</li>
-                            </a>
-                            <a href="#" class="submenu-content-a">
-                                <li>Newsletters</li>
-                            </a>
-                        </ul>
-                    </li>
-                </a>
+                <li class="menu-content-li"><label for="btn-6" class="show">Contact Us +</label>
+                    <a href="#" class="menu-a">Contact Us</a>
+                    <input type="checkbox" id="btn-6">
+                    <ul class="submenu-content">
+                        <li><a href="#" class="submenu-content-a">Location</a></li>
+                        <li><a href="#" class="submenu-content-a">Newsletters</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </div>
-    <div id="league_layout">
-        <!-- ########## league link ########## -->
-            <div id="league_link">
-                <header><i class="fas fa-link"></i><b> Related Links</b></header>
-                <a href="#teams">&raquo; Teams</a>
-                <br><br><a href="#training">&raquo; Training</a>
-                <br><br><a href="#indoor">&raquo; Indoor Training</a>
-                <br><br><a href="#schedule">&raquo; Schedule</a>
-            </div>
-        <!-- ########## league contents ########## -->
-        <div id="league_main">
-            <div class="league_container" id="teams">
-                <h1 class="catchphrase">We are all in this together</h1>
-                <header>Teams</header>
-                <h3 style="color: green; font-weight: bold;">TEAMS REGISTERED FOR 2015 SEASON</h3>
+    <div class="grid-container">
+        <div class="teams">
+            <div class="teams_text">
+                <h1>Teams</h1>
+                <h2>TEAMS REGISTERED FOR 2015 SEASON</h2>
                 <ul>
-                    <li><img src="./images/teamsmall1.png" alt="list_icon">&ensp;7 competitive men's teams registered with the BC Mainland Cricket League (BCMCL)</li>
-                    <li><img src="./images/teamsmall1.png" alt="list_icon">&ensp;1 women's cricket teams with the BCMCL</li>
-                    <li><img src="./images/teamsmall1.png" alt="list_icon">&ensp;1 (maybe 2 if we have the numbers) Under 16's hardball cricket teams with the Vancouver & District
-                        Saturday Morning Cricket League (VDSMCL)</li>
-                    <li><img src="./images/teamsmall1.png" alt="list_icon">&ensp;2 Under 12's Kanga (softball) cricket teams</li>
-                    <li><img src="./images/teamsmall1.png" alt="list_icon">&ensp;Over 40's West Vancouver Taverners</li>
+                    <li>
+                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;7 competitive men's teams registered with the BC Mainland Cricket League (BCMCL)
+                    </li>
+                    <li>
+                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;1 women's cricket teams with the BCMCL
+                    </li>
+                    <li>
+                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;1 (maybe 2 if we have the numbers) Under 16's hardball cricket teams with the Vancouver & District
+                        Saturday Morning Cricket League (VDSMCL)
+                    </li>
+                    <li>
+                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;2 Under 12's Kanga (softball) cricket teams
+                    </li>
+                    <li>
+                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;Over 40's West Vancouver Taverners
+                    </li>
                 </ul>
-                <h3 style="color: green; font-weight: bold;">Player registration begins in January</h3>
-                <p>Junior player registration will be held <span
-                        style="font-size: 1.2em; border-bottom: 2px solid black;"><b>9 am on Saturday, April 25,
-                            2015</b></span> at the West Vancouver Cricket Clubhouse - Hugo Ray Park. Registration forms for
-                    the 2015 season will be placed on this page once they become available.</p>
-                <p>If you are interested in playing for the club, please <span
-                        style="color: green; font-weight: bold;">contact:</span></p>
-                <h3><span style="color: green; font-weight: bold;"><i class="fas fa-user-plus"></i> Alex Turko</span> on <i class="fas fa-mobile-alt"></i> 778-229-785</h3>
-                <h1>We look forward to welcoming you!</h1>
-            <div class="img_center">
-                <img src="./images/league_1.jpg" alt="league_img1" class="league_img" id="league_img1">
+                <h2>Player registration begins in January</h2>
+                <p>
+                    Junior player registration will be held <span style="font-size: 1.2em; border-bottom: 2px solid black;"><b>9 am on Saturday, April 25,
+                    2015</b></span> at the West Vancouver Cricket Clubhouse - Hugo Ray Park. Registration forms for
+                    the 2015 season will be placed on this page once they become available.
+                </p>
+                <p>If you are interested in playing for the club, please contact:</p>
+                <p><span style="color: green; font-weight: bold;"><i class="fas fa-user-plus"></i> Alex Turko</span> on <i class="fas fa-mobile-alt"></i> 778-229-785</p>
+                <h2 style="color:black; font-weight:bold;">We look forward to welcoming you!</h2>
             </div>
+            <div class="teams_img">
+                <img src="./images/league_1.jpg" alt="teams_img" style="width: 100%; height: 100%;">
             </div>
-            <div class="league_container" id="training">
-                <h1 class="catchphrase" style="color: black;">Run hard when it’s hard to run!</h1>
-                <header>Training</header>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, sunt?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur debitis quas dolores aperiam corrupti
-                    culpa similique in asperiores iusto deserunt eum temporibus, reiciendis delectus ipsam doloremque
+        </div>
+        <div class="training">
+            <div class="training_img">
+                <img src="./images/league_2.jpg" alt="training_img" style="width: 100%; height: 100%;">
+            </div>
+            <div class="training_text">
+                <h1>Training</h1>
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, sunt?</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur debitis quas dolores aperiam corrupti culpa similique in asperiores iusto deserunt eum temporibus, reiciendis delectus ipsam doloremque
                     aliquid sapiente atque. Fugiat optio facere et porro, neque recusandae vero libero earum saepe! Aperiam,
                     accusamus suscipit blanditiis, officiis eius ipsum nisi id quibusdam veritatis alias molestias iusto
                     numquam consectetur, est temporibus. Cum exercitationem ipsum architecto eius est repudiandae,
                     distinctio excepturi cumque officiis quod? Pariatur nihil sit commodi molestiae nobis dignissimos fuga,
                     harum vel illum consectetur corporis provident totam, dolor sapiente neque voluptatem, debitis quasi
-                    quaerat aperiam dolorem inventore quidem explicabo deserunt cum. Iste.</p>
+                    quaerat aperiam dolorem inventore quidem explicabo deserunt cum. Iste.
+                </p>
             </div>
-            <div class="league_container" id="indoor">
-                <h1 class="catchphrase">Train hard!<br>Win easy!</h1>
-                <header>Indoor Training</header>
-                <h3 style="color: green;">INDOOR TRAINING - WINTER 2018</h3>
-                <p><span style="font-size: 1.2em; border-bottom: 2px solid black;"><b>Indoor training will begin on
-                            Saturday, January 20th, 2018.</b></span> Indoor training will continue until the weather
+        </div>
+        <div class="indoor_training">
+            <div class="indoor_text">
+                <h1>Indoor Training</h1>
+                <h2>INDOOR TRAINING - WINTER 2018</h2>
+                <p>
+                    <span style="font-size: 1.2em; border-bottom: 2px solid black;"><b>Indoor training will begin on Saturday, January 20th, 2018.</b></span> Indoor training will continue until the weather
                     improves and we can move outdoors. The indoor training sessions are open to all members, new and
-                    potential players for the 2018 season.</p>
-                <p>For insurance and legal purposes, all participants MUST be insured by registering with the Club and
+                    potential players for the 2018 season.
+                </p>
+                <p>
+                    For insurance and legal purposes, all participants MUST be insured by registering with the Club and
                     BCMCL. If you played last season, you are still covered until February 1, 2018. Registration forms will
                     be available for participants to sign at the indoor centre. New players must sign registration form to
-                    participate.</p>
-                <h3></h3>
-                <p style="font-size: 1.2em;">Date: January 20 to mid-March
+                    participate.
+                </p>
+                <br><p style="font-size: 1.2em;">
+                    Date: January 20 to mid-March
                     <br>Time: 6 to 8 pm
                     <br>Cost: Participants will pay $50 for the full indoor training prorgam (8 sessions)
-                    <br>Address: Surrey</p>
-                <h3></h3>
-                <p>The pre-season Twenty20 cricket will start on March 17 and the regular season begins in late April. The
+                    <br>Address: Surrey
+                </p><br>
+                <p>
+                    The pre-season Twenty20 cricket will start on March 17 and the regular season begins in late April. The
                     regular season is 19 weeks in duration with 18 matches - all limited overs games. That means that each
                     team will have one bye during the regular season. The playoffs start on the first weekend in September.
                 </p>
-                <p>For more information, please contact <i class="fas fa-user-plus"></i> Alex Turko <i class="fas fa-mobile-alt"></i> @ 778 229 7858 or <i class="fas fa-envelope-square"></i> email: <a
-                        href="alex@westvancouvercricketclub.ca">alex@westvancouvercricketclub.ca</a>.</p>
+                <p>
+                    For more information, please contact:
+                </p>
+                <p><span style="color: green; font-weight: bold;"><i class="fas fa-user-plus"></i>Alex Turko</span> on <i class="fas fa-mobile-alt"></i> 778 229 7858 or <i class="fas fa-envelope-square"></i> email: <a href="alex@westvancouvercricketclub.ca">alex@westvancouvercricketclub.ca</a>.
+                </p>
+                
             </div>
-            <div class="league_container" id="schedule">
-                <h1 class="catchphrase" style="color: black;">One team, <br>one dream</h1>
-                <header>Schedule</header>
-                <h3 style="color: white;">2020 SEASON - SCHEDULE</h3>
-                <p>The BC Mainland Cricket League (BCMCL) is responsible for the schedule and it will be published once the
+            <div class="indoor_img">
+                <img src="./images/league_3.jpg" alt="indoor_img" style="width: 100%; height: 100%;">
+            </div>
+        </div>
+        <div class="schedule">
+            <div class="schedule_img">
+                <img src="./images/league_4.jpg" alt="schedule_img" style="width: 100%; height: 100%;">
+            </div>
+            <div class="schedule_text">
+                <h1>Schedule</h1>
+                <h2>2020 SEASON - SCHEDULE</h2>
+                <p>
+                    The BC Mainland Cricket League (BCMCL) is responsible for the schedule and it will be published once the
                     club receives it from the league. The schedeule is usually available in early April. The club plays
                     every Saturday and Sunday at Hugo Ray Park and also travels to other grounds in Metro Vancouver, the
-                    Fraser Valley and the Okanagan.</p>
-                <h3 style="color: white;">For the 2020 season the club has registered the following teams:</h3>
+                    Fraser Valley and the Okanagan.
+                </p>
+                <h2>For the 2020 season the club has registered the following teams:</h2>
                 <ul>
-                    <li><img src="./images/teamsmall1.png" alt="list_icon">&ensp;1st XI - Elite Division</li>
-                    <li><img src="./images/teamsmall1.png" alt="list_icon">&ensp;2nd XI - Premier Division</li>
-                    <li><img src="./images/teamsmall1.png" alt="list_icon">&ensp;3rd XI - Division 1</li>
-                    <li><img src="./images/teamsmall1.png" alt="list_icon">&ensp;4th XI - Division 3</li>
-                    <li><img src="./images/teamsmall1.png" alt="list_icon">&ensp;5th XI - Division 4</li>
-                    <li><img src="./images/teamsmall1.png" alt="list_icon">&ensp;6th XI - Division 6</li>
-                    <li><img src="./images/teamsmall1.png" alt="list_icon">&ensp;7th XI - Division 7</li>
-                    <li><img src="./images/teamsmall1.png" alt="list_icon">&ensp;8th XI - Division 8</li>
-                    <li><img src="./images/teamsmall1.png" alt="list_icon">&ensp;Women's Team - play 4 to 6 games during the season</li>
-                    <li><img src="./images/teamsmall1.png" alt="list_icon">&ensp;Junior Under 16's - play on Sundays</li>
-                    <li><img src="./images/teamsmall1.png" alt="list_icon">&ensp;Under 13's - play on Saturdayu mornings</li>
-                    <li><img src="./images/teamsmall1.png" alt="list_icon">&ensp;Junior Under 12's Kanga Team - 2 teams will play in the Vancouver & District Saturday Morning League
-                        on Saturday mornings</li>
-                    <li><img src="./images/teamsmall1.png" alt="list_icon">&ensp;School Cricket - Collingwood School</li>
-                    <li><img src="./images/teamsmall1.png" alt="list_icon">&ensp;Over 40's team (West Vancouver Taverners)</li>
+                    <li>
+                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;1st XI - Elite Division
+                    </li>
+                    <li>
+                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;2nd XI - Premier Division
+                    </li>
+                    <li>
+                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;3rd XI - Division 1
+                    </li>
+                    <li>
+                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;4th XI - Division 3
+                    </li>
+                    <li>
+                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;5th XI - Division 4
+                    </li>
+                    <li>
+                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;6th XI - Division 6
+                    </li>
+                    <li>
+                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;7th XI - Division 7
+                    </li>
+                    <li>
+                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;8th XI - Division 8
+                    </li>
+                    <li>
+                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;Women's Team - play 4 to 6 games during the season
+                    </li>
+                    <li>
+                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;Junior Under 16's - play on Sundays
+                    </li>
+                    <li>
+                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;Under 13's - play on Saturdayu mornings
+                    </li>
+                    <li>
+                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;Junior Under 12's Kanga Team - 2 teams will play in the Vancouver & District Saturday Morning League
+                        on Saturday mornings
+                    </li>
+                    <li>
+                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;School Cricket - Collingwood School
+                    </li>
+                    <li>
+                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;Over 40's team (West Vancouver Taverners)
+                    </li>
                 </ul>
-                <div class="img_center">
-                    <img src="./images/league.jpg" alt="league_img2" class="league_img">
-                </div>
             </div>
         </div>
     </div>
-    <div id="logo_footer">
-        <img src="./images/title+logo.png" alt="logo" class="footer_logo">
-    </div>
     <footer>
-        <center><p><b>---- COPYRIGHT &copy; 2020 HTML & CSS ----</b></p></center>
+        <img id="footerImg" class="footer-img" src="./images/title+logo.png" alt="logo">
+        <div class="footer-followUs">
+            <p>Follow Us:</p>
+            <a href="https://www.facebook.com/WestVancouverCricketClub/"><i id="footerFace"
+                    class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/westvancouvercricketclub/"><i id="footerInsta"
+                    class="fab fa-instagram-square"></i></a>
+            <a href="https://twitter.com/westvancricket?s=20"><i id="footerTwit" class="fab fa-twitter-square"></i></a>
+        </div>
     </footer>
+    <p id="copyright">---- COPYRIGHT &copy; 2020 West Vancouver Cricket Club ----</p>
+
+    <script>
+        $('.icon').click(function () {
+            $('span').toggleClass("cancel");
+        });
+    </script>
 </body>
 
 </html>
