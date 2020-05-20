@@ -4,6 +4,13 @@
     padding: 0;
 }
 
+body {
+    background-image: url(../images/clubhouseBackground.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 /* Header Menu */
 
 .header {
@@ -152,4 +159,308 @@ nav ul ul li a {
 
 .show, .icon, input {
     display: none;
+}
+
+/* Body */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    gap: 80px 0px;
+    margin: 50px 20px;
+    grid-template-areas: "rental-grid" "equipment-grid";
+}
+
+.rental-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "rental-text1 rental-pic1" "rental-pic2 rental-text2";
+    grid-area: rental-grid;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.rental-text1 {
+    grid-area: rental-text1;
+    padding: 30px 50px;
+}
+
+.rental-text1 h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.rental-text1 p {
+    line-height: 30px;
+    text-align: justify;
+}
+
+.rental-pic1 {
+    grid-area: rental-pic1;
+    padding: 30px 50px;
+    text-align: center;
+}
+
+.rental-pic1 img {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.rental-pic2 {
+    grid-area: rental-pic2;
+    padding: 30px 50px;
+    text-align: center;
+}
+.rental-pic2 img {
+    width: 100%;
+}
+
+.rental-text2 {
+    grid-area: rental-text2;
+    margin-top: 20px;
+    padding: 30px 50px;
+}
+
+.rental-text2 p {
+    line-height: 30px;
+    text-align: justify;
+}
+
+.equipment-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1.3fr;
+    gap: 1px 1px;
+    grid-template-areas: "equipment-title" "equipment-text";
+    grid-area: equipment-grid;
+    background-color:rgb(244, 155, 0, 0.8);
+}
+
+.equipment-title {
+    grid-area: equipment-title;
+    margin-bottom: 50px;
+}
+.equipment-title h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+.equipment-text {
+    grid-area: equipment-text;
+    padding: 30px 50px;
+}
+.equipment-text li {
+    line-height: 30px;
+    margin-left: 20px;
+}
+.equipment-text p {
+    line-height: 30px;
+    text-align: justify;
+}
+
+/* Footer */
+
+footer {
+    display: grid;
+    grid-template-columns: 1.5fr 0.7fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "footer-img footer-followUs";
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+footer i {
+    font-size: 26px;
+}
+
+#footerFace {
+    color: rgb(66, 103, 178);
+}
+
+#footerInsta {
+    color: rgb(193, 53, 132);
+}
+
+#footerTwit {
+    color: rgb(29, 161, 242);
+}
+
+.footer-img {
+    width: 40vw;
+}
+
+#copyright {
+    position: sticky;
+    bottom: 0px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0.5vh 0;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Medias */
+
+@media screen and (max-width:1160px) {
+    /* Menu 1160px */
+    #menu_media {
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        top: 75px;
+        opacity: 0.8;
+    }
+    nav {
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    nav ul {
+        margin-right: 0px;
+        float: left;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .submenu-content-a {
+        display: block;
+    }
+    nav .logo {
+        padding-left: 30px;
+        width: 100%;
+    }
+    .show+a, ul {
+        display: none;
+    }
+    nav ul li, nav ul ul li {
+        display: block;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        /* Change - Lucas */
+    }
+    nav ul li a:hover {
+        box-shadow: none;
+    }
+    .show {
+        display: block;
+        color: white;
+        font-size: 15px;
+        padding: 0 20px;
+        line-height: 70px;
+        cursor: pointer;
+        font-weight: bold;
+        /* Change - Lucas */
+        text-transform: uppercase;
+        /* Change - Lucas */
+    }
+    .show:hover {
+        color: cyan;
+    }
+    .icon {
+        display: block;
+        color: white;
+        position: absolute;
+        top: 0;
+        right: 40px;
+        line-height: 70px;
+        cursor: pointer;
+        font-size: 25px;
+    }
+    nav ul ul {
+        top: 70px;
+        border-top: 0px;
+        float: none;
+        position: static;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+    nav ul ul a {
+        padding-left: 0;
+        /* Change - Lucas */
+        display: block;
+        /* Change - Lucas */
+    }
+    nav ul ul ul a {
+        padding-left: 0px;
+        /* Change - Lucas */
+        text-align: left;
+        /* Change - Lucas */
+        display: block;
+        /* Change - Lucas */
+    }
+    nav ul ul ul li {
+        position: static;
+    }
+    [id^=btn]:checked+ul {
+        display: block;
+    }
+    nav ul ul li {
+        border-bottom: 0px;
+    }
+    span.cancel:before {
+        content: '\f00d';
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+        gap: 80px 0px;
+        grid-template-areas: "rental-grid" "equipment-grid";
+        margin: 50px 20px;
+    }
+    .rental-grid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 1px 1px;
+        grid-template-areas: "rental-text1" "rental-pic1" "rental-text2" "rental-pic2";
+        grid-area: rental-grid;
+    }
+    .rental-text1 {
+        grid-area: rental-text1;
+    }
+    .rental-pic1 {
+        grid-area: rental-pic1;
+        padding: 0;
+    }
+    .rental-pic1 img{
+        margin-top: 0;
+        width: 80vw;
+        padding: 0px;
+    }
+    .rental-text2 {
+        grid-area: rental-text2;
+    }
+    .rental-pic2 {
+        grid-area: rental-pic2;
+        padding: 0;
+    }
+    .rental-pic2 img {
+        width: 80vw;
+        padding: 0px;
+        margin-bottom: 70px;
+    }
+    .equipment-grid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 0.1fr 1.6fr;
+        gap: 1px 1px;
+        grid-template-areas: "equipment-title" "equipment-text";
+        grid-area: equipment-grid;
+    }
+    .equipment-title {
+        grid-area: equipment-title;
+        margin-bottom: 0;
+    }
+    .equipment-text {
+        grid-area: equipment-text;
+    }
+    .equipment-list {
+        display: block;
+    }
 }
