@@ -1,0 +1,155 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Menu */
+
+.header {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 30px;
+    width: 100%;
+}
+
+.header ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Social Media Links */
+
+.social-media {
+    display: absolute;
+    float: right;
+    right: 10px;
+}
+
+.social-media li {
+    margin-right: 35px;
+}
+
+.social-media a i {
+    font-size: 20px;
+    margin: 0;
+    margin-top: 5px;
+    color: black;
+}
+
+.social-media ul {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Menu */
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: sticky;
+    top: 0px;
+    height: 75px;
+    width: 100%;
+    align-items: center;
+    z-index: 1;
+    list-style-type: none;
+}
+
+#logo-image {
+    position: relative;
+    top: 10px;
+    margin-left: 10px;
+}
+
+nav {
+    margin-left: 100px;
+}
+
+nav:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu-content-li:hover {
+    background-color: rgb(244, 155, 0, 0.75);
+}
+
+nav ul li {
+    display: inline-block;
+    width: 10vw;
+    text-align: center;
+}
+
+.submenu-content li {
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+.submenu-content-a {
+    display: block;
+}
+
+.submenu-content li:hover {
+    background-color: rgb(244, 155, 0, 0.8);
+    border-bottom: 3px solid white;
+}
+
+.menu-a {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    color: white;
+    line-height: 70px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav ul ul li a:hover {
+    box-shadow: none;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 90px;
+    border-top: 3px solid white;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+}
+
+nav ul ul ul {
+    border-top: none;
+}
+
+nav ul li:hover>ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li {
+    position: relative;
+    margin: 0px;
+    width: 10vw;
+    float: none;
+    display: list-item;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 3px solid transparent;
+}
+
+nav ul ul li a {
+    line-height: 50px;
+}
+
+.show, .icon, input {
+    display: none;
+}
