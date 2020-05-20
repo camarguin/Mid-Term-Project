@@ -68,7 +68,7 @@ body{
     height: 75px;
     width: 100%;
     align-items: center;
-    z-index: 1;
+    z-index: 2;
     list-style-type: none;
 }
 
@@ -177,146 +177,90 @@ nav ul ul li a {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 80px 0px;
     margin: 50px 20px;
-    grid-template-areas: "teams" "training" "indoor_training" "schedule";
-}
+    grid-template-areas: "team" "schedule" "training";
+  }
   
-.teams {
+.team {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "teams_text teams_img";
-    grid-area: teams;
+    /* gap: 1px 1px; */
+    grid-template-areas: "team_text team_img";
+    grid-area: team;
 }
   
-.teams_text {
-    grid-area: teams_text;
+.team_text { 
+    grid-area: team_text;
     background-color: rgb(255, 255, 255, 0.8);
     padding: 30px 50px;
 }
 
-.teams_text h1 {
+.team_text h1 {
     font-size: 4em;
     text-align: center;
     margin-bottom: 10px;
 }
 
-.teams_text h2 {
+.team_text h2 {
     text-align: center;
     margin: 20px;
     color: green;
     font-weight: bold;
 }
 
-.teams_text p {
+.team_text p {
     text-align: justify;
 }
 
-.teams_text ul {
-    padding-left: 0;
-}
-
-.teams_text li {
-    list-style-type: none;
-    line-height: 30px;
-}
-  
-.teams_img { 
-    grid-area: teams_img;
+.team_img { 
+    grid-area: team_img;
     margin: 0 0;
-}
-  
-.training {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "training_img training_text";
-    grid-area: training;
-}
-  
-.training_img { 
-    grid-area: training_img;
-    margin: 0 0;
+    background-color: rgba(128, 128, 128, 0.9);
+    position: relative;
 }
 
-.training_text { 
-    grid-area: training_text;
-    background-color: rgb(244, 155, 0, 0.8);
-    padding: 30px 50px;
+.center_box {
+    background-color: rgb(244, 155, 0);
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.training_text h1 {
-    font-size: 4em;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.training_text h2 {
-    text-align: center;
-    margin: 20px;
-    color: white;
-    font-weight: bold;
-}
-
-.training_text p {
-    text-align: justify;
-}
-
-.indoor_training {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "indoor_text indoor_img";
-    grid-area: indoor_training;
-}
-  
-.indoor_text { 
-    grid-area: indoor_text;
-    background-color: rgb(255, 255, 255, 0.8);
-    padding: 30px 50px;
-}
-
-.indoor_text h1 {
-    font-size: 4em;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.indoor_text h2 {
-    text-align: center;
-    margin: 20px;
-    color: green;
-    font-weight: bold;
-}
-
-.indoor_text p {
-    /* text-align: justify; */
-}
-
-.indoor_img { 
-    grid-area: indoor_img;
-    margin: 0 0;
+.center_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
 .schedule {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    /* gap: 1px 1px; */
     grid-template-areas: "schedule_img schedule_text";
     grid-area: schedule;
 }
-  
-.schedule_img {
+
+.schedule_img { 
     grid-area: schedule_img;
     margin: 0 0;
+    background-color: rgba(128, 128, 128, 0.9);
+    position: relative;
 }
-  
+
 .schedule_text { 
     grid-area: schedule_text;
-    background-color: rgb(244, 155, 0, 0.8);
-    padding: 30px 50px;
+    /* background-color: rgb(244, 155, 0, 0.8); */
+    background-color: rgb(255, 255, 255, 0.8);
+    padding: 30px 50px; 
 }
 
 .schedule_text h1 {
@@ -328,7 +272,7 @@ nav ul ul li a {
 .schedule_text h2 {
     text-align: center;
     margin: 20px;
-    color: white;
+    color: green;
     font-weight: bold;
 }
 
@@ -336,13 +280,43 @@ nav ul ul li a {
     text-align: justify;
 }
 
-.schedule_text ul {
-    padding-left: 0;
+.training {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    /* gap: 1px 1px; */
+    grid-template-areas: "training_text training_img";
+    grid-area: training;
 }
 
-.schedule_text li {
-    list-style-type: none;
-    line-height: 30px;
+.training_text { 
+    grid-area: training_text;
+    background-color: rgb(255, 255, 255, 0.8);
+    padding: 30px 50px; 
+}
+
+.training_text h1 {
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.training_text h2 {
+    text-align: center;
+    margin: 20px;
+    color: green;
+    font-weight: bold;
+}
+
+.training_text p {
+    text-align: justify;
+}
+
+.training_img { 
+    grid-area: training_img;
+    margin: 0 0;
+    background-color: rgba(128, 128, 128, 0.9);
+    position: relative;
 }
 
 /* ############################ */
@@ -389,6 +363,7 @@ footer i {
     font-weight: bold;
     color: black;
     background-color: rgba(255, 255, 255, 0.5);
+    z-index: 2;
 }
 
 /* ################################ */
@@ -401,9 +376,11 @@ footer i {
         top: 0px;
         right: 20px;
     }
+
     .social-media li {
         margin-left: 20px;
     }
+
     /* Menu */
     #menu_media {
         background-color: rgba(0, 0, 0, 0.8);
@@ -413,33 +390,41 @@ footer i {
         top: 75px;
         opacity: 0.8;
     }
+
     nav {
         margin: 0;
         background-color: rgba(0, 0, 0, 0.8);
     }
+
     nav ul {
         margin-right: 0px;
         float: left;
         background-color: rgba(0, 0, 0, 0.8);
     }
+
     .submenu-content-a {
         display: block;
     }
+
     nav .logo {
         padding-left: 30px;
         width: 100%;
     }
+
     .show+a, ul {
         display: none;
     }
+
     nav ul li, nav ul ul li {
         display: block;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.9);
     }
+
     nav ul li a:hover {
         box-shadow: none;
     }
+
     .show {
         display: block;
         color: white;
@@ -450,9 +435,11 @@ footer i {
         font-weight: bold;
         text-transform: uppercase;
     }
+
     .show:hover {
         color: cyan;
     }
+
     .icon {
         display: block;
         color: white;
@@ -463,6 +450,7 @@ footer i {
         cursor: pointer;
         font-size: 25px;
     }
+
     nav ul ul {
         top: 70px;
         border-top: 0px;
@@ -472,106 +460,32 @@ footer i {
         opacity: 1;
         visibility: visible;
     }
+
     nav ul ul a {
         padding-left: 0;
         display: block;
     }
+
     nav ul ul ul a {
         padding-left: 0px;
         text-align: left;
         display: block;
     }
+
     nav ul ul ul li {
         position: static;
     }
+
     [id^=btn]:checked+ul {
         display: block;
     }
+
     nav ul ul li {
         border-bottom: 0px;
     }
+
     span.cancel:before {
         content: '\f00d';
-    }
-
-    /* ##################################### */
-    /* ########## media container ########## */
-    /* ##################################### */
-
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        gap: 80px 0px;
-        grid-template-areas: "teams" "training" "indoor_training" "schedule";
-    }
-      
-    .teams {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 1px 1px;
-        grid-template-areas: "teams_text" "teams_img";
-        grid-area: teams;
-    }
-      
-    .teams_text { 
-        grid-area: teams_text; 
-    }
-    
-    .teams_img { 
-        grid-area: teams_img; 
-    }
-    
-    .training {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 1px 1px;
-        grid-template-areas: "training_text" "training_img";
-        grid-area: training;
-    }
-      
-    .training_text { 
-        grid-area: training_text; 
-    }
-    
-    .training_img { 
-        grid-area: training_img; 
-    }
-    
-    .indoor_training {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 1px 1px;
-        grid-template-areas: "indoor_text" "indoor_img";
-        grid-area: indoor_training;
-    }
-      
-    .indoor_text { 
-        grid-area: indoor_text; 
-    }
-    
-    .indoor_img { 
-        grid-area: indoor_img; 
-    }
-    
-    .schedule {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 1px 1px;
-        grid-template-areas: "schedule_text" "schedule_img";
-        grid-area: schedule;
-    }
-    
-    .schedule_text { 
-        grid-area: schedule_text; 
-    }
-    
-    .schedule_img { 
-        grid-area: schedule_img; 
     }
 
     /* ################################## */
@@ -580,22 +494,5 @@ footer i {
 
     .footer-img {
         width: 70vw;
-    }
-}
-@media screen and (max-width:450px) {
-    .teams_text { 
-        padding: 30px 20px;
-    }
-
-    .training_text { 
-        padding: 30px 20px;
-    }
-
-    .indoor_text { 
-        padding: 30px 20px;
-    }
-
-    .schedule_text { 
-        padding: 30px 20px;
     }
 }
