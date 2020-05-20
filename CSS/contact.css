@@ -175,11 +175,11 @@ nav ul ul li a {
 }
 
 .grid-container {
-    margin: 10px;
+    margin: 50px 20px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 15px 1px;
+    gap: 80px 1px;
     grid-template-areas: "contact-grid" "location-grid" "newsletter-grid";
 }
 
@@ -397,6 +397,9 @@ nav ul ul li a {
     align-items: center;
     width: 250px;
     margin-top: 10px;
+}
+.newsletterbtn input {
+    display: block;
 }
 
 .newsletterButton {
@@ -822,5 +825,11 @@ footer i {
     .footer-followUs {
         grid-area: footer-followUs;
         text-align: center;
+    }
+}
+@media only screen  and (min-width : 1824px) {
+    .grid-container {
+        margin-left: 20vw;
+        margin-right: 20vw;
     }
 }
