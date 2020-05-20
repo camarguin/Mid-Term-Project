@@ -1,15 +1,9 @@
-/* * {
-    box-sizing: border-box;
-
-  } */
-
 * {
-  margin: 0 auto;
-  padding: 0 auto;
-  font-family: 'Open Sans', sans-serif;
+  margin: 0 ;
+  padding: 0 ;
+  font-family: "Open Sans", sans-serif;
   text-decoration: none;
 }
-
 body {
   background-image: url(../images/image12.jpg);
   background-repeat: no-repeat;
@@ -83,7 +77,7 @@ nav {
 }
 
 nav:after {
-  content: '';
+  content: "";
   clear: both;
   display: table;
 }
@@ -142,14 +136,14 @@ nav ul ul {
   border-top: 3px solid white;
   opacity: 0;
   visibility: hidden;
-  transition: top .3s;
+  transition: top 0.3s;
 }
 
 nav ul ul ul {
   border-top: none;
 }
 
-nav ul li:hover>ul {
+nav ul li:hover > ul {
   top: 70px;
   opacity: 1;
   visibility: visible;
@@ -171,767 +165,169 @@ nav ul ul li a {
   line-height: 50px;
 }
 
-.show, .icon, input {
+.show,
+.icon,
+input {
   display: none;
 }
 
-/* Body */
 
-.body-section {
-  width: 100%;
-}
 
+/*====END OF MENU======*/
+
+
+
+
+
+
+
+
+
+
+
+/* ========BODY==========*/
 .grid-container {
-  margin: 10px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 15px 1px;
+  grid-template-rows: .8fr .3fr .4fr;
+  gap: 1px 1px;
   grid-template-areas: "JuniorCricket" "schoolcricket" "summercamp";
-  /* margin-left: 5px; */
-  /* margin-right: -50px; */
 }
 
 .JuniorCricket {
-  /* background-color: rgb(255, 255, 255, 0.8); */
+  background-color: rgb(255, 255, 255, 0.8); 
   display: grid;
-  grid-template-columns: auto auto;
-  /* grid-template-rows: 1fr; */
-  gap: 15px 50px;
-  grid-template-areas: "picture1 textjunior";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "juniortext1 juniorpic1" "juniorpic2 juniortex2" "juniortext3 juniorpic3";
   grid-area: JuniorCricket;
 }
 
-.textjunior {
-  grid-area: textjunior;
-  background-color: rgb(255, 255, 255, 0.8);
-  margin: 0px;
-  margin-bottom: 25vh;
-  /* margin-right: 25vh; */
-  width: 47vw;
+.juniortext1 { grid-area: juniortext1;
+
+  padding: 2rem;
+  top: 18vh;
+  left: 30vw;
+
+}
+
+.juniorpic1 { grid-area: juniorpic1;
+}
+.imgjunior1{
+
+  border-radius: 8px;
+  width: 675px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 4%;
+}
+.juniorpic2 { grid-area: juniorpic2; }
+.imgjunior2{
+
+  border-radius: 8px;
+  width: 675px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 7%;
+}
+.juniortex2 { grid-area: juniortex2; 
   padding: 2rem;
   top: 18vh;
   left: 30vw;
 }
 
-/* .bodycontainer1{
-    position: fixed;
-    margin: 0px;
-    margin-bottom: 25vh;
-    margin-right: 25vh;
-    background-color: rgb(0, 0, 0, 0.8);
-    width: 20vw;
-    padding: 2rem;
-    top: 21.7vh;
-    left: 2vw;
-    color:white;
-} */
+.juniortext3 { grid-area: juniortext3;
 
-/* .imglogotext{
-    width: 30vw;
-    margin-bottom: 10px;
-}
-.imglogotext1{
-    width: 22vw;
-    margin-bottom: 10px;
-} */
-
-/* .titlewelcome{
-    font-size: 6rem;
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: -0.2rem;
-    line-height: 100px;
-    margin-bottom: 70px;
-}
-.titlewelcome1{
-    font-size: 2rem;
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 0.0rem;
-    line-height: 30px;
-    margin-bottom: 40px;
-
-    
-} */
-
-/* .textwelcome{
-   text-align: justify;
-  
-}
-.textwelcome1{
- color:white;
-    text-align: justify;
-} */
-
-.ulmargin {
-  margin-left: -40px;
-}
-
-/*links*/
-
-/* #related-links a:visited {
-    color:white;
-  } */
-
-/* .learnmorebutton{
-    background-color: #fff;
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 13px;
-    font-weight: bolder;
-    letter-spacing: 0.2rem;
-    margin-top: 50px;
-} */
-
-dd {
-  line-height: 1.7;
-}
-
-.space {
-  letter-spacing: 1px;
-}
-
-.picture1 {
-  grid-area: picture1;
-}
-
-.carousel>input[type="radio"]:nth-child(1):checked~.carousel__prev>label:nth-child(5), .carousel>input[type="radio"]:nth-child(1):checked~.carousel__next>label:nth-child(2), .carousel>input[type="radio"]:nth-child(2):checked~.carousel__prev>label:nth-child(1), .carousel>input[type="radio"]:nth-child(2):checked~.carousel__next>label:nth-child(3), .carousel>input[type="radio"]:nth-child(3):checked~.carousel__prev>label:nth-child(2), .carousel>input[type="radio"]:nth-child(3):checked~.carousel__next>label:nth-child(4), .carousel>input[type="radio"]:nth-child(4):checked~.carousel__prev>label:nth-child(3), .carousel>input[type="radio"]:nth-child(4):checked~.carousel__next>label:nth-child(5), .carousel>input[type="radio"]:nth-child(5):checked~.carousel__prev>label:nth-child(4), .carousel>input[type="radio"]:nth-child(5):checked~.carousel__next>label:nth-child(1) {
-  opacity: 1 !important;
-  z-index: 3;
-}
-
-*, *:before, *:after {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
-
-/* body {
-    background: #fcfcfc;
-    margin: 0;
-  } */
-
-.container {
-  width: 600px;
-  /*changed*/
-  min-width: 600px;
-  /*changed*/
-  margin: 200px auto;
-  z-index: 1;
-}
-
-.carousel {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.carousel>input[type="radio"] {
-  position: absolute;
-  left: 0;
-  opacity: 0;
-  top: 0;
-}
-
-.carousel>input[type="radio"]:checked~.carousel__items .carousel__item, .carousel>input[type="radio"]:checked~.carousel__prev>label, .carousel>input[type="radio"]:checked~.carousel__next>label {
-  opacity: 0;
-}
-
-.carousel>input[type="radio"]:nth-child(1):checked~.carousel__items .carousel__item:nth-child(1) {
-  opacity: 1;
-}
-
-.carousel>input[type="radio"]:nth-child(1):checked~.carousel__nav>label:nth-child(1) {
-  background: #ccc;
-  cursor: default;
-  pointer-events: none;
-}
-
-.carousel>input[type="radio"]:nth-child(2):checked~.carousel__items .carousel__item:nth-child(2) {
-  opacity: 1;
-}
-
-.carousel>input[type="radio"]:nth-child(2):checked~.carousel__nav>label:nth-child(2) {
-  background: #ccc;
-  cursor: default;
-  pointer-events: none;
-}
-
-.carousel>input[type="radio"]:nth-child(3):checked~.carousel__items .carousel__item:nth-child(3) {
-  opacity: 1;
-}
-
-.carousel>input[type="radio"]:nth-child(3):checked~.carousel__nav>label:nth-child(3) {
-  background: #ccc;
-  cursor: default;
-  pointer-events: none;
-}
-
-.carousel>input[type="radio"]:nth-child(4):checked~.carousel__items .carousel__item:nth-child(4) {
-  opacity: 1;
-}
-
-.carousel>input[type="radio"]:nth-child(4):checked~.carousel__nav>label:nth-child(4) {
-  background: #ccc;
-  cursor: default;
-  pointer-events: none;
-}
-
-.carousel>input[type="radio"]:nth-child(5):checked~.carousel__items .carousel__item:nth-child(5) {
-  opacity: 1;
-}
-
-.carousel>input[type="radio"]:nth-child(5):checked~.carousel__nav>label:nth-child(5) {
-  background: #ccc;
-  cursor: default;
-  pointer-events: none;
-}
-
-.carousel__items {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  width: 100%;
-  height: 600px;
-  position: relative;
-}
-
-.carousel__item {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  transition: opacity 2s;
-  -webkit-transition: opacity 2s;
-}
-
-.carousel__item img {
-  width: 100%;
-  vertical-align: middle;
-}
-
-.carousel__prev>label, .carousel__next>label {
-  border: 1px solid #fff;
-  border-radius: 50%;
-  cursor: pointer;
-  display: block;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transition: all .3s ease;
-  -webkit-transition: all .3s ease;
-  opacity: 0;
-  z-index: 2;
-}
-
-.carousel__prev>label:hover, .carousel__prev>label:focus, .carousel__next>label:hover, .carousel__next>label:focus {
-  opacity: .5 !important;
-}
-
-.carousel__prev>label:before, .carousel__prev>label:after, .carousel__next>label:before, .carousel__next>label:after {
-  content: "";
-  position: absolute;
-  width: inherit;
-  height: inherit;
-}
-
-.carousel__prev>label:before, .carousel__next>label:before {
-  background: -webkit-gradient(linear, left bottom, left top, from(#fff), color-stop(10%, #fff), color-stop(10%, rgba(51, 51, 51, 0))), -webkit-gradient(linear, right top, left top, from(#fff), color-stop(10%, #fff), color-stop(10%, rgba(51, 51, 51, 0)));
-  background: linear-gradient(to top, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%), linear-gradient(to left, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%);
-  width: 60%;
-  height: 60%;
-  top: 20%;
-}
-
-.carousel__prev>label {
-  left: 2%;
-}
-
-.carousel__prev>label:before {
-  left: 35%;
-  top: 20%;
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
-
-.carousel__next>label {
-  right: 2%;
-}
-
-.carousel__next>label:before {
-  left: 10%;
-  transform: rotate(315deg);
-  -webkit-transform: rotate(315deg);
-}
-
-.carousel__nav {
-  position: absolute;
-  bottom: 3%;
-  left: 0;
-  text-align: center;
-  width: 100%;
-  z-index: 3;
-}
-
-.carousel__nav>label {
-  border: 1px solid #fff;
-  display: inline-block;
-  border-radius: 50%;
-  cursor: pointer;
-  margin: 0 .125%;
-  width: 20px;
-  height: 20px;
-}
-
-/*# sourceMappingURL=junior.css.map */
-
-.summercamp {
-  display: grid;
-  grid-template-columns: auto auto;
-  /* grid-template-rows: 1fr; */
-  gap: 15px 50px;
-  grid-template-areas: "picture3 textsummer";
-  grid-area: summercamp;
-}
-
-.picture3 {
-  grid-area: picture3;
-}
-
-.carousel>input[type="radio"]:nth-child(1):checked~.carousel__prev>label:nth-child(5), .carousel>input[type="radio"]:nth-child(1):checked~.carousel__next>label:nth-child(2), .carousel>input[type="radio"]:nth-child(2):checked~.carousel__prev>label:nth-child(1), .carousel>input[type="radio"]:nth-child(2):checked~.carousel__next>label:nth-child(3), .carousel>input[type="radio"]:nth-child(3):checked~.carousel__prev>label:nth-child(2), .carousel>input[type="radio"]:nth-child(3):checked~.carousel__next>label:nth-child(4), .carousel>input[type="radio"]:nth-child(4):checked~.carousel__prev>label:nth-child(3), .carousel>input[type="radio"]:nth-child(4):checked~.carousel__next>label:nth-child(5), .carousel>input[type="radio"]:nth-child(5):checked~.carousel__prev>label:nth-child(4), .carousel>input[type="radio"]:nth-child(5):checked~.carousel__next>label:nth-child(1) {
-  opacity: 1 !important;
-  z-index: 3;
-}
-
-*, *:before, *:after {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
-
-/* body {
-    background: #fcfcfc;
-    margin: 0;
-  } */
-
-.container {
-  width: 600px;
-  /*changed*/
-  min-width: 600px;
-  /*changed*/
-  margin: 200px auto;
-}
-
-.carousel {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.carousel>input[type="radio"] {
-  position: absolute;
-  left: 0;
-  opacity: 0;
-  top: 0;
-}
-
-.carousel>input[type="radio"]:checked~.carousel__items .carousel__item, .carousel>input[type="radio"]:checked~.carousel__prev>label, .carousel>input[type="radio"]:checked~.carousel__next>label {
-  opacity: 0;
-}
-
-.carousel>input[type="radio"]:nth-child(1):checked~.carousel__items .carousel__item:nth-child(1) {
-  opacity: 1;
-}
-
-.carousel>input[type="radio"]:nth-child(1):checked~.carousel__nav>label:nth-child(1) {
-  background: #ccc;
-  cursor: default;
-  pointer-events: none;
-}
-
-.carousel>input[type="radio"]:nth-child(2):checked~.carousel__items .carousel__item:nth-child(2) {
-  opacity: 1;
-}
-
-.carousel>input[type="radio"]:nth-child(2):checked~.carousel__nav>label:nth-child(2) {
-  background: #ccc;
-  cursor: default;
-  pointer-events: none;
-}
-
-.carousel>input[type="radio"]:nth-child(3):checked~.carousel__items .carousel__item:nth-child(3) {
-  opacity: 1;
-}
-
-.carousel>input[type="radio"]:nth-child(3):checked~.carousel__nav>label:nth-child(3) {
-  background: #ccc;
-  cursor: default;
-  pointer-events: none;
-}
-
-.carousel>input[type="radio"]:nth-child(4):checked~.carousel__items .carousel__item:nth-child(4) {
-  opacity: 1;
-}
-
-.carousel>input[type="radio"]:nth-child(4):checked~.carousel__nav>label:nth-child(4) {
-  background: #ccc;
-  cursor: default;
-  pointer-events: none;
-}
-
-.carousel>input[type="radio"]:nth-child(5):checked~.carousel__items .carousel__item:nth-child(5) {
-  opacity: 1;
-}
-
-.carousel>input[type="radio"]:nth-child(5):checked~.carousel__nav>label:nth-child(5) {
-  background: #ccc;
-  cursor: default;
-  pointer-events: none;
-}
-
-.carousel__items {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  width: 100%;
-  height: 600px;
-  position: relative;
-}
-
-.carousel__item {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  transition: opacity 2s;
-  -webkit-transition: opacity 2s;
-}
-
-.carousel__item img {
-  width: 100%;
-  vertical-align: middle;
-}
-
-.carousel__prev>label, .carousel__next>label {
-  border: 1px solid #fff;
-  border-radius: 50%;
-  cursor: pointer;
-  display: block;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transition: all .3s ease;
-  -webkit-transition: all .3s ease;
-  opacity: 0;
-  z-index: 2;
-}
-
-.carousel__prev>label:hover, .carousel__prev>label:focus, .carousel__next>label:hover, .carousel__next>label:focus {
-  opacity: .5 !important;
-}
-
-.carousel__prev>label:before, .carousel__prev>label:after, .carousel__next>label:before, .carousel__next>label:after {
-  content: "";
-  position: absolute;
-  width: inherit;
-  height: inherit;
-}
-
-.carousel__prev>label:before, .carousel__next>label:before {
-  background: -webkit-gradient(linear, left bottom, left top, from(#fff), color-stop(10%, #fff), color-stop(10%, rgba(51, 51, 51, 0))), -webkit-gradient(linear, right top, left top, from(#fff), color-stop(10%, #fff), color-stop(10%, rgba(51, 51, 51, 0)));
-  background: linear-gradient(to top, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%), linear-gradient(to left, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%);
-  width: 60%;
-  height: 60%;
-  top: 20%;
-}
-
-.carousel__prev>label {
-  left: 2%;
-}
-
-.carousel__prev>label:before {
-  left: 35%;
-  top: 20%;
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
-
-.carousel__next>label {
-  right: 2%;
-}
-
-.carousel__next>label:before {
-  left: 10%;
-  transform: rotate(315deg);
-  -webkit-transform: rotate(315deg);
-}
-
-.carousel__nav {
-  position: absolute;
-  bottom: 3%;
-  left: 0;
-  text-align: center;
-  width: 100%;
-  z-index: 3;
-}
-
-.carousel__nav>label {
-  border: 1px solid #fff;
-  display: inline-block;
-  border-radius: 50%;
-  cursor: pointer;
-  margin: 0 .125%;
-  width: 20px;
-  height: 20px;
-}
-
-/*# sourceMappingURL=junior.css.map */
-
-.textsummer {
-  grid-area: textsummer;
-  background-color: rgb(255, 255, 255, 0.8);
-  margin: 0px;
-  margin-bottom: 25vh;
-  /* margin-right: 25vh; */
-  width: 47vw;
   padding: 2rem;
   top: 18vh;
-  left: 30vw;
+  left: 30vw;}
+
+.juniorpic3 { grid-area: juniorpic3; }
+.imgjunior3{
+
+  border-radius: 8px;
+  width: 675px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+   margin: 4%;
 }
 
+.juniorhead {
+  background-color: rgb(255, 255, 255, 0.8);
+  width: 50%;
+}
 .schoolcricket {
+  background-color: rgb(255, 255, 255, 0.8); 
   display: grid;
-  grid-template-columns: auto auto;
-  /* grid-template-rows: 1fr; */
-  gap: 15px 50px;
-  grid-template-areas: "picture2 textschool";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "schoolpic schooltext";
   grid-area: schoolcricket;
 }
 
-.picture2 {
-  grid-area: picture2;
-}
-
-.carousel>input[type="radio"]:nth-child(1):checked~.carousel__prev>label:nth-child(5), .carousel>input[type="radio"]:nth-child(1):checked~.carousel__next>label:nth-child(2), .carousel>input[type="radio"]:nth-child(2):checked~.carousel__prev>label:nth-child(1), .carousel>input[type="radio"]:nth-child(2):checked~.carousel__next>label:nth-child(3), .carousel>input[type="radio"]:nth-child(3):checked~.carousel__prev>label:nth-child(2), .carousel>input[type="radio"]:nth-child(3):checked~.carousel__next>label:nth-child(4), .carousel>input[type="radio"]:nth-child(4):checked~.carousel__prev>label:nth-child(3), .carousel>input[type="radio"]:nth-child(4):checked~.carousel__next>label:nth-child(5), .carousel>input[type="radio"]:nth-child(5):checked~.carousel__prev>label:nth-child(4), .carousel>input[type="radio"]:nth-child(5):checked~.carousel__next>label:nth-child(1) {
-  opacity: 1 !important;
-  z-index: 3;
-}
-
-*, *:before, *:after {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
-
-/* body {
-    background: #fcfcfc;
-    margin: 0;
-  } */
-
-.container {
-  width: 600px;
-  /*changed*/
-  min-width: 600px;
-  /*changed*/
-  margin: 200px auto;
-}
-
-.carousel {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.carousel>input[type="radio"] {
-  position: absolute;
-  left: 0;
-  opacity: 0;
-  top: 0;
-}
-
-.carousel>input[type="radio"]:checked~.carousel__items .carousel__item, .carousel>input[type="radio"]:checked~.carousel__prev>label, .carousel>input[type="radio"]:checked~.carousel__next>label {
-  opacity: 0;
-}
-
-.carousel>input[type="radio"]:nth-child(1):checked~.carousel__items .carousel__item:nth-child(1) {
-  opacity: 1;
-}
-
-.carousel>input[type="radio"]:nth-child(1):checked~.carousel__nav>label:nth-child(1) {
-  background: #ccc;
-  cursor: default;
-  pointer-events: none;
-}
-
-.carousel>input[type="radio"]:nth-child(2):checked~.carousel__items .carousel__item:nth-child(2) {
-  opacity: 1;
-}
-
-.carousel>input[type="radio"]:nth-child(2):checked~.carousel__nav>label:nth-child(2) {
-  background: #ccc;
-  cursor: default;
-  pointer-events: none;
-}
-
-.carousel>input[type="radio"]:nth-child(3):checked~.carousel__items .carousel__item:nth-child(3) {
-  opacity: 1;
-}
-
-.carousel>input[type="radio"]:nth-child(3):checked~.carousel__nav>label:nth-child(3) {
-  background: #ccc;
-  cursor: default;
-  pointer-events: none;
-}
-
-.carousel>input[type="radio"]:nth-child(4):checked~.carousel__items .carousel__item:nth-child(4) {
-  opacity: 1;
-}
-
-.carousel>input[type="radio"]:nth-child(4):checked~.carousel__nav>label:nth-child(4) {
-  background: #ccc;
-  cursor: default;
-  pointer-events: none;
-}
-
-.carousel>input[type="radio"]:nth-child(5):checked~.carousel__items .carousel__item:nth-child(5) {
-  opacity: 1;
-}
-
-.carousel>input[type="radio"]:nth-child(5):checked~.carousel__nav>label:nth-child(5) {
-  background: #ccc;
-  cursor: default;
-  pointer-events: none;
-}
-
-.carousel__items {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  width: 100%;
-  height: 600px;
-  position: relative;
-}
-
-.carousel__item {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  transition: opacity 2s;
-  -webkit-transition: opacity 2s;
-}
-
-.carousel__item img {
-  width: 100%;
-  vertical-align: middle;
-}
-
-.carousel__prev>label, .carousel__next>label {
-  border: 1px solid #fff;
-  border-radius: 50%;
-  cursor: pointer;
+.schoolpic { grid-area: schoolpic; }
+.imgschool1{
+  border-radius: 8px;
+  width: 675px;
   display: block;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transition: all .3s ease;
-  -webkit-transition: all .3s ease;
-  opacity: 0;
-  z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
-.carousel__prev>label:hover, .carousel__prev>label:focus, .carousel__next>label:hover, .carousel__next>label:focus {
-  opacity: .5 !important;
-}
 
-.carousel__prev>label:before, .carousel__prev>label:after, .carousel__next>label:before, .carousel__next>label:after {
-  content: "";
-  position: absolute;
-  width: inherit;
-  height: inherit;
-}
-
-.carousel__prev>label:before, .carousel__next>label:before {
-  background: -webkit-gradient(linear, left bottom, left top, from(#fff), color-stop(10%, #fff), color-stop(10%, rgba(51, 51, 51, 0))), -webkit-gradient(linear, right top, left top, from(#fff), color-stop(10%, #fff), color-stop(10%, rgba(51, 51, 51, 0)));
-  background: linear-gradient(to top, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%), linear-gradient(to left, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%);
-  width: 60%;
-  height: 60%;
-  top: 20%;
-}
-
-.carousel__prev>label {
-  left: 2%;
-}
-
-.carousel__prev>label:before {
-  left: 35%;
-  top: 20%;
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
-
-.carousel__next>label {
-  right: 2%;
-}
-
-.carousel__next>label:before {
-  left: 10%;
-  transform: rotate(315deg);
-  -webkit-transform: rotate(315deg);
-}
-
-.carousel__nav {
-  position: absolute;
-  bottom: 3%;
-  left: 0;
-  text-align: center;
-  width: 100%;
-  z-index: 3;
-}
-
-.carousel__nav>label {
-  border: 1px solid #fff;
-  display: inline-block;
-  border-radius: 50%;
-  cursor: pointer;
-  margin: 0 .125%;
-  width: 20px;
-  height: 20px;
-}
-
-/*# sourceMappingURL=junior.css.map */
-
-.textschool {
-  grid-area: textschool;
-  background-color: rgb(255, 255, 255, 0.8);
-  margin: 0px;
-  margin-bottom: 5vh;
-  /* margin-right: 25vh; */
-  width: 47vw;
+.schooltext { grid-area: schooltext;
   padding: 2rem;
   top: 18vh;
   left: 30vw;
+
+}
+/* .schoolhead{ Doubt
+  background-color: rgb(255, 255, 255, 0.8);
+      width: 100%;
+  }  */
+
+.summercamp {
+  background-color: rgb(255, 255, 255, 0.8); 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "summerpic summertex";
+  grid-area: summercamp;
 }
 
-/* Footer */
+.summerpic { grid-area: summerpic; }
+.imgsummer1{
+  border-radius: 8px;
+  width: 675px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.summertex { grid-area: summertex; 
+  padding: 2rem;
+  top: 18vh;
+  left: 30vw;
+
+}
+/* .summerhead{
+
+  background-color: rgb(255, 255, 255, 0.8);
+      width: 50%;
+} */
+
+/*=====END OF BODY========*/
+
+
+
+/* ======Footer======= */
 
 footer {
   display: grid;
@@ -975,104 +371,400 @@ footer i {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/*========MEDIA=====*/
+/*=====END OF FOOTER======*/
+
+
+
+/*======RESPONSIVE=======*/
 
 @media screen and (max-width:1160px) {
+
+/*===BODY====*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "JuniorCricket" "schoolcricket" "summercamp";
+}
+
+.JuniorCricket {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "juniorpic1" "juniortext1";
+  grid-area: JuniorCricket;
+}
+
+.juniorpic1 { grid-area: juniorpic1; }
+
+.juniortext1 { grid-area: juniortext1; }
+
+.schoolcricket {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "schoolpic" "schooltext";
+  grid-area: schoolcricket;
+}
+
+.schoolpic { grid-area: schoolpic; }
+
+
+
+.schooltext { grid-area: schooltext; }
+
+.summercamp {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "summerpic" "summertex";
+  grid-area: summercamp;
+}
+
+.summerpic { grid-area: summerpic; }
+
+.summertex { grid-area: summertex; }
+
+
+
   /* Menu 1160px */
   #menu_media {
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 100%;
-    position: absolute;
-    left: 0px;
-    top: 75px;
-    opacity: 0.8;
+      background-color: rgba(0, 0, 0, 0.8);
+      width: 100%;
+      position: absolute;
+      left: 0px;
+      top: 75px;
+      opacity: 0.8;
   }
   nav {
-    margin: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+      margin: 0;
+      background-color: rgba(0, 0, 0, 0.8);
   }
   nav ul {
-    margin-right: 0px;
-    float: left;
-    background-color: rgba(0, 0, 0, 0.8);
+      margin-right: 0px;
+      float: left;
+      background-color: rgba(0, 0, 0, 0.8);
   }
   .submenu-content-a {
-    display: block;
+      display: block;
   }
   nav .logo {
-    padding-left: 30px;
-    width: 100%;
+      padding-left: 30px;
+      width: 100%;
   }
   .show+a, ul {
-    display: none;
+      display: none;
   }
   nav ul li, nav ul ul li {
-    display: block;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    /* Change - Lucas */
+      display: block;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      /* Change - Lucas */
   }
   nav ul li a:hover {
-    box-shadow: none;
+      box-shadow: none;
   }
   .show {
-    display: block;
-    color: white;
-    font-size: 15px;
-    padding: 0 20px;
-    line-height: 70px;
-    cursor: pointer;
-    font-weight: bold;
-    /* Change - Lucas */
-    text-transform: uppercase;
-    /* Change - Lucas */
+      display: block;
+      color: white;
+      font-size: 15px;
+      padding: 0 20px;
+      line-height: 70px;
+      cursor: pointer;
+      font-weight: bold;
+      /* Change - Lucas */
+      text-transform: uppercase;
+      /* Change - Lucas */
   }
   .show:hover {
-    color: cyan;
+      color: cyan;
   }
   .icon {
-    display: block;
-    color: white;
-    position: absolute;
-    top: 0;
-    right: 40px;
-    line-height: 70px;
-    cursor: pointer;
-    font-size: 25px;
+      display: block;
+      color: white;
+      position: absolute;
+      top: 0;
+      right: 40px;
+      line-height: 70px;
+      cursor: pointer;
+      font-size: 25px;
   }
   nav ul ul {
-    top: 70px;
-    border-top: 0px;
-    float: none;
-    position: static;
-    display: none;
-    opacity: 1;
-    visibility: visible;
+      top: 70px;
+      border-top: 0px;
+      float: none;
+      position: static;
+      display: none;
+      opacity: 1;
+      visibility: visible;
   }
   nav ul ul a {
-    padding-left: 0;
-    /* Change - Lucas */
-    display: block;
-    /* Change - Lucas */
+      padding-left: 0;
+      /* Change - Lucas */
+      display: block;
+      /* Change - Lucas */
   }
   nav ul ul ul a {
-    padding-left: 0px;
-    /* Change - Lucas */
-    text-align: left;
-    /* Change - Lucas */
-    display: block;
-    /* Change - Lucas */
+      padding-left: 0px;
+      /* Change - Lucas */
+      text-align: left;
+      /* Change - Lucas */
+      display: block;
+      /* Change - Lucas */
   }
   nav ul ul ul li {
-    position: static;
+      position: static;
   }
   [id^=btn]:checked+ul {
-    display: block;
+      display: block;
   }
   nav ul ul li {
-    border-bottom: 0px;
+      border-bottom: 0px;
   }
   span.cancel:before {
-    content: '\f00d';
+      content: '\f00d';
   }
+
+
+/* Footer 1160px */
+footer {
+  display: grid;
+  grid-template-columns: 1.5fr 0.7fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "footer-img footer-followUs";
+  background-color: rgba(255, 255, 255, 0.5);
+}
+footer i {
+  font-size: 26px;
+}
+#footerFace {
+  color: rgb(66, 103, 178);
+}
+#footerInsta {
+  color: rgb(193, 53, 132);
+}
+#footerTwit {
+  color: rgb(29, 161, 242);
+}
+.footer-img {
+  width: 70vw;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+/*====RESPONSIVE 812px =====*/
+@media screen and (max-device-width: 812px) {
+
+/* Footer 812px*/
+footer {
+  display: grid;
+  grid-template-columns: 1.5fr 0.7fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "footer-img footer-followUs";
+  background-color: rgba(255, 255, 255, 0.5);
+}
+footer i {
+  font-size: 26px;
+}
+#footerFace {
+  color: rgb(66, 103, 178);
+}
+#footerInsta {
+  color: rgb(193, 53, 132);
+}
+#footerTwit {
+  color: rgb(29, 161, 242);
+}
+.footer-img {
+  width: 70vw;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+/*====RESPONSIVE 375px =====*/
+@media screen and (max-width:375px) {
+/*===BODY====*/
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: .5fr .3fr .4fr;
+  gap: 1px 1px;
+  grid-template-areas: "JuniorCricket" "schoolcricket" "summercamp";
+}
+
+.JuniorCricket {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: .3fr 1fr .3fr 1fr .3fr .5fr;
+  gap: 1px 1px;
+  grid-template-areas: "juniorpic1" "juniortext1" "juniorpic2" "juniortex2" "juniorpic3" "juniortext3";
+  grid-area: JuniorCricket;
+}
+
+.juniorpic1 
+
+{ grid-area: juniorpic1; 
+}
+
+.imgjunior1{
+
+  border-radius: 8px;
+  width: 360px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.juniortext1 { grid-area: juniortext1; 
+
+  padding: 2rem;
+  top: 18vh;
+  left: 30vw;
+
+}
+
+.juniorpic2 { grid-area: juniorpic2; }
+
+.imgjunior2{
+
+  border-radius: 8px;
+  width: 360px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.juniortex2 { grid-area: juniortex2;
+
+  padding: 2rem;
+  top: 18vh;
+  left: 30vw;
+
+}
+.juniorpic3 { grid-area: juniorpic3; }
+
+.imgjunior3{
+
+  border-radius: 8px;
+  width: 360px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.juniortext3 { grid-area: juniortext3;
+
+  padding: 2rem;
+  top: 18vh;
+  left: 30vw;
+
+}
+
+
+
+.schoolcricket {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: .4fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "schoolpic" "schooltext";
+  grid-area: schoolcricket;
+}
+
+.schoolpic { grid-area: schoolpic; }
+
+.imgschool1{
+  border-radius: 8px;
+  width: 360px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.schooltext { grid-area: schooltext; 
+
+  padding: 2rem;
+  top: 18vh;
+  left: 30vw;
+
+}
+
+.summercamp {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: .3fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "summerpic" "summertex";
+  grid-area: summercamp;
+}
+
+.summerpic { grid-area: summerpic;}
+.imgsummer1{
+  border-radius: 8px;
+  width: 360px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.summertex { grid-area: summertex;
+  padding: 2rem;
+  top: 18vh;
+  left: 30vw;
+
+}
+
+
+
+footer {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "footer-followUs" "footer-img";
+  grid-area: footer-grid;
+}
+.footer-img {
+  grid-area: footer-img;
+}
+#footerImg {
+  width: 100vw;
+}
+.footer-followUs {
+  grid-area: footer-followUs;
+  text-align: center;
+}
 }
