@@ -97,8 +97,8 @@
                     <a href="contact.html" class="menu-a">Contact</a>
                     <input type="checkbox" id="btn-6">
                     <ul class="submenu-content">
-                        <li><a href="#" class="submenu-content-a">Location</a></li>
-                        <li><a href="#" class="submenu-content-a">Newsletters</a></li>
+                        <li><a href="#location-link" class="submenu-content-a">Location</a></li>
+                        <li><a href="#newsletter-link" class="submenu-content-a">Newsletters</a></li>
                     </ul>
                 </li>
             </ul>
@@ -113,34 +113,36 @@
                     <h1>Contact</h1>
                 </div>
                 <div class="contact-form">
-                    <form class="getintouch-form" action="mailto:abc@hotmail.com" method="POST">
+                    <form class="getintouch-form" action="contactform.php" method="POST">
                         <h3>Send us an email</h3>
                         <div class="formItem">
                             <label class="formLabel" for="name">Name:</label>
-                            <input class="formField" type="text" name="" placeholder="Enter your name" required />
+                            <input class="formField" type="text" name="name" placeholder="Enter your name" required />
                         </div>
                         <div class="formItem">
                             <label class="formLabel" for="email">Email:</label>
                             <input class="formField" type="email" name="email" placeholder="Enter your email"
                                 required />
                         </div>
-                        <!-- <input class="formField" type="text" name="subject" placeholder="Enter your subject" required /> -->
+                        
                         <div id="selectSubject-form" class="formItem">
                             <label class="formLabel" for="subject">Subject:</label>
+                            <!-- <input class="formField" type="text" name="subject" placeholder="Enter your subject" required /> -->
                             <select name="subject" id="selectField" class="formField">
                                 <option value="" selected disabled hidden>---Enter the subject---</option>
-                                <option value="volvo">General</option>
-                                <option value="saab">League Cricket</option>
-                                <option value="mercedes">Women Cricket</option>
-                                <option value="audi">Junior Cricket</option>
+                                <option value="general">General</option>
+                                <option value="league">League Cricket</option>
+                                <option value="women">Women Cricket</option>
+                                <option value="junior">Junior Cricket</option>
                             </select>
                         </div>
                         <div class="formItem">
                             <label class="formLabel" for="message">Message:</label>
-                            <textarea class="formField" cols="30" rows="5" placeholder="Message"></textarea>
+                            <textarea class="formField" name="message" cols="30" rows="5" placeholder="Message"></textarea>
                         </div>
                         <div class="formItem">
-                            <input class="formBtn" type="submit" value="Submit" />
+                            <!-- <button class="formBtn" type="submit" form="form" value="Submit">Submit</button> -->
+                            <input class="formBtn" type="submit" name="submit" value="submit" />
                         </div>
                     </form>
                 </div>
@@ -164,7 +166,7 @@
                 </div>
             </div>
             <div class="location-grid">
-                <div class="location-title">
+                <div id="location-link" class="location-title">
                     <h2>Location and Directions</h2>
                 </div>
                 <div class="location-info">
@@ -188,7 +190,7 @@
                         aria-hidden="true" tabindex="0"></iframe>
                 </div>
             </div>
-            <div class="newsletter-grid">
+            <div id="newsletter-link" class="newsletter-grid">
                 <div class="newsletter-title">
                     <h2>Newsletters</h2>
                 </div>

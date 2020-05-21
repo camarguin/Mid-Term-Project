@@ -398,6 +398,7 @@ nav ul ul li a {
     width: 250px;
     margin-top: 10px;
 }
+
 .newsletterbtn input {
     display: block;
 }
@@ -651,6 +652,12 @@ footer i {
 }
 
 @media screen and (max-device-width: 812px) {
+    body {
+        background-image: url(../images/mapvancouver.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
     /* Body 812px */
     .grid-container {
         display: grid;
@@ -827,7 +834,8 @@ footer i {
         text-align: center;
     }
 }
-@media only screen  and (min-width : 1824px) {
+
+@media only screen and (min-width: 1824px) {
     .grid-container {
         margin-left: 20vw;
         margin-right: 20vw;

@@ -724,6 +724,7 @@ footer {
   grid-template-columns: 1.5fr 0.7fr;
   grid-template-rows: 1fr;
   gap: 1px 1px;
+  width: 100%;
   grid-template-areas: "footer-img footer-followUs";
   background-color: rgba(255, 255, 255, 0.5);
 }

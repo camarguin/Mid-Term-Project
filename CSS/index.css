@@ -419,33 +419,52 @@ input[name="r"] {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1.8fr;
+    grid-template-rows: 0.2fr 1fr;
     gap: 1px 1px;
     grid-template-areas: "media-title media-title media-title" "facebook-grid instagram-grid twitter-grid";
-    background-color: rgb(255, 255, 255, 0.8);
+    background-color: rgb(244, 155, 0, 0.5);
     text-align: center;
 }
 
 .media-title {
     grid-area: media-title;
 }
+.media-title h1 {
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 30px;
+}
 
 .facebook-grid {
     grid-area: facebook-grid;
+    display: inline-block;
+    margin: 0 auto;
 }
 
 .instagram-grid {
     grid-area: instagram-grid;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+}
+.instagram-iframe {
+    margin: 0 auto;
+    display: inline-block;
     text-align: center;
 }
 
 .twitter-grid {
     grid-area: twitter-grid;
     text-align: center;
+    display: inline-block;
+    margin: 0 auto;
 }
 
 .twitter-iframe {
-    width: 300px;
+    width: 350px;
+    align-self: center;
+    margin: 0 auto;
 }
 
 /* Footer */
