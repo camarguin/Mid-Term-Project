@@ -202,6 +202,7 @@ input {
   gap: 1px 1px;
   grid-template-areas: "juniortext1 juniorpic1" "juniorpic2 juniortex2" "juniortext3 juniorpic3";
   grid-area: JuniorCricket;
+  margin-bottom:  50px;
 }
 
 .juniortext1 { grid-area: juniortext1;
@@ -256,10 +257,10 @@ input {
    margin: 4%;
 }
 
-.juniorhead {
+/* .juniorhead {
   background-color: rgb(255, 255, 255, 0.8);
   width: 50%;
-}
+} */
 .schoolcricket {
   background-color: rgb(255, 255, 255, 0.8); 
   display: grid;
@@ -268,6 +269,7 @@ input {
   gap: 1px 1px;
   grid-template-areas: "schoolpic schooltext";
   grid-area: schoolcricket;
+  margin-bottom:  50px;
 }
 
 .schoolpic { grid-area: schoolpic; }
@@ -300,6 +302,7 @@ input {
   gap: 1px 1px;
   grid-template-areas: "summerpic summertex";
   grid-area: summercamp;
+  margin-bottom: 50px;
 }
 
 .summerpic { grid-area: summerpic; }
@@ -372,6 +375,201 @@ footer i {
 }
 
 /*=====END OF FOOTER======*/
+
+
+/*=====RESPONSIVE 1418px=====*/
+
+@media screen and (max-width:1418px) {
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: .8fr .3fr .4fr;
+  gap: 1px 1px;
+  grid-template-areas: "JuniorCricket" "schoolcricket" "summercamp";
+}
+
+.JuniorCricket {
+  background-color: rgb(255, 255, 255, 0.8); 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "juniortext1 juniorpic1" "juniorpic2 juniortex2" "juniortext3 juniorpic3";
+  grid-area: JuniorCricket;
+  margin-bottom:  50px;
+}
+
+.juniortext1 { grid-area: juniortext1;
+
+  padding: 2rem;
+  top: 18vh;
+  left: 20vw;
+
+}
+
+.juniorpic1 { grid-area: juniorpic1;
+}
+.imgjunior1{
+
+  border-radius: 8px;
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 2%;
+}
+.juniorpic2 { grid-area: juniorpic2; }
+.imgjunior2{
+
+  border-radius: 8px;
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 2%;
+}
+.juniortex2 { grid-area: juniortex2; 
+  padding: 2rem;
+  top: 18vh;
+  left: 30vw;
+}
+
+.juniortext3 { grid-area: juniortext3;
+
+  padding: 2rem;
+  top: 18vh;
+  left: 30vw;}
+
+.juniorpic3 { grid-area: juniorpic3; }
+.imgjunior3{
+
+  border-radius: 8px;
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+   margin: 2%;
+}
+
+/* .juniorhead {
+  background-color: rgb(255, 255, 255, 0.8);
+  width: 50%;
+} */
+.schoolcricket {
+  background-color: rgb(255, 255, 255, 0.8); 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "schoolpic schooltext";
+  grid-area: schoolcricket;
+  margin-bottom:  50px;
+}
+
+.schoolpic { grid-area: schoolpic; }
+.imgschool1{
+  border-radius: 8px;
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+.schooltext { grid-area: schooltext;
+  padding: 2rem;
+  top: 18vh;
+  left: 30vw;
+
+}
+/* .schoolhead{ Doubt
+  background-color: rgb(255, 255, 255, 0.8);
+      width: 100%;
+  }  */
+
+.summercamp {
+  background-color: rgb(255, 255, 255, 0.8); 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "summerpic summertex";
+  grid-area: summercamp;
+  margin-bottom: 50px;
+}
+
+.summerpic { grid-area: summerpic; }
+.imgsummer1{
+  border-radius: 8px;
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.summertex { grid-area: summertex; 
+  padding: 2rem;
+  top: 18vh;
+  left: 30vw;
+
+}
+/* .summerhead{
+
+  background-color: rgb(255, 255, 255, 0.8);
+      width: 50%;
+} */
+
+/*=====END OF BODY========*/
+
+
+
+/* ======Footer======= */
+
+footer {
+  display: grid;
+  grid-template-columns: 1.5fr 0.7fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "footer-img footer-followUs";
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+footer i {
+  font-size: 26px;
+}
+
+#footerFace {
+  color: rgb(66, 103, 178);
+}
+
+#footerInsta {
+  color: rgb(193, 53, 132);
+}
+
+#footerTwit {
+  color: rgb(29, 161, 242);
+}
+
+.footer-img {
+  width: 40vw;
+}
+
+#copyright {
+  position: sticky;
+  bottom: 0px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0.5vh 0;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+}
+
 
 
 
@@ -560,45 +758,682 @@ footer i {
 
 
 
-
-
-
-
-
-
-
 /*====RESPONSIVE 812px =====*/
 @media screen and (max-device-width: 812px) {
+/*===BODY====*/
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
 
-/* Footer 812px*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: .5fr .3fr .4fr;
+  gap: 1px 1px;
+  grid-template-areas: "JuniorCricket" "schoolcricket" "summercamp";
+}
+
+.JuniorCricket {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: .3fr 1fr .3fr 1fr .3fr .5fr;
+  gap: 1px 1px;
+  grid-template-areas: "juniorpic1" "juniortext1" "juniorpic2" "juniortex2" "juniorpic3" "juniortext3";
+  grid-area: JuniorCricket;
+  margin-bottom: 25px;
+}
+
+.juniorpic1 
+
+{ grid-area: juniorpic1; 
+}
+
+.imgjunior1{
+
+  border-radius: 8px;
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.juniortext1 { grid-area: juniortext1; 
+
+  padding: 2rem;
+  top: 18vh;
+  left: 30vw;
+
+}
+
+.juniorpic2 { grid-area: juniorpic2; }
+
+.imgjunior2{
+
+  border-radius: 8px;
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.juniortex2 { grid-area: juniortex2;
+
+  padding: 2rem;
+  top: 18vh;
+  left: 30vw;
+
+}
+.juniorpic3 { grid-area: juniorpic3; }
+
+.imgjunior3{
+
+  border-radius: 8px;
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.juniortext3 { grid-area: juniortext3;
+
+  padding: 2rem;
+  top: 18vh;
+  left: 30vw;
+
+}
+
+
+
+.schoolcricket {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: .4fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "schoolpic" "schooltext";
+  grid-area: schoolcricket;
+  margin-bottom: 25px;
+}
+
+.schoolpic { grid-area: schoolpic; }
+
+.imgschool1{
+  border-radius: 8px;
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.schooltext { grid-area: schooltext; 
+
+  padding: 2rem;
+  top: 18vh;
+  left: 30vw;
+
+}
+
+.summercamp {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: .3fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "summerpic" "summertex";
+  grid-area: summercamp;
+  margin-bottom: 25px;
+}
+
+.summerpic { grid-area: summerpic;}
+.imgsummer1{
+  border-radius: 8px;
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.summertex { grid-area: summertex;
+  padding: 2rem;
+  top: 18vh;
+  left: 30vw;
+
+}
+
+
+
 footer {
   display: grid;
-  grid-template-columns: 1.5fr 0.7fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr;
   gap: 1px 1px;
-  grid-template-areas: "footer-img footer-followUs";
-  background-color: rgba(255, 255, 255, 0.5);
-}
-footer i {
-  font-size: 26px;
-}
-#footerFace {
-  color: rgb(66, 103, 178);
-}
-#footerInsta {
-  color: rgb(193, 53, 132);
-}
-#footerTwit {
-  color: rgb(29, 161, 242);
+  grid-template-areas: "footer-followUs" "footer-img";
+  grid-area: footer-grid;
 }
 .footer-img {
-  width: 70vw;
+  grid-area: footer-img;
+}
+#footerImg {
+  width: 100vw;
+}
+.footer-followUs {
+  grid-area: footer-followUs;
+  text-align: center;
 }
 }
 
 
+/*===RESPONSIVE 1024px=====*/
+
+@media screen and (max-width:1024px) {
+  /*===BODY====*/
+  * {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: .5fr .3fr .4fr;
+    gap: 1px 1px;
+    grid-template-areas: "JuniorCricket" "schoolcricket" "summercamp";
+  }
+  
+  .JuniorCricket {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .3fr 1fr .3fr 1fr .3fr .5fr;
+    gap: 1px 1px;
+    grid-template-areas: "juniorpic1" "juniortext1" "juniorpic2" "juniortex2" "juniorpic3" "juniortext3";
+    grid-area: JuniorCricket;
+    margin-bottom: 25px;
+  }
+  
+  .juniorpic1 
+  
+  { grid-area: juniorpic1; 
+  }
+  
+  .imgjunior1{
+  
+    border-radius: 8px;
+    width: 750px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .juniortext1 { grid-area: juniortext1; 
+  
+    padding: 2rem;
+    top: 18vh;
+    left: 30vw;
+  
+  }
+  
+  .juniorpic2 { grid-area: juniorpic2; }
+  
+  .imgjunior2{
+  
+    border-radius: 8px;
+    width: 750px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .juniortex2 { grid-area: juniortex2;
+  
+    padding: 2rem;
+    top: 18vh;
+    left: 30vw;
+  
+  }
+  .juniorpic3 { grid-area: juniorpic3; }
+  
+  .imgjunior3{
+  
+    border-radius: 8px;
+    width: 750px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .juniortext3 { grid-area: juniortext3;
+  
+    padding: 2rem;
+    top: 18vh;
+    left: 30vw;
+  
+  }
+  
+  
+  
+  .schoolcricket {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .4fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "schoolpic" "schooltext";
+    grid-area: schoolcricket;
+    margin-bottom: 25px;
+  }
+  
+  .schoolpic { grid-area: schoolpic; }
+  
+  .imgschool1{
+    border-radius: 8px;
+    width: 750px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  
+  .schooltext { grid-area: schooltext; 
+  
+    padding: 2rem;
+    top: 18vh;
+    left: 30vw;
+  
+  }
+  
+  .summercamp {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .3fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "summerpic" "summertex";
+    grid-area: summercamp;
+    margin-bottom: 25px;
+  }
+  
+  .summerpic { grid-area: summerpic;}
+  .imgsummer1{
+    border-radius: 8px;
+    width: 750px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  
+  .summertex { grid-area: summertex;
+    padding: 2rem;
+    top: 18vh;
+    left: 30vw;
+  
+  }
+  
+  
+  
+  footer {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "footer-followUs" "footer-img";
+    grid-area: footer-grid;
+  }
+  .footer-img {
+    grid-area: footer-img;
+  }
+  #footerImg {
+    width: 40vw;
+  }
+  .footer-followUs {
+    grid-area: footer-followUs;
+    text-align: center;
+  }
+  }
 
 
+
+
+/*====RESPONSIVE 768px=====*/
+
+@media screen and (max-width:768px) {
+  /*===BODY====*/
+  * {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: .5fr .3fr .4fr;
+    gap: 1px 1px;
+    grid-template-areas: "JuniorCricket" "schoolcricket" "summercamp";
+  }
+  
+  .JuniorCricket {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .3fr 1fr .3fr 1fr .3fr .5fr;
+    gap: 1px 1px;
+    grid-template-areas: "juniorpic1" "juniortext1" "juniorpic2" "juniortex2" "juniorpic3" "juniortext3";
+    grid-area: JuniorCricket;
+    margin-bottom: 25px;
+  }
+  
+  .juniorpic1 
+  
+  { grid-area: juniorpic1; 
+  }
+  
+  .imgjunior1{
+  
+    border-radius: 8px;
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .juniortext1 { grid-area: juniortext1; 
+  
+    padding: 2rem;
+    top: 18vh;
+    left: 30vw;
+  
+  }
+  
+  .juniorpic2 { grid-area: juniorpic2; }
+  
+  .imgjunior2{
+  
+    border-radius: 8px;
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .juniortex2 { grid-area: juniortex2;
+  
+    padding: 2rem;
+    top: 18vh;
+    left: 30vw;
+  
+  }
+  .juniorpic3 { grid-area: juniorpic3; }
+  
+  .imgjunior3{
+  
+    border-radius: 8px;
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .juniortext3 { grid-area: juniortext3;
+  
+    padding: 2rem;
+    top: 18vh;
+    left: 30vw;
+  
+  }
+  
+  
+  
+  .schoolcricket {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .4fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "schoolpic" "schooltext";
+    grid-area: schoolcricket;
+    margin-bottom: 25px;
+  }
+  
+  .schoolpic { grid-area: schoolpic; }
+  
+  .imgschool1{
+    border-radius: 8px;
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  
+  .schooltext { grid-area: schooltext; 
+  
+    padding: 2rem;
+    top: 18vh;
+    left: 30vw;
+  
+  }
+  
+  .summercamp {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .3fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "summerpic" "summertex";
+    grid-area: summercamp;
+    margin-bottom: 25px;
+  }
+  
+  .summerpic { grid-area: summerpic;}
+  .imgsummer1{
+    border-radius: 8px;
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  
+  .summertex { grid-area: summertex;
+    padding: 2rem;
+    top: 18vh;
+    left: 30vw;
+  
+  }
+  
+  
+  
+  footer {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "footer-followUs" "footer-img";
+    grid-area: footer-grid;
+  }
+  .footer-img {
+    grid-area: footer-img;
+  }
+  #footerImg {
+    width: 100vw;
+  }
+  .footer-followUs {
+    grid-area: footer-followUs;
+    text-align: center;
+  }
+  }
+
+
+
+
+
+
+
+
+/*====RESPONSIVE 425px =====*/
+@media screen and (max-width:425px) {
+  /*===BODY====*/
+  * {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: .5fr .3fr .4fr;
+    gap: 1px 1px;
+    grid-template-areas: "JuniorCricket" "schoolcricket" "summercamp";
+  }
+  
+  .JuniorCricket {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .3fr 1fr .3fr 1fr .3fr .5fr;
+    gap: 1px 1px;
+    grid-template-areas: "juniorpic1" "juniortext1" "juniorpic2" "juniortex2" "juniorpic3" "juniortext3";
+    grid-area: JuniorCricket;
+    margin-bottom: 25px;
+  }
+  
+  .juniorpic1 
+  
+  { grid-area: juniorpic1; 
+  }
+  
+  .imgjunior1{
+  
+    border-radius: 8px;
+    width: 360px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .juniortext1 { grid-area: juniortext1; 
+  
+    padding: 2rem;
+    top: 18vh;
+    left: 30vw;
+  
+  }
+  
+  .juniorpic2 { grid-area: juniorpic2; }
+  
+  .imgjunior2{
+  
+    border-radius: 8px;
+    width: 360px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .juniortex2 { grid-area: juniortex2;
+  
+    padding: 2rem;
+    top: 18vh;
+    left: 30vw;
+  
+  }
+  .juniorpic3 { grid-area: juniorpic3; }
+  
+  .imgjunior3{
+  
+    border-radius: 8px;
+    width: 360px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .juniortext3 { grid-area: juniortext3;
+  
+    padding: 2rem;
+    top: 18vh;
+    left: 30vw;
+  
+  }
+  
+  
+  
+  .schoolcricket {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .4fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "schoolpic" "schooltext";
+    grid-area: schoolcricket;
+    margin-bottom: 25px;
+  }
+  
+  .schoolpic { grid-area: schoolpic; }
+  
+  .imgschool1{
+    border-radius: 8px;
+    width: 360px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  
+  .schooltext { grid-area: schooltext; 
+  
+    padding: 2rem;
+    top: 18vh;
+    left: 30vw;
+  
+  }
+  
+  .summercamp {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .3fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "summerpic" "summertex";
+    grid-area: summercamp;
+    margin-bottom: 25px;
+  }
+  
+  .summerpic { grid-area: summerpic;}
+  .imgsummer1{
+    border-radius: 8px;
+    width: 360px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  
+  .summertex { grid-area: summertex;
+    padding: 2rem;
+    top: 18vh;
+    left: 30vw;
+  
+  }
+  
+  
+  
+  footer {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "footer-followUs" "footer-img";
+    grid-area: footer-grid;
+  }
+  .footer-img {
+    grid-area: footer-img;
+  }
+  #footerImg {
+    width: 100vw;
+  }
+  .footer-followUs {
+    grid-area: footer-followUs;
+    text-align: center;
+  }
+  }
 
 
 
@@ -630,6 +1465,7 @@ footer i {
   gap: 1px 1px;
   grid-template-areas: "juniorpic1" "juniortext1" "juniorpic2" "juniortex2" "juniorpic3" "juniortext3";
   grid-area: JuniorCricket;
+  margin-bottom: 25px;
 }
 
 .juniorpic1 
@@ -700,6 +1536,7 @@ footer i {
   gap: 1px 1px;
   grid-template-areas: "schoolpic" "schooltext";
   grid-area: schoolcricket;
+  margin-bottom: 25px;
 }
 
 .schoolpic { grid-area: schoolpic; }
@@ -728,6 +1565,7 @@ footer i {
   gap: 1px 1px;
   grid-template-areas: "summerpic" "summertex";
   grid-area: summercamp;
+  margin-bottom: 25px;
 }
 
 .summerpic { grid-area: summerpic;}
@@ -746,8 +1584,6 @@ footer i {
   left: 30vw;
 
 }
-
-
 
 footer {
   display: grid;
@@ -768,3 +1604,169 @@ footer {
   text-align: center;
 }
 }
+
+
+/*========RESPONSIE 320px========*/
+
+@media screen and (max-width:320px) {
+  /*===BODY====*/
+  * {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: .5fr .3fr .4fr;
+    gap: 1px 1px;
+    grid-template-areas: "JuniorCricket" "schoolcricket" "summercamp";
+  }
+  
+  .JuniorCricket {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: .3fr 1fr .3fr 1fr .3fr .5fr;
+    gap: 1px 1px;
+    grid-template-areas: "juniorpic1" "juniortext1" "juniorpic2" "juniortex2" "juniorpic3" "juniortext3";
+    grid-area: JuniorCricket;
+    margin-bottom: 25px;
+  }
+  
+  .juniorpic1 
+  
+  { grid-area: juniorpic1; 
+  }
+  
+  .imgjunior1{
+  
+    border-radius: 8px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .juniortext1 { grid-area: juniortext1; 
+  
+    padding: 2rem;
+    top: 18vh;
+    left: 30vw;
+  
+  }
+  
+  .juniorpic2 { grid-area: juniorpic2; }
+  
+  .imgjunior2{
+  
+    border-radius: 8px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .juniortex2 { grid-area: juniortex2;
+  
+    padding: 2rem;
+    top: 18vh;
+    left: 30vw;
+  
+  }
+  .juniorpic3 { grid-area: juniorpic3; }
+  
+  .imgjunior3{
+  
+    border-radius: 8px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .juniortext3 { grid-area: juniortext3;
+  
+    padding: 2rem;
+    top: 18vh;
+    left: 30vw;
+  
+  }
+  
+  
+  
+  .schoolcricket {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: .4fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "schoolpic" "schooltext";
+    grid-area: schoolcricket;
+    margin-bottom: 25px;
+  }
+  
+  .schoolpic { grid-area: schoolpic; }
+  
+  .imgschool1{
+    border-radius: 8px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  
+  .schooltext { grid-area: schooltext; 
+  
+    padding: 2rem;
+    top: 18vh;
+    left: 30vw;
+  
+  }
+  
+  .summercamp {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: .3fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "summerpic" "summertex";
+    grid-area: summercamp;
+    margin-bottom: 25px;
+  }
+  
+  .summerpic { grid-area: summerpic;}
+  .imgsummer1{
+    border-radius: 8px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  
+  .summertex { grid-area: summertex;
+    padding: 2rem;
+    top: 18vh;
+    left: 30vw;
+  
+  }
+  
+  footer {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "footer-followUs" "footer-img";
+    grid-area: footer-grid;
+  }
+  .footer-img {
+    grid-area: footer-img;
+  }
+  #footerImg {
+    width: 100vw;
+  }
+  .footer-followUs {
+    grid-area: footer-followUs;
+    text-align: center;
+  }
+  }
