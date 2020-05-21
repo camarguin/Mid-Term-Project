@@ -6,11 +6,34 @@
 }
 
 body {
-  background-image: url(../images/BallBackgroundBlur.png);
+  /* background-image: url(../images/slideshow/cricket-0033.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; */
+}
+
+.body_section{
+  background-image: url(../images/slideshow/cricket-0033.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  width: 100%;
 }
+
+h1 {
+  font-size: 4em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+h2 {
+  font-weight: bold;
+}
+ /* p {
+   font-size: 1em;
+   text-align: justify;
+ } */
+
+
 
 /*MODAL BTN READ MORE STYLE */
 
@@ -26,7 +49,8 @@ body {
   width: 200px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
+  margin-left: 0px;
+  margin-top: 10px;
 }
 
 .buttonread span {
@@ -48,27 +72,39 @@ body {
 .buttonread:hover span {
   padding-right: 25px;
 }
+
 .buttonread:hover span:after {
   opacity: 1;
   right: 0;
 }
 
 /* The Modal (background) */
+
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 5; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 5;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: scroll; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: scroll;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
 }
 
 /* Modal Content */
+
 .modal-content {
   /* background-color: #fefefe; */
   background: white;
@@ -79,16 +115,16 @@ body {
 }
 
 /* The Close Button */
-.close {
+
+.close1, .close2, .close3 {
   color: #e74c3c;
   float: right;
   font-size: 40px;
   font-weight: bolder;
 }
 
-.close:hover,
-.close:focus {
-  color: #000;  
+.close1:hover, .close2:hover, .close3:hover, .close1:focus, .close2:focus, .close3:focus {
+  color: #000;
   text-decoration: none;
   cursor: pointer;
 }
@@ -112,8 +148,6 @@ body {
   transform: scale(0.9);
 }
 
-
-
 /* END BUTTON STYLE*/
 
 /* Header Menu */
@@ -123,7 +157,6 @@ body {
   height: 30px;
   width: 100%;
 }
-
 
 .header ul {
   list-style-type: none;
@@ -280,8 +313,10 @@ nav ul ul li a {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.1fr 0.2fr 0.2fr 0.2fr 0.2fr;
-  gap: 1px;
-  grid-template-areas: "about" "councilcards" "life-members" "programs" "facilities";  
+  margin: 50px 20px;
+  gap: 80px;
+  grid-template-areas: "about" "councilcards" "life-members" "programs" "facilities";
+  /* background-color: rgba(255, 255, 255, 0.4); */
 }
 
 .grid-container li {
@@ -296,16 +331,39 @@ nav ul ul li a {
   grid-template-areas: "abouttxt";
   grid-area: about;
   text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  /* background-color: rgb(255, 255, 255, 0.4); */
+  /* background-color: rgb(244, 155, 0, 0.6); */
+
 }
+
+#aboutinit {
+  color: #fff;
+  background-color: rgb(244, 155, 0, 0.6);
+  /* margin-left: 0; */
+  width: 40%;
+  height: 40vh;
+  padding: 30px 50px !important;
+  margin-top: 200px;
+  margin-left: 50px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
 
 .abouttxt {
   grid-area: abouttxt;
-  background-image: url(../images/slideshow/cricket-0033.jpg);
+  /* background-image: url(../images/slideshow/cricket-0033.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
-  color: white;
+  background-size: cover; */
+  height: 70vh;
+  color: rgb(0, 0, 0);
+  padding-left: 0;
+  text-align: justify;
 }
+
 
 .abouttxt ul {
   padding: 30px;
@@ -318,12 +376,12 @@ nav ul ul li a {
   gap: 1px 1px;
   grid-template-areas: "titlestd titlestd titlestd" "pic1 pic2 pic3" "pic4 pic5 pic6";
   grid-area: councilcards;
-  background-color: rgb(244, 155, 0, 0.5);
+  background-color: rgb(244, 155, 0, 0.8);
 }
 
-.councilcards img{
+.councilcards img {
   background-image: linear-gradient(to right, white, orange);
-  text-align: center;  
+  text-align: center;
 }
 
 .pic1 {
@@ -336,7 +394,6 @@ nav ul ul li a {
   align-self: center;
   flex-flow: column;
   align-items: center; */
-
 }
 
 .pic2 {
@@ -344,7 +401,6 @@ nav ul ul li a {
   z-index: 3;
   text-align: center;
   margin: 0 auto;
-
 }
 
 .pic3 {
@@ -352,7 +408,6 @@ nav ul ul li a {
   z-index: 3;
   text-align: center;
   margin: 0 auto;
-
 }
 
 .pic4 {
@@ -360,7 +415,6 @@ nav ul ul li a {
   z-index: 2;
   text-align: center;
   margin: 0 auto;
-
 }
 
 .pic5 {
@@ -368,7 +422,6 @@ nav ul ul li a {
   z-index: 2;
   text-align: center;
   margin: 0 auto;
-
 }
 
 .pic6 {
@@ -376,45 +429,42 @@ nav ul ul li a {
   z-index: 2;
   text-align: center;
   margin: 0 auto;
-
 }
 
-.life-members {
+/* .life-members {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   gap: 1px 1px;
   grid-template-areas: "lifetxt";
   grid-area: life-members;
-}
+  background-color: rgba(255, 255, 255, 0.8);
+} */
 
-.lifeimg img {
-  display: flex;
-  /* right: 3vw; */
-  /* top: 70%; */
-  width: 50%;
-  /* height: auto; */
-  border: 20px solid white;
-  box-shadow: 0 1px 3px rgba(34, 25, 25, 0.6);
-  -moz-box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
-  -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
-}
+/* .lifeimg img {
+  display: block;
+  text-align: center;
+  width: 50%;  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} */
 
-.titlestd {
+/* .titlestd {
   grid-area: titlestd;
-}
+} */
 
-.life-members h1 {
+/* .life-members h1 {
   width: auto;
-  height: auto;
-  /* align-items: center; */
-  /* align-self: center; */
-}
+  height: auto; 
+  align-items: center; 
+  align-self: center;
+} */
 
-.lifetxt {
+/* .lifetxt {
   grid-area: lifetxt;
   background-color: rgb(244, 155, 0, 0.4);
-}
+} */
 
 /* .lifetxt p {
   font-size: 1.8rem;
@@ -424,18 +474,106 @@ nav ul ul li a {
 } */
 
 
-
-.lifeimg img {
-  /* position: absolute; */
-  right: 3vw;
-  top: 50%;
-  /* width: 50%; */
-  /* height: auto; */
-  border: 30px solid white;
-  box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
-  -moz-box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
-  -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+/* LIFE MEMBERS GRID */
+.life-members {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.3fr 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "lifetitle lifetitle" "lifecontainer1 lifecontainer2" "lifecontainer3 lifecontainer4" "lifecontainer5 lifecontainer6";
+  grid-area: life-members;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
 }
+
+.liferef1, .liferef2, .liferef3, .liferef4, .liferef5, .liferef6 {
+  padding: 30px 5px;
+}
+
+.lifecontainer1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.4fr 0.6fr;
+  gap: 1px 1px;
+  grid-template-areas: "lifepic1" "liferef1";
+  grid-area: lifecontainer1;
+}
+
+.lifepic1 { grid-area: lifepic1; }
+
+.liferef1 { grid-area: liferef1; }
+
+.lifetitle { grid-area: lifetitle; }
+
+
+.lifecontainer2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.4fr 0.6fr;
+  gap: 1px 1px;
+  grid-template-areas: "lifepic2" "liferef2";
+  grid-area: lifecontainer2;
+}
+
+.lifepic2 { grid-area: lifepic2; }
+
+.liferef2 { grid-area: liferef2; }
+
+.lifecontainer3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.4fr 0.6fr;
+  gap: 1px 1px;
+  grid-template-areas: "lifepic3" "liferef3";
+  grid-area: lifecontainer3;
+}
+
+.lifepic3 { grid-area: lifepic3; }
+
+.liferef3 { grid-area: liferef3; }
+
+.lifecontainer4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.4fr 0.6fr;
+  gap: 1px 1px;
+  grid-template-areas: "lifepic4" "liferef4";
+  grid-area: lifecontainer4;
+}
+
+.lifepic4 { grid-area: lifepic4; }
+
+.liferef4 { grid-area: liferef4; }
+
+.lifecontainer5 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.4fr 0.6fr;
+  gap: 1px 1px;
+  grid-template-areas: "lifepic5" "liferef5";
+  grid-area: lifecontainer5;
+}
+
+.lifepic5 { grid-area: lifepic5; }
+
+.liferef5 { grid-area: liferef5; }
+
+.lifecontainer6 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.4fr 0.6fr;
+  gap: 1px 1px;
+  grid-template-areas: "lifepic6" "liferef6";
+  grid-area: lifecontainer6;
+}
+
+.lifepic6 { grid-area: lifepic6; }
+
+.liferef6 { grid-area: liferef6; }
+
+/* END LIFE GRID */
+
+
 
 .programs {
   display: grid;
@@ -444,6 +582,8 @@ nav ul ul li a {
   gap: 1px 1px;
   grid-template-areas: "titlestd titlestd" "programstxt imgprog";
   grid-area: programs;
+  background-color: rgb(244, 155, 0, 0.8);
+
 }
 
 .programs h1 {
@@ -457,10 +597,10 @@ nav ul ul li a {
 
 .programstxt {
   grid-area: programstxt;
-  background-color: rgb(244, 155, 0, 0.75);
+  /* background-color: rgb(244, 155, 0, 0.75); */
 }
 
-.programstxt ul{
+.programstxt ul {
   padding: 30px;
 }
 
@@ -469,7 +609,7 @@ nav ul ul li a {
 }
 
 .imgprog {
-  background-color: rgb(244, 155, 0, 0.4);
+  /* background-color: rgb(244, 155, 0, 0.4); */
 }
 
 .imgprog img {
@@ -477,7 +617,7 @@ nav ul ul li a {
   grid-area: imgprog;
   /* margin-top: 30vh; */
   width: 100%;
-  border: 30px solid rgb(255, 255, 255, 0.5);
+  /* border: 30px solid rgb(255, 255, 255, 0.5); */
   right: 5vw;
 }
 
@@ -488,7 +628,7 @@ nav ul ul li a {
   gap: 1px 1px;
   grid-template-areas: "titlestd" "facilitiestxt";
   grid-area: facilities;
-  background-color: rgb(244, 155, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .facilities h1 {
@@ -498,22 +638,30 @@ nav ul ul li a {
   align-self: center;
 }
 
-.facilities ul{
+.facilities ul {
   padding: 30px;
 }
 
 /* STANDARD STYLES */
 
+.cricketlist {
+  display: block;
+}
+
 .cricketlist li {
   font-size: 1.1em !important;
 }
 
-.abouttxt, .lifetxt, .programstxt, .facilitiestxt p {
-  font-size: 1.3em !important;
-  line-height: 30px;
+.lifetxt, .programstxt, .facilitiestxt p {
+  font-size: 1.5em !important;
+  line-height: 40px;
   text-align: justify;
   padding: 30px 20px;
-  /* font-size: 10em; */
+}
+
+.facilitiestxt li{
+  font-size: 1.5em !important;
+
 }
 
 .about, .councilcards, .life-members, .programs, .facilities {
@@ -545,12 +693,7 @@ nav ul ul li a {
 
 /*END FACILITIES TEST */
 
-.titlestd h1 {
-  height: 100px;
-  font-size: 4em;
-  text-align: center;
-  font-weight: bolder;
-}
+
 
 /* END OF THE GRID LAYOUT */
 
@@ -563,14 +706,16 @@ nav ul ul li a {
 
 .about h1 {
   font-family: inherit;
-  font-size: 5rem;
+  font-size: 4rem;
+  color: white !important;
+  text-shadow: 3px 3px #000;
 }
 
-.abouttxt {
+/* .abouttxt {
   width: 4hw;
   text-align: justify;
   padding: 2rem;
-}
+} */
 
 /* COUNCIL CARDS STYLE */
 
@@ -761,11 +906,35 @@ footer i {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-
-
 /* NEW GRID */
 
-/* @media screen and (max-width: 978px) { */
+@media screen and (max-width: 375px) {
+
+  .about {
+    width: 100%;
+    height: 800px;
+  }
+
+  #aboutinit {    
+    width: 600px !important;
+    height: 50vh !important;
+    margin-top: 400px !important;   
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  #aboutinit {
+    height: 37vh;
+    width: 650px !important;
+    margin-top: 530px !important;
+    margin-left: 50px;
+  }
+
+  .imgfacil2 {
+    display: none !important;
+  }
+}
 
 @media screen and (max-width: 1024px) {
   /* 
@@ -889,19 +1058,14 @@ footer i {
   span.cancel:before {
     content: "\f00d";
   }
-  /* .titlestd {
-    grid-area: titlestd;
-    font-size: 3rem;
-    font-weight: bolder;
-    height: 100px;
-    text-align: center;
-  } */
+
   .grid-container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-rows: 0.1fr 0.2fr 0.2fr 0.2fr 0.2fr;
-    gap: 1px 1px;
+    gap: 80px 0px;
     grid-template-areas: "about" "councilcards" "life-members" "programs" "facilities";
+    margin: 50px 20px
   }
   .about {
     display: grid;
@@ -912,22 +1076,18 @@ footer i {
     grid-area: about;
     margin-top: 0;
   }
+
+  #aboutinit {    
+    width: 50%;
+    height: 35vh;
+    margin-top: 550px;
+    margin-left: 10px;
+  }
+
   .abouttxt {
     grid-area: abouttxt;
     /* background-color: rgb(244, 155, 0, 0.75) !important; */
-    width: fit-content;
-  }
-  .abouttxt p {
-    font-size: 1.8rem;
-    line-height: 40px;
-    text-align: justify;
-    padding: 30px 20px;
-  }
-  .cricketlist {
-    display: block;
-  }
-  .cricketlist li {
-    font-size: 1.8em;
+    /* width: fit-content; */
   }
   .councilcards {
     display: grid;
@@ -937,9 +1097,9 @@ footer i {
     grid-template-areas: "titlestd titlestd" "pic1 pic2" "pic3 pic4" "pic5 pic6";
     grid-area: councilcards;
     background-color: rgb(244, 155, 0, 0.4);
+    margin-top: 130px;
   }
-
-  .councilcards h1{
+  .councilcards h1 {
     font-size: 2.5rem;
   }
   .titlestd {
@@ -968,23 +1128,17 @@ footer i {
   .pic6 {
     grid-area: pic6;
   }
-  .life-members {
+  /* .life-members {
     display: grid;
     grid-template-columns: 1fr;
-    /* grid-template-rows: 0.6fr 1.4fr 1fr; */
     grid-template-rows: 1fr;
     gap: 1px;
     grid-template-areas: "lifetxt";
     grid-area: life-members;
-  }
+  } */
   .titlestd {
     grid-area: titlestd;
   }
-  /* .lifeimg {
-    grid-area: lifeimg;
-    margin-top: 0;
-    margin-bottom: 0;
-  } */
   .lifetxt {
     grid-area: lifetxt;
   }
@@ -1047,5 +1201,4 @@ footer i {
     padding: 2rem;
     width: fit-content;
   }
-
 }
