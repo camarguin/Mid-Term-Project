@@ -391,6 +391,115 @@ footer i {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+/* ############################### */
+/* ########## read more ########## */
+/* ############################### */
+
+.readmore_btn {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.buttonread {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #F4511E;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.buttonread span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttonread span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.buttonread:hover span {
+    padding-right: 25px;
+}
+
+.buttonread:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 5;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: scroll;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+    /* background-color: #FEFEFE; */
+    background: white;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 80%;
+}
+  /* The Close Button */
+.close1, .close2, .close3, .close4 {
+    color: #E74C3C;
+    float: right;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.close1:hover, .close2:hover, .close3:hover, .close4:hover, .close1:focus, .close2:focus .close3:focus, .close4:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.card .bottom-text .btn {
+    margin: 10px 0;
+    text-align: left;
+}
+.card .bottom-text .btn a {
+    text-decoration: none;
+    background: #E74C3C;
+    color: #F2F2F2;
+    padding: 5px 8px;
+    border-radius: 3px;
+    display: inline-flex;
+    transition: 0.2s;
+}
+.card .bottom-text .btn a:hover {
+    transform: scale(0.9);
+}
+
 /* ################################ */
 /* ########## media part ########## */
 /* ################################ */
@@ -429,7 +538,7 @@ footer i {
         padding-left: 30px;
         width: 100%;
     }
-    .show+a, ul {
+    .show+a, .menu_media {
         display: none;
     }
     nav ul li, nav ul ul li {
@@ -501,7 +610,7 @@ footer i {
     .grid-container {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
         gap: 80px 0px;
         grid-template-areas: "teams" "training" "indoor_training" "schedule";
     }
