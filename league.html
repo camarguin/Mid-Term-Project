@@ -36,7 +36,7 @@
                 <span class="fa fa-bars"></span>
             </label>
             <input type="checkbox" id="btn">
-            <ul id="menu_media">
+            <ul id="menu_media" class="menu_media">
                 <!-- Home -->
                 <li class="menu-content-li">
                     <a href="index.html" class="menu-a">Home
@@ -110,27 +110,40 @@
             <div class="teams_text">
                 <h1>Teams</h1>
                 <h2>TEAMS REGISTERED FOR 2015 SEASON</h2>
-                <ul>
-                    <li>
-                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;7 competitive men's teams registered
-                        with the BC Mainland Cricket League (BCMCL)
-                    </li>
-                    <li>
-                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;1 women's cricket teams with the BCMCL
-                    </li>
-                    <li>
-                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;1 (maybe 2 if we have the numbers)
-                        Under 16's hardball cricket teams with the Vancouver & District
-                        Saturday Morning Cricket League (VDSMCL)
-                    </li>
-                    <li>
-                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;2 Under 12's Kanga (softball) cricket
-                        teams
-                    </li>
-                    <li>
-                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;Over 40's West Vancouver Taverners
-                    </li>
-                </ul>
+                <!-- Trigger/Open The Modal -->
+            <div class="readmore_btn" style="margin-bottom: 50px;">
+                <button class="buttonread" id="teams_read_btn" style="vertical-align:middle"><span>READ MORE</span></button>
+            </div>
+                <!-- The Modal -->
+                <div id="teams_read_text" class="modal">
+                        <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close1">&times;</span>
+                        <p>
+                            <ul>
+                                <li>
+                                    <img src="./images/teamsmall1.png" alt="list_icon">&ensp;7 competitive men's teams registered
+                                    with the BC Mainland Cricket League (BCMCL)
+                                </li>
+                                <li>
+                                    <img src="./images/teamsmall1.png" alt="list_icon">&ensp;1 women's cricket teams with the BCMCL
+                                </li>
+                                <li>
+                                    <img src="./images/teamsmall1.png" alt="list_icon">&ensp;1 (maybe 2 if we have the numbers)
+                                    Under 16's hardball cricket teams with the Vancouver & District
+                                    Saturday Morning Cricket League (VDSMCL)
+                                </li>
+                                <li>
+                                    <img src="./images/teamsmall1.png" alt="list_icon">&ensp;2 Under 12's Kanga (softball) cricket
+                                    teams
+                                </li>
+                                <li>
+                                    <img src="./images/teamsmall1.png" alt="list_icon">&ensp;Over 40's West Vancouver Taverners
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
                 <h2>Player registration begins in January</h2>
                 <p>
                     Junior player registration will be held <span
@@ -142,7 +155,7 @@
                 <p>If you are interested in playing for the club, please contact:</p>
                 <p><span style="color: green; font-weight: bold;"><i class="fas fa-user-plus"></i> Alex Turko</span> on
                     <i class="fas fa-mobile-alt"></i> 778-229-785</p>
-                <h2 style="color:black; font-weight:bold;">We look forward to welcoming you!</h2>
+                <!-- <h2 style="color:black; font-weight:bold;">We look forward to welcoming you!</h2> -->
             </div>
             <div class="teams_img">
                 <img src="./images/league_1.jpg" alt="teams_img" style="width: 100%; height: 100%;">
@@ -154,20 +167,32 @@
             </div>
             <div class="training_text">
                 <h1>Training</h1>
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, sunt?</h2>
+                <h2>OUTDOOR TRAINING - starts in early April at Hugo Ray Park (weather dependent)</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur debitis quas dolores aperiam
-                    corrupti culpa similique in asperiores iusto deserunt eum temporibus, reiciendis delectus ipsam
-                    doloremque
-                    aliquid sapiente atque. Fugiat optio facere et porro, neque recusandae vero libero earum saepe!
-                    Aperiam,
-                    accusamus suscipit blanditiis, officiis eius ipsum nisi id quibusdam veritatis alias molestias iusto
-                    numquam consectetur, est temporibus. Cum exercitationem ipsum architecto eius est repudiandae,
-                    distinctio excepturi cumque officiis quod? Pariatur nihil sit commodi molestiae nobis dignissimos
-                    fuga,
-                    harum vel illum consectetur corporis provident totam, dolor sapiente neque voluptatem, debitis quasi
-                    quaerat aperiam dolorem inventore quidem explicabo deserunt cum. Iste.
+                    With the regular season starting on the last weekend of April, outdoor training commences once the weather permits.  This is usually the <span
+                    style="font-size: 1.2em; border-bottom: 2px solid black;"><b>first week of April</b></span>.  Please check this page in the spring for the training program. We have 2 permanent nets and one portable net for centre wicket practice.
                 </p>
+                <p>Club practices are held as follows:</p>
+
+                <!-- Trigger/Open The Modal -->
+            <div class="readmore_btn">
+                <button class="buttonread" id="training_read_btn" style="vertical-align:middle"><span>READ MORE</span></button>
+            </div>
+                <!-- The Modal -->
+                <div id="training_read_text" class="modal">
+                        <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close2">&times;</span>
+                        <p>
+                            <p style="font-size: 1.2em;">
+                                Monday - wowen's training (6 - 8 pm)
+                                <br>Tuesday - club practice (5:30 - 8 pm)
+                                <br>Thursday - optional club practice (needs to be coordinated with the junior cricket coordinator)
+                                <br>Thursdays - junior program (6 - 8 pm)
+                            </p>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="indoor_training">
@@ -188,27 +213,38 @@
                     to
                     participate.
                 </p>
-                <br>
-                <p style="font-size: 1.2em;">
-                    Date: January 20 to mid-March
-                    <br>Time: 6 to 8 pm
-                    <br>Cost: Participants will pay $50 for the full indoor training prorgam (8 sessions)
-                    <br>Address: Surrey
-                </p><br>
-                <p>
-                    The pre-season Twenty20 cricket will start on March 17 and the regular season begins in late April.
-                    The
-                    regular season is 19 weeks in duration with 18 matches - all limited overs games. That means that
-                    each
-                    team will have one bye during the regular season. The playoffs start on the first weekend in
-                    September.
-                </p>
-                <p>
-                    For more information, please contact:
-                </p>
-                <p><span style="color: green; font-weight: bold;"><i class="fas fa-user-plus"></i>Alex Turko</span> on <i class="fas fa-mobile-alt"></i> 778-229-7858 or <i class="fas fa-envelope-square"></i> email: <a href="alex@westvancouvercricketclub.ca">alex@westvancouvercricketclub.ca</a>.
-                </p>
 
+                <!-- Trigger/Open The Modal -->
+            <div class="readmore_btn">
+                <button class="buttonread" id="indoor_read_btn" style="vertical-align:middle"><span>READ MORE</span></button>
+            </div>
+                <!-- The Modal -->
+                <div id="indoor_read_text" class="modal">
+                        <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close3">&times;</span>
+                        <p>
+                            <p style="font-size: 1.2em;">
+                                Date: January 20 to mid-March
+                                <br>Time: 6 to 8 pm
+                                <br>Cost: Participants will pay $50 for the full indoor training prorgam (8 sessions)
+                                <br>Address: Surrey
+                            </p>
+                            <br>
+                            <p>
+                                The pre-season Twenty20 cricket will start on March 17 and the regular season begins in late April.
+                                The
+                                regular season is 19 weeks in duration with 18 matches - all limited overs games. That means that
+                                each
+                                team will have one bye during the regular season. The playoffs start on the first weekend in
+                                September.
+                            </p>
+                            <p>For more information, please contact:</p>
+                            <p><span style="color: green; font-weight: bold;"><i class="fas fa-user-plus"></i>Alex Turko</span> on <i class="fas fa-mobile-alt"></i> 778-229-7858 or <i class="fas fa-envelope-square"></i> email: <a href="alex@westvancouvercricketclub.ca">alex@westvancouvercricketclub.ca</a>.
+                            </p>
+                        </p>
+                    </div>
+                </div>
             </div>
             <div class="indoor_img">
                 <img src="./images/league_3.jpg" alt="indoor_img" style="width: 100%; height: 100%;">
@@ -229,54 +265,67 @@
                     Fraser Valley and the Okanagan.
                 </p>
                 <h2>For the 2020 season the club has registered the following teams:</h2>
-                <ul>
-                    <li>
-                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;1st XI - Elite Division
-                    </li>
-                    <li>
-                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;2nd XI - Premier Division
-                    </li>
-                    <li>
-                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;3rd XI - Division 1
-                    </li>
-                    <li>
-                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;4th XI - Division 3
-                    </li>
-                    <li>
-                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;5th XI - Division 4
-                    </li>
-                    <li>
-                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;6th XI - Division 6
-                    </li>
-                    <li>
-                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;7th XI - Division 7
-                    </li>
-                    <li>
-                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;8th XI - Division 8
-                    </li>
-                    <li>
-                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;Women's Team - play 4 to 6 games during
-                        the season
-                    </li>
-                    <li>
-                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;Junior Under 16's - play on Sundays
-                    </li>
-                    <li>
-                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;Under 13's - play on Saturdayu mornings
-                    </li>
-                    <li>
-                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;Junior Under 12's Kanga Team - 2 teams
-                        will play in the Vancouver & District Saturday Morning League
-                        on Saturday mornings
-                    </li>
-                    <li>
-                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;School Cricket - Collingwood School
-                    </li>
-                    <li>
-                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;Over 40's team (West Vancouver
-                        Taverners)
-                    </li>
-                </ul>
+                    <!-- Trigger/Open The Modal -->
+                    <div class="readmore_btn">
+                        <button class="buttonread" id="schedule_read_btn" style="vertical-align:middle"><span>READ MORE</span></button>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="schedule_read_text" class="modal">
+                            <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close4">&times;</span>
+                            <p>
+                                <ul>
+                                    <li>
+                                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;1st XI - Elite Division
+                                    </li>
+                                    <li>
+                                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;2nd XI - Premier Division
+                                    </li>
+                                    <li>
+                                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;3rd XI - Division 1
+                                    </li>
+                                    <li>
+                                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;4th XI - Division 3
+                                    </li>
+                                    <li>
+                                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;5th XI - Division 4
+                                    </li>
+                                    <li>
+                                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;6th XI - Division 6
+                                    </li>
+                                    <li>
+                                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;7th XI - Division 7
+                                    </li>
+                                    <li>
+                                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;8th XI - Division 8
+                                    </li>
+                                    <li>
+                                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;Women's Team - play 4 to 6 games during
+                                        the season
+                                    </li>
+                                    <li>
+                                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;Junior Under 16's - play on Sundays
+                                    </li>
+                                    <li>
+                                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;Under 13's - play on Saturdayu mornings
+                                    </li>
+                                    <li>
+                                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;Junior Under 12's Kanga Team - 2 teams
+                                        will play in the Vancouver & District Saturday Morning League
+                                        on Saturday mornings
+                                    </li>
+                                    <li>
+                                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;School Cricket - Collingwood School
+                                    </li>
+                                    <li>
+                                        <img src="./images/teamsmall1.png" alt="list_icon">&ensp;Over 40's team (West Vancouver
+                                        Taverners)
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
@@ -294,11 +343,69 @@
     </footer>
     <p id="copyright">---- COPYRIGHT &copy; 2020 West Vancouver Cricket Club ----</p>
 
+    <!-- ############################ -->
+    <!-- ########## Script ########## -->
+    <!-- ############################ -->
+
     <script>
         $('.icon').click(function () {
             $('span').toggleClass("cancel");
         });
     </script>
+    <script>
+        // Get the modal
+        var modal1 = document.getElementById("teams_read_text");
+        var modal2 = document.getElementById("training_read_text");
+        var modal3 = document.getElementById("indoor_read_text");
+        var modal4 = document.getElementById("schedule_read_text");
+        // Get the button that opens the modal
+        var btn1 = document.getElementById("teams_read_btn");
+        var btn2 = document.getElementById("training_read_btn");
+        var btn3 = document.getElementById("indoor_read_btn");
+        var btn4 = document.getElementById("schedule_read_btn");
+        // Get the <span> element that closes the modal
+        var span1 = document.getElementsByClassName("close1")[0];
+        var span2 = document.getElementsByClassName("close2")[0];
+        var span3 = document.getElementsByClassName("close3")[0];
+        var span4 = document.getElementsByClassName("close4")[0];
+        // When the user clicks the button, open the modal 
+        btn1.onclick = function () {
+          modal1.style.display = "block";
+        }
+        btn2.onclick = function () {
+          modal2.style.display = "block";
+        }
+        btn3.onclick = function () {
+          modal3.style.display = "block";
+        }
+        btn4.onclick = function () {
+          modal4.style.display = "block";
+        }
+        // When the user clicks on <span> (x), close the modal
+        span1.onclick = function () {
+          modal1.style.display = "none";
+        }
+        span2.onclick = function () {
+          modal2.style.display = "none";
+        }
+        span3.onclick = function () {
+          modal3.style.display = "none";
+        }
+        span4.onclick = function () {
+          modal4.style.display = "none";
+        }
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+          if (event.target == modal1 || event.target == modal2 || event.target == modal3 || event.target == modal4) {
+            modal1.style.display = "none";
+            modal2.style.display = "none";
+            modal3.style.display = "none";
+            modal4.style.display = "none";
+          }
+        }
+      </script>
+    
+
 </body>
 
 </html>
