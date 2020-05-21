@@ -104,240 +104,205 @@
 
     <!-- <section class="body_section"> -->
       <div class="grid-container">
-
         <div class="about" id="about">     
-          <div class="abouttxt">
-            <div class="titlestd"><h1>ABOUT WVCC</h1></div>
-            <br>
-            <p>The West Vancouver Cricket Club, based at Hugo Ray Park in West Vancouver is one of the largest cricket clubs in Canada.  It is rated the best cricketing facility in Western Canada.It is our aim to develop a strong and successful club both on and off the field and to provide an enjoyable environment for all members, guests and spectators.                            
-            Our club field will field seven (7) competitive league teams playing in the British Columbia Mainland Cricket League (BCMCL) for the 2016 Season.  The top teams play One Day International (ODI) while the rest of the teams play limited 45 overs.  Games are played on Saturdays and Sundays.  The regular season starts on the last weekend of April and runs to the Labour Day weekend. The club also participates in a Pre-Season Twenty20 Cricket Tournament which runs for 5 weekends prior to the start of the regular season.</p>
-            <br>
-            
-              <h2>Other cricket events/tournaments include:</h2>
-              <br>    
-              <ul class="cricketlist">              
-                <li> Social Over 40's Cricket (mid week) </li>
-                <li> Junior Cricket - Under 12's and Under 17's programs </li>
-                <li> High peformance cricket programs </li>
-                <li> Summer Cricket Camp (July 4-8, 2016) at Hugo Ray Park </li>
-                <li> Women's Cricket (May to August) </li>
-                <li> The club supports and provides coaches for School Cricket </li>
-                <li> Social games during the season </li>
-                <li> Mid-week Twenty20 Cricket </li>
-                <li> 6-A-Side Tournaments </li>
-                <li> Matches against touring teams </li>
-                <li> Community and social cricket on Fridays from 6-8 pm (June - August) </li>
-              </ul>
+            <div class="abouttxt">
+              <div class="titlestd"><h1>ABOUT WVCC</h1></div>
               <br>
-                              
-              <p>Our club's home, Hugo Ray Park, has great facilities including 2 outdoor nets and 2 grounds - changing rooms with showers and ample free parking. The club is fortunate to have a clubhouse for use by members and guests.  The clubhouse is located adjacent to the two cricket grounds and has numerous amenities including a licensed bar, a pool table and a ping pong table, kitchen, BBQ, and lounge and bar areas leading onto balconies which overlook the grounds.  The clubhouse is also available for rental.
-              </p>
-            </p>
-        </div>
-        <div class="slideshow">
-          <div class="slideshow-container">
+              <p>The West Vancouver Cricket Club, based at Hugo Ray Park in West Vancouver is one of the largest cricket clubs in Canada.  It is rated the best cricketing facility in Western Canada.It is our aim to develop a strong and successful club both on and off the field and to provide an enjoyable environment for all members, guests and spectators.</p>              
+       
+              <!-- Trigger/Open The Modal -->
+              <button class="buttonread" id="readabout" style="vertical-align:middle"><span>READ MORE </span></button>
 
-            <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
-              <img src="./images/slideshow/cricket-0018.jpg" style="width:100%">
-              <!-- <div class="text">Caption Text</div> -->
-            </div>
+              <!-- The Modal -->
+              <div id="myModalabout" class="modal">
 
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img src="./images/slideshow/cricket-0033.jpg" style="width:100%">
-              <!-- <div class="text">Caption Two</div> -->
-            </div>
-
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img src="./images/slideshow/cricket-016.jpg" style="width:100%">
-              <!-- <div class="text">Caption Three</div> -->
-            </div>
-
-            </div>
-            <div style="text-align:center">
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-            </div>
-            <script>
-            var slideIndex = 0;
-            showSlides();
-
-            function showSlides() {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("dot");
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-              }
-              slideIndex++;
-              if (slideIndex > slides.length) {slideIndex = 1}    
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-              setTimeout(showSlides, 4000); // Change image every 2 seconds
-            }
-            </script>
-
-              <!-- <img src="/images/cricket4.jpg" alt=""> -->
-        </div>
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p> The West Vancouver Cricket Club, based at Hugo Ray Park in West Vancouver is one of the largest cricket clubs in Canada.  It is rated the best cricketing facility in Western Canada.It is our aim to develop a strong and successful club both on and off the field and to provide an enjoyable environment for all members, guests and spectators.  Our club field will field seven (7) competitive league teams playing in the British Columbia Mainland Cricket League (BCMCL) for the 2016 Season.  The top teams play One Day International (ODI) while the rest of the teams play limited 45 overs.  Games are played on Saturdays and Sundays.  The regular season starts on the last weekend of April and runs to the Labour Day weekend. The club also participates in a Pre-Season Twenty20 Cricket Tournament which runs for 5 weekends prior to the start of the regular season.</p><br>              
+                <h2>Other cricket events/tournaments include:</h2><br>    
+                <ul class="cricketlist">              
+                  <li> Social Over 40's Cricket (mid week) </li>
+                  <li> Junior Cricket - Under 12's and Under 17's programs </li>
+                  <li> High peformance cricket programs </li>
+                  <li> Summer Cricket Camp (July 4-8, 2016) at Hugo Ray Park </li>
+                  <li> Women's Cricket (May to August) </li>
+                  <li> The club supports and provides coaches for School Cricket </li>
+                  <li> Social games during the season </li>
+                  <li> Mid-week Twenty20 Cricket </li>
+                  <li> 6-A-Side Tournaments </li>
+                  <li> Matches against touring teams </li>
+                  <li> Community and social cricket on Fridays from 6-8 pm (June - August) </li>
+                </ul>
+                <br>
+                                
+                <p>Our club's home, Hugo Ray Park, has great facilities including 2 outdoor nets and 2 grounds - changing rooms with showers and ample free parking. The club is fortunate to have a clubhouse for use by members and guests.  The clubhouse is located adjacent to the two cricket grounds and has numerous amenities including a licensed bar, a pool table and a ping pong table, kitchen, BBQ, and lounge and bar areas leading onto balconies which overlook the grounds.  The clubhouse is also available for rental.</p></div></div>
+          </div>
         </div>
         <div class="councilcards" id="councilcards">
-          <div class="titlestd"><h1>WVCC 2020 SEASON GOVERNING COUNCIL</h1></div>
-          <div class="pic1">
-            <div class="card">
-                <div class="img">
-                  <img src="./images/avatar/Alex Turko.png" />
-                </div>
-                <div class="top-text">
-                  <div class="name">
-                    Alex Turko
+            <div class="titlestd"><h1>WVCC 2020 SEASON GOVERNING COUNCIL</h1></div>
+            <div class="pic1">
+              <div class="card">
+                  <div class="img">
+                    <img src="./images/avatar/default_avatar2.png" />
                   </div>
-                  <p>
-                    President
-                  </p>
-                </div>
-                <div class="bottom-text">
-                  <div class="textcard">
-                    &#9742 778-229-7858<br>
-                    &#9993 president@westvancouvercricketclub.ca
-                  </div>
-                  <div class="btn">
-                    <a href="#">Read more</a>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div class="pic2">
-            <div class="card">
-                <div class="img">
-                  <img src="./images/avatar/Monty Purewal.png" />
-                </div>
-                <div class="top-text">
-                  <div class="name">
-                    Monty Purewal
-                  </div>
-                  <p>
-                    Finance Director
-                  </p>
-                </div>
-                <div class="bottom-text">
-                  <div class="textcard">
-                    &#9742 778-384-6538<br>
-                    &#9993 treasurer@westvancouvercricketclub.ca
-                  </div>
-                  <div class="btn">
-                    <a href="#">Read more</a>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div class="pic3">
-            <div class="card">
-                <div class="img">
-                  <img src="./images/avatar/Ali Haq.png" />
-                </div>
-                <div class="top-text">
-                  <div class="name">
-                    Ali Haq
-                  </div>
-                  <p>
-                    Administration & Club Secretary Director
-                  </p>
-                </div>
-                <div class="bottom-text">
-                  <div class="textcard">
-                    &#9742 6045-818-6613<br>
-                    &#9993 secretary@westvancouvercricketclub.ca
-                  </div>
-                  <div class="btn">
-                    <a href="#">Read more</a>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div class="pic4">
-            <div class="card">
-                <div class="img">
-                  <img src="./images/avatar/Alex Turko.png" />
-                </div>
-                <div class="top-text">
-                  <div class="name">
-                    Alex Turko
-                  </div>
-                  <p>
-                    Cricket Development & Junior Coordinator
-                  </p>
-                </div>
-                <div class="bottom-text">
-                  <div class="textcard">
-                    &#9742 778-229-7858<br>
-                    &#9993 alex@westvancouvercricketclub.ca
-                  </div>
-                  <div class="btn">
-                    <a href="#">Read more</a>
-                  </div>
-                </div>
-              </div>
-          </div> 
-          <div class="pic5">
-                <div class="card">
-                    <div class="img">
-                      <img src="./images/avatar1.png" />
+                  <div class="top-text">
+                    <div class="name">
+                      Alex Turko
                     </div>
-                    <div class="top-text">
-                      <div class="name">
-                        Karan Chabba
-                      </div>
-                      <p>
-                        Facilities Director
-                      </p>
+                    <p>
+                      President
+                    </p>
+                  </div>
+                  <div class="bottom-text">
+                    <div class="textcard">
+                      &#9742 778-229-7858<br>
+                      &#9993 president@westvancouvercricketclub.ca
                     </div>
-                    <div class="bottom-text">
-                      <div class="textcard">
-                        &#9742 778-512-5208<br>
-                        &#9993 karan@westvancouvercricketclub.ca
-                      </div>
-                      <div class="btn">
-                        <a href="#">Read more</a>
-                      </div>
+                    <div class="btn">
+                      <a href="#">Read more</a>
                     </div>
                   </div>
-          </div>  
-          <div class="pic6">
-                <div class="card">
-                <div class="img">
-                  <img src="./images/avatar/Alex Turko.png" />
                 </div>
-                <div class="top-text">
-                  <div class="name">
-                    Alex Turko
+            </div>
+            <div class="pic2">
+              <div class="card">
+                  <div class="img">
+                    <img src="./images/avatar/default_avatar2.png" />
                   </div>
-                  <p>
-                    Cricket Operations Director
-                </p>
+                  <div class="top-text">
+                    <div class="name">
+                      Monty Purewal
+                    </div>
+                    <p>
+                      Finance Director
+                    </p>
+                  </div>
+                  <div class="bottom-text">
+                    <div class="textcard">
+                      &#9742 778-384-6538<br>
+                      &#9993 treasurer@westvancouvercricketclub.ca
+                    </div>
+                    <div class="btn">
+                      <a href="#">Read more</a>
+                    </div>
+                  </div>
                 </div>
-                <div class="bottom-text">
-                  <div class="textcard">
-                    &#9742 778-229-7858<br>
-                    &#9993 president@westvancouvercricketclub.ca
+            </div>
+            <div class="pic3">
+              <div class="card">
+                  <div class="img">
+                    <img src="./images/avatar/default_avatar2.png" />
                   </div>
-                  <div class="btn">
-                    <a href="#">Read more</a>
+                  <div class="top-text">
+                    <div class="name">
+                      Ali Haq
+                    </div>
+                    <p>
+                      Administration & Club Secretary Director
+                    </p>
+                  </div>
+                  <div class="bottom-text">
+                    <div class="textcard">
+                      &#9742 6045-818-6613<br>
+                      &#9993 secretary@westvancouvercricketclub.ca
+                    </div>
+                    <div class="btn">
+                      <a href="#">Read more</a>
+                    </div>
                   </div>
                 </div>
-              </div>
+            </div>
+            <div class="pic4">
+              <div class="card">
+                  <div class="img">
+                    <img src="./images/avatar/default_avatar2.png" />
+                  </div>
+                  <div class="top-text">
+                    <div class="name">
+                      Alex Turko
+                    </div>
+                    <p>
+                      Cricket Development & Junior Coordinator
+                    </p>
+                  </div>
+                  <div class="bottom-text">
+                    <div class="textcard">
+                      &#9742 778-229-7858<br>
+                      &#9993 alex@westvancouvercricketclub.ca
+                    </div>
+                    <div class="btn">
+                      <a href="#">Read more</a>
+                    </div>
+                  </div>
+                </div>
+            </div> 
+            <div class="pic5">
+                  <div class="card">
+                      <div class="img">
+                        <img src="./images/avatar/default_avatar2.png" />
+                      </div>
+                      <div class="top-text">
+                        <div class="name">
+                          Karan Chabba
+                        </div>
+                        <p>
+                          Facilities Director
+                        </p>
+                      </div>
+                      <div class="bottom-text">
+                        <div class="textcard">
+                          &#9742 778-512-5208<br>
+                          &#9993 karan@westvancouvercricketclub.ca
+                        </div>
+                        <div class="btn">
+                          <a href="#">Read more</a>
+                        </div>
+                      </div>
+                    </div>
+            </div>  
+            <div class="pic6">
+                  <div class="card">
+                  <div class="img">
+                    <img src="./images/avatar/default_avatar2.png" />
+                  </div>
+                  <div class="top-text">
+                    <div class="name">
+                      Alex Turko
+                    </div>
+                    <p>
+                      Cricket Operations Director
+                  </p>
+                  </div>
+                  <div class="bottom-text">
+                    <div class="textcard">
+                      &#9742 778-229-7858<br>
+                      &#9993 president@westvancouvercricketclub.ca
+                    </div>
+                    <div class="btn">
+                      <a href="#">Read more</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+          <div class="life-members" id="life-members">            
+            <div class="lifetxt">
+              <div class="titlestd"><h1>LIFE MEMBERS</h1></div>
+              <br>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam fuga aliquid voluptate error saepe reiciendis itaque doloremque distinctio nobis! Qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, porro ab aperiam quam cumque architecto ratione temporibus tenetur, provident sed dolorum a maxime nisi minima illum tempore nostrum quos excepturi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam quia maxime atque libero optio repellendus reiciendis, accusamus rerum vero beatae possimus similique cumque, quas laboriosam?</p>
+              <div class="lifeimg"><img class="lifeimg" src="./images/cricket-105025.jpg" alt=""></div>
+
+              <p> Molestiae id eos voluptate praesentium! Corporis dolores eius impedit sequi placeat dolor magnam. Similique quasi possimus neque, veniam corrupti commodi ipsam, aliquam, corporis cupiditate ipsum molestiae quis impedit libero? Sint doloribus totam, vitae velit sunt modi non? Sint, quod dolor? Ea distinctio iure quidem quos, corporis dolores rerum dicta eaque ducimus, neque labore quasi consequatur ad molestias in quisquam. Adipisci, exercitationem expedita. Maiores, molestias aut? Ipsam modi pariatur voluptatem officiis natus tempora corporis sit, rerum at consectetur ratione perferendis, expedita ipsa facere fugiat quos delectus eius, reprehenderit dolor hic suscipit necessitatibus adipisci quod! Dolor dolore expedita illo amet similique at ipsam provident eaque architecto, quis quidem inventore qui assumenda.Ea distinctio iure quidem quos, corporis dolores rerum dicta eaque ducimus.</p>
           </div>
         </div>
-        <div class="life-members" id="life-members">
-          <div class="titlestd"><h1>LIFE MEMBERS</h1></div>
-          <div class="lifetxt"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam fuga aliquid voluptate error saepe reiciendis itaque doloremque distinctio nobis! Qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, porro ab aperiam quam cumque architecto ratione temporibus tenetur, provident sed dolorum a maxime nisi minima illum tempore nostrum quos excepturi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam quia maxime atque libero optio repellendus reiciendis, accusamus rerum vero beatae possimus similique cumque, quas laboriosam? Molestiae id eos voluptate praesentium! Corporis dolores eius impedit sequi placeat dolor magnam. Similique quasi possimus neque, veniam corrupti commodi ipsam, aliquam, corporis cupiditate ipsum molestiae quis impedit libero? Sint doloribus totam, vitae velit sunt modi non? Sint, quod dolor? Ea distinctio iure quidem quos, corporis dolores rerum dicta eaque ducimus, neque labore quasi consequatur ad molestias in quisquam. Adipisci, exercitationem expedita. Maiores, molestias aut? Ipsam modi pariatur voluptatem officiis natus tempora corporis sit, rerum at consectetur ratione perferendis, expedita ipsa facere fugiat quos delectus eius, reprehenderit dolor hic suscipit necessitatibus adipisci quod! Dolor dolore expedita illo amet similique at ipsam provident eaque architecto, quis quidem inventore qui assumenda.Ea distinctio iure quidem quos, corporis dolores rerum dicta eaque ducimus.</p></div>
-          <div class="lifeimg"><img class="lifeimg" src="./images/cricket-105025.jpg" alt=""></div>
-        </div>
+
+
+
+
+
+
+
         <div class="programs" id="programs">
           <div class="titlestd"><h1>PROGRAMS</h1></div>
           <div class="programstxt">
@@ -441,6 +406,39 @@
         </div>
     </footer>
     <p id="copyright">---- COPYRIGHT &copy; 2020 West Vancouver Cricket Club ----</p>
+
+
+    <!-- SCRIPT FOR THE READ MORE POPUPS (MODAL BTN)-->
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModalabout");
+      // var modal = document.getElementById("myModallife");
+
+      
+      // Get the button that opens the modal
+      var btn = document.getElementById("readabout");
+      // var btn = document.getElementById("readlife");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      
+      // When the user clicks the button, open the modal 
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
 
         
 </body>
