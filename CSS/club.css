@@ -6,34 +6,31 @@
 }
 
 body {
-  /* background-image: url(../images/slideshow/cricket-0033.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; */
-}
-
-.body_section{
   background-image: url(../images/slideshow/cricket-0033.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+
+.body_section {
+  /* background-image: url(../images/slideshow/cricket-0033.jpg); */
   width: 100%;
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 3em;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
+
 h2 {
   font-weight: bold;
 }
- /* p {
+
+/* p {
    font-size: 1em;
    text-align: justify;
  } */
-
-
 
 /*MODAL BTN READ MORE STYLE */
 
@@ -333,24 +330,20 @@ nav ul ul li a {
   text-align: center;
   padding-left: 0;
   padding-right: 0;
-  /* background-color: rgb(255, 255, 255, 0.4); */
-  /* background-color: rgb(244, 155, 0, 0.6); */
-
 }
 
 #aboutinit {
   color: #fff;
-  background-color: rgb(244, 155, 0, 0.6);
+  background-color: rgb(244, 155, 0, 0.7);
   /* margin-left: 0; */
   width: 40%;
-  height: 40vh;
+  /* height: 40vh; */
   padding: 30px 50px !important;
-  margin-top: 200px;
+  /* margin-top: 200px; */
   margin-left: 50px;
-  font-weight: bolder;
-  font-size: 20px;
+  /* font-weight: bolder; */
+  /* font-size: 20px; */
 }
-
 
 .abouttxt {
   grid-area: abouttxt;
@@ -358,12 +351,11 @@ nav ul ul li a {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover; */
-  height: 70vh;
+  /* height: 70vh; */
   color: rgb(0, 0, 0);
   padding-left: 0;
   text-align: justify;
 }
-
 
 .abouttxt ul {
   padding: 30px;
@@ -473,8 +465,8 @@ nav ul ul li a {
   padding: 30px 20px;
 } */
 
-
 /* LIFE MEMBERS GRID */
+
 .life-members {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -499,12 +491,17 @@ nav ul ul li a {
   grid-area: lifecontainer1;
 }
 
-.lifepic1 { grid-area: lifepic1; }
+.lifepic1 {
+  grid-area: lifepic1;
+}
 
-.liferef1 { grid-area: liferef1; }
+.liferef1 {
+  grid-area: liferef1;
+}
 
-.lifetitle { grid-area: lifetitle; }
-
+.lifetitle {
+  grid-area: lifetitle;
+}
 
 .lifecontainer2 {
   display: grid;
@@ -515,9 +512,13 @@ nav ul ul li a {
   grid-area: lifecontainer2;
 }
 
-.lifepic2 { grid-area: lifepic2; }
+.lifepic2 {
+  grid-area: lifepic2;
+}
 
-.liferef2 { grid-area: liferef2; }
+.liferef2 {
+  grid-area: liferef2;
+}
 
 .lifecontainer3 {
   display: grid;
@@ -528,9 +529,13 @@ nav ul ul li a {
   grid-area: lifecontainer3;
 }
 
-.lifepic3 { grid-area: lifepic3; }
+.lifepic3 {
+  grid-area: lifepic3;
+}
 
-.liferef3 { grid-area: liferef3; }
+.liferef3 {
+  grid-area: liferef3;
+}
 
 .lifecontainer4 {
   display: grid;
@@ -541,9 +546,13 @@ nav ul ul li a {
   grid-area: lifecontainer4;
 }
 
-.lifepic4 { grid-area: lifepic4; }
+.lifepic4 {
+  grid-area: lifepic4;
+}
 
-.liferef4 { grid-area: liferef4; }
+.liferef4 {
+  grid-area: liferef4;
+}
 
 .lifecontainer5 {
   display: grid;
@@ -554,9 +563,13 @@ nav ul ul li a {
   grid-area: lifecontainer5;
 }
 
-.lifepic5 { grid-area: lifepic5; }
+.lifepic5 {
+  grid-area: lifepic5;
+}
 
-.liferef5 { grid-area: liferef5; }
+.liferef5 {
+  grid-area: liferef5;
+}
 
 .lifecontainer6 {
   display: grid;
@@ -567,13 +580,15 @@ nav ul ul li a {
   grid-area: lifecontainer6;
 }
 
-.lifepic6 { grid-area: lifepic6; }
+.lifepic6 {
+  grid-area: lifepic6;
+}
 
-.liferef6 { grid-area: liferef6; }
+.liferef6 {
+  grid-area: liferef6;
+}
 
 /* END LIFE GRID */
-
-
 
 .programs {
   display: grid;
@@ -583,7 +598,6 @@ nav ul ul li a {
   grid-template-areas: "titlestd titlestd" "programstxt imgprog";
   grid-area: programs;
   background-color: rgb(244, 155, 0, 0.8);
-
 }
 
 .programs h1 {
@@ -649,19 +663,18 @@ nav ul ul li a {
 }
 
 .cricketlist li {
-  font-size: 1.1em !important;
+  font-size: 1em !important;
 }
 
 .lifetxt, .programstxt, .facilitiestxt p {
-  font-size: 1.5em !important;
-  line-height: 40px;
+  font-size: 1em !important;
+  line-height: 30px;
   text-align: justify;
   padding: 30px 20px;
 }
 
-.facilitiestxt li{
-  font-size: 1.5em !important;
-
+.facilitiestxt li {
+  font-size: 1em !important;
 }
 
 .about, .councilcards, .life-members, .programs, .facilities {
@@ -692,8 +705,6 @@ nav ul ul li a {
 }
 
 /*END FACILITIES TEST */
-
-
 
 /* END OF THE GRID LAYOUT */
 
@@ -746,7 +757,7 @@ html, body {
   height: 100%;
   display: grid;
   place-items: center;
-  background: #f2f2f2;
+  /* background: #f2f2f2; */
   /* text-align: center; */
 }
 
@@ -910,28 +921,24 @@ footer i {
 /* NEW GRID */
 
 @media screen and (max-width: 375px) {
-
   .about {
-    width: 100%;
-    height: 800px;
+    /* width: 100%; */
+    /* height: 800px; */
   }
-
-  #aboutinit {    
-    width: 600px !important;
-    height: 50vh !important;
-    margin-top: 400px !important;   
+  #aboutinit {
+    /* width: 100px !important; */
+    /* height: 50vh !important; */
+    /* margin-top: 400px !important;    */
   }
 }
 
 @media screen and (max-width: 768px) {
-
   #aboutinit {
-    height: 37vh;
-    width: 650px !important;
-    margin-top: 530px !important;
+    /* height: 37vh; */
+    /* width: 650px !important; */
+    /* margin-top: 530px !important; */
     margin-left: 50px;
   }
-
   .imgfacil2 {
     display: none !important;
   }
@@ -1059,7 +1066,6 @@ footer i {
   span.cancel:before {
     content: "\f00d";
   }
-
   .grid-container {
     display: grid;
     grid-template-columns: 100%;
@@ -1077,14 +1083,12 @@ footer i {
     grid-area: about;
     margin-top: 0;
   }
-
-  #aboutinit {    
+  /* #aboutinit {    
     width: 50%;
     height: 35vh;
     margin-top: 550px;
     margin-left: 10px;
-  }
-
+  } */
   .abouttxt {
     grid-area: abouttxt;
     /* background-color: rgb(244, 155, 0, 0.75) !important; */
